@@ -33,12 +33,13 @@
             background-image: var(--image1);
             background-size: cover;
             background-position: center;
-            transition: background-image 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transition: background-image 0.5s ease-in-out, transform 0.3s ease-in-out;
         }
 
         .tile:hover {
             background-image: var(--image2);
             transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
         }
 
         .overlay {
@@ -49,6 +50,21 @@
             color: white;
             text-align: center;
             padding: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .title h1 {
+                font-size: 2em;
+            }
+
+            .nav-bar {
+                flex-direction: column;
+            }
+
+            .tile {
+                width: 90%;
+                /* Prevents tiles from being too small */
+            }
         }
     </style>
 </head>
@@ -65,14 +81,14 @@
                 <h1>Life Below Water</h1>
             </div>
             <div class="search-profile">
-                <input type="text" class="search-bar">
+                <input type="text" class="searchbar">
                 <button class="search-button">🔍</button>
                 <a href="#profile"><button class="profile-button">👤</button></a>
             </div>
         </div>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="/home.html">Home</a></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#schallengesandthreats">Challenges and Threats</a></li>
@@ -80,7 +96,7 @@
                 <li><a href="#progression">Progression</a></li>
                 <li><a href="#gallerypage">Gallery Page</a></li>
                 <li><a href="#sitemap">Sitemap</a></li>
-                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="/feedback.html">Feedback</a></li>
             </ul>
         </nav>
     </header>
@@ -129,7 +145,7 @@
             <div class="footer-links">
                 <h3>Links</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="/home.html">Home</a></li>
                     <li><a href="#overview">Overview</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#challenges">Challenges and Threats</a></li>
@@ -137,7 +153,7 @@
                     <li><a href="#progression">Progression</a></li>
                     <li><a href="#gallery">Gallery Page</a></li>
                     <li><a href="#sitemap">Sitemap</a></li>
-                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="/feedback.html">Feedback</a></li>
                 </ul>
             </div>
 
