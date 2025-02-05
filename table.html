@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .membership-section {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            margin: 50px 0;
+        }
+
+        .membership-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .membership-section p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .membership-table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #0F172A;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Column Colors */
+        .basic {
+            background-color: #48cae4;
+        }
+
+        .standard {
+            background-color: #00b4d8;
+        }
+
+        .premium {
+            background-color: #0096c7;
+        }
+
+        .membership-table th,
+        .membership-table td {
+            padding: 20px;
+            border: 1px solid #3B3F58;
+
+        }
+
+        .membership-table thead th {
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        .membership-table td {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Join Now Buttons */
+        .join-row td {
+            padding: 20px;
+            border: none;
+        }
+
+        .join-btn {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .basic-btn,
+        .standard-btn,
+        .premium-btn {
+            color: #000000;
+        }
+
+        .join-btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .membership-table td img {
+            width: 30px;
+            /* Adjust the image size */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            /* Center the image in the cell */
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .membership-table {
+                width: 95%;
+            }
+
+            .membership-table th,
+            .membership-table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .join-btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Utility Bar -->
+    <div class="top-utility-bar">
+
+        <div class="search-container">
+            <input type="texts" placeholder="Search...">
+            <button>🔍</button>
+            <a href="#profile"><button class="profile-button">👤</button></a>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="main-nav">
+        <div class="logo">
+            <a href="/home.html">
+                <img src="images/logo.png" alt="Your Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#schallengesandthreats">Challenges and Threats</a></li>
+                <li><a href="#teampage">Team Page</a></li>
+                <li><a href="#progression">Progression</a></li>
+                <li><a href="#gallerypage">Gallery Page</a></li>
+                <li><a href="#sitemap">Sitemap</a></li>
+                <li><a href="/feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="membership-section">
+        <h2>Become a Member</h2>
+        <p>Join our exclusive community and enjoy premium benefits. Choose the best plan for you.</p>
+
+        <table class="membership-table">
+            <thead>
+                <tr>
+                    <th>Features</th>
+                    <th class="basic">Basic<br><span class="price">$0/month</span></th>
+                    <th class="standard">Standard<br><span class="price">$9.99/month</span></th>
+                    <th class="premium">Premium<br><span class="price">$19.99/month</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Community Forum Access</td>
+                    <td class="basic"><img src="images/tick.png" alt="Exclusive Content"></td>
+
+                    <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
+                    <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                </tr>
+                <tr>
+                    <td>Early Project Previews</td>
+                    <td class="basic">❌</td>
+                    <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
+                    <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                </tr>
+                <tr>
+                    <td>Access to Exclusive Content</td>
+                    <td class="basic">❌</td>
+                    <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
+                    <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                </tr>
+                <tr>
+                    <td>Special Event Invitations</td>
+                    <td class="basic">❌</td>
+                    <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
+                    <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                </tr>
+                <tr>
+                    <td>Personalized Support</td>
+                    <td class="basic">❌</td>
+                    <td class="standard">❌</td>
+                    <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                </tr>
+                <tr class="join-row">
+                    <td></td>
+                    <td class="basic"><button class="join-btn basic-btn">Join Now</button></td>
+                    <td class="standard"><button class="join-btn standard-btn">Join Now</button></td>
+                    <td class="premium"><button class="join-btn premium-btn">Join Now</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/image.png" alt="TechAstris Logo" class="footer-logo">
+                <p>
+                    Exploring the world of technology to create innovative <br>
+                    and impactful solutions that shape the future.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#challenges">Challenges and Threats</a></li>
+                    <li><a href="#team">Team Page</a></li>
+                    <li><a href="#progression">Progression</a></li>
+                    <li><a href="#gallery">Gallery Page</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-editors">
+                <h3>Editors</h3>
+                <ul>
+                    <li><a href="#kevin">Kevin</a></li>
+                    <li><a href="#avaneesh">Avaneesh</a></li>
+                    <li><a href="#pangajan">Pangajan</a></li>
+                    <li><a href="#imayuru">Imayuru</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 TECHASTRIS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
