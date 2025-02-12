@@ -1,4 +1,7 @@
 /* Reset some default browser styles */
+body {
+    background: linear-gradient(to bottom, rgba(167, 221, 237, 1), #0F172A);
+}
 body, ul {
     margin: 0;
     padding: 0;
@@ -77,91 +80,78 @@ body, ul {
 
 /* Footer Styling */
 .footer {
-    background-color: #0F172A; /* Dark background */
-    color: white; /* White text */
-    padding: 40px 0;
-    font-family: Arial, sans-serif;
+    background-color: #001933;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-/* Footer Container */
-.footer-container {
+.footer img {
+    width: 200px;
+    margin-bottom: 45px;
+}
+
+.footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 60px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: rgb(97, 198, 228);
+}
+
+.footer hr {
+    border: 1px solid white;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.footer .bottom-text {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 0 20px;
-    
-}
-
-/* Left Side (Branding & Description) */
-.footer-brand {
-    flex: 1;
-    text-align: left;
-    max-width: 400px;
-}
-
-.footer-logo {
-    height: 100px;
-    margin-bottom: 15px;
-}
-
-.footer-brand h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #FACC15; /* Yellowish accent */
-}
-
-
-
-/* Links & Editors Sections */
-.footer-links, .footer-editors {
-    text-align: left;
-}
-
-.footer-editors {
-    text-decoration: none;
-}
-
-.footer-links h3, .footer-editors h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: rgba(167, 221, 237); /* Yellow heading */
-}
-
-/* Links Styling */
-.footer-links ul, .footer-editors ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li, .footer-editors li {
-    margin-bottom: 5px;
-}
-
-.footer-links a,
-.footer-editors a {
-    text-decoration: none;
-    color: white;
+    width: 100%;
+    max-width: 1200px;
     font-size: 14px;
-    transition: color 0.3s;
+    padding-top: 10px;
 }
 
-.footer-links a:hover {
-    color:rgba(167, 221, 237); /* Highlight on hover */
+.footer .extra-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-/* Footer Bottom */
-.footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid #1F2A40;
-    padding-top: 15px;
-    font-size: 12px;
+.footer .extra-links a {
+    color: #4cc8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .extra-links a:hover {
     color: white;
 }
+
+.footer .membership-table {
+    font-weight: bold;
+}
+
+
 
 /* Responsive Styles for Max Width 768px */
 @media (max-width: 768px) {
