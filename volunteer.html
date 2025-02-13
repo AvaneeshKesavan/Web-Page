@@ -20,7 +20,7 @@
         .card-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            gap: 15px;
+            gap: 19px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -28,7 +28,12 @@
         .card {
             background: white;
             border-radius: 5px;
-            border: 1px solid #2f2929;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .card-header-image {
@@ -47,6 +52,23 @@
             height: 50%;
             border-top: 1px solid #ccc;
             padding: 10px;
+        }
+
+    
+
+        .data-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: wheat;
+            border-radius: 5px;
+            padding: 6px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .page-link {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -87,7 +109,29 @@
         <div class="program-listing">
             <h1>100 volunteer programs available</h1>
             <span>Filters: </span>
-            <p>Showing 1 to 10 results</p>
+            <div class="data-card">
+                <p>Showing 1 to 6 results on page 1</p>
+                <div>
+                    <a href="#previous-page" class="page-link">
+                        <
+                    </a>
+                    <a href="#1" class="page-link">
+                        1
+                    </a>
+                    <a href="#2" class="page-link">
+                        2
+                    </a>
+                    <a href="#3" class="page-link">
+                        3
+                    </a>
+                    <a href="#4" class="page-link">
+                        4
+                    </a>
+                    <a href="#5" class="page-link">
+                        >
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="card-container">
             <div class="card">
@@ -97,7 +141,7 @@
                     <h2>ReefRescue: Coral Revival Program</h2>
                 </div>
                 <div class="card-footer">
-                    <button>Learn More</button>
+                    <a href="#volunteer-learn-more">Learn more</a>
                 </div>
             </div>
             <div class="card">
@@ -106,7 +150,7 @@
                     <h2>SeaSafe: Ocean Rescue & Disaster Relief </h2>
                 </div>
                 <div class="card-footer">
-                    <button>Learn More</button>
+                    <a href="#volunteer-learn-more">Learn more</a>
                 </div>
             </div>
             <div class="card">
@@ -116,7 +160,7 @@
                     <h2>AquaHope: Sustainable Fisheries Project</h2>
                 </div>
                 <div class="card-footer">
-                    <button>Learn More</button>
+                    <a href="#volunteer-learn-more">Learn more</a>
                 </div>
             </div>
             <div class="card">
@@ -134,46 +178,6 @@
                     src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
                 <div class="card-body">
                     <h2>DeepBlue: Ocean Research & Restoration</h2>
-                </div>
-                <div class="card-footer">
-                    <button>Learn More</button>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-header-image"
-                    src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
-                <div class="card-body">
-                    <h2>ReefRescue: Coral Revival Program</h2>
-                </div>
-                <div class="card-footer">
-                    <button>Learn More</button>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-header-image"
-                    src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
-                <div class="card-body">
-                    <h2>ReefRescue: Coral Revival Program</h2>
-                </div>
-                <div class="card-footer">
-                    <button>Learn More</button>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-header-image"
-                    src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
-                <div class="card-body">
-                    <h2>ReefRescue: Coral Revival Program</h2>
-                </div>
-                <div class="card-footer">
-                    <button>Learn More</button>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-header-image"
-                    src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
-                <div class="card-body">
-                    <h2>ReefRescue: Coral Revival Program</h2>
                 </div>
                 <div class="card-footer">
                     <button>Learn More</button>
