@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Life Below water</title>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <style>
-            html, body {
-                background-image: url("images/coral.webp");
-                background-repeat: no-repeat;
-                background-size: cover;
-                color: white;
-                height: 100%;
-                width: 100%;
-                margin: 0;
-            }
+  <head>
+    <title>Life Below water</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <style>
+      html,
+      body {
+        background-image: url("images/splash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+      }
 
-            .overlay {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.5);
-            }
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
 
-            .splash-container {
-                padding-top: 120px;
-                position: relative; /* Ensures text is above overlay */
-                color: white; /* Adjust based on overlay color */
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-                z-index: 1;
-            }
+      .splash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
 
-            .splash-description {
-                width: 50%;
-                text-align: center;
-            }
+      .splash-container {
+        position: relative; /* Ensures text is above overlay */
+        text-align: center;
+        z-index: 1;
+      }
 
-            .group-member {
-                display: inline;
-                font-size: x-large;
-            }
+      .group-member {
+        display: inline;
+      }
 
-            * {
-                font-family: Arial, sans-serif;
-            }
-        </style>
-        <meta http-equiv="refresh" content="5;url=home.html" />
-    </head>
-    <body>
-        <div class="overlay"></div>
-        <div class="splash-container">
-            <h1 class="splash-title">Life Below Water</h1>
-            <h3 class="splash-description"> 
-                Conserve and sustainably use the oceans, seas and marine resources for sustainable development 
-            </h3>
-            <div class="member-container">
-                <h3>Group Members</h3>
-                <ul>
-                    <li class="group-member"><b>Kevin</b> |</li>
-                    <li class="group-member"><b>Avaneesh</b> |</li>
-                    <li class="group-member"><b>Pangajan</b> |</li>
-                    <li class="group-member"><b>Imayuru</b></li>
-                </ul>
-            </div>
-            <img src="images/swimming.gif" width="250" height="250" />
+      * {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <meta http-equiv="refresh" content="5;url=home.html" />
+  </head>
+  <body>
+    <div class="splash">
+     <div class="overlay"></div>
+      <div class="splash-container">
+        <h1>Life Below Water</h1>
+        <h3 class="splash-description">
+          Conserve and sustainably use the oceans, seas and marine resources for
+          sustainable development
+        </h3>
+        <div class="member-container">
+          <h3>Group Members</h3>
+          <ul>
+            <li class="group-member"><b>Kevin</b> |</li>
+            <li class="group-member"><b>Avaneesh</b> |</li>
+            <li class="group-member"><b>Pangajan</b> |</li>
+            <li class="group-member"><b>Imayuru</b></li>
+          </ul>
         </div>
-    </body>
+        <img src="images/swimming.gif" width="250" height="250" />
+      </div>
+    </div>
+  </body>
 </html>
