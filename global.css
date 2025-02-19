@@ -126,7 +126,7 @@ body {
 }
 
 .search-container button {
-    background: rgb(0, 255, 221);
+    background: rgb(125, 218, 238);
     padding: 8px 16px;
     border: none;
     cursor: pointer;
@@ -148,7 +148,7 @@ body {
 
 .search-container button#search-btn {
     margin-left: 10px;
-    background: rgb(7, 177, 154);
+    background: rgb(1, 200, 255);
 }
 
 #nav-links button#search-expand {
