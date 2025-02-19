@@ -12,14 +12,17 @@
         /* Hero Section */
         .hero-section {
             background: url("images/background.jpg") no-repeat center center/cover;
-            height: 500px;
+            width: 100%;
+            height: 100%;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            background-attachment: fixed; /* Gives a parallax-like effect */
             color: rgb(255, 255, 255);
             text-align: center;
+            padding: 160px 0;
+        }
+
+        .hero-section-text {
+            position: relative;
         }
 
         /* Dark overlay for better text contrast */
@@ -30,7 +33,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3);
         }
 
         /* Ensure text appears above the overlay */
@@ -44,7 +47,7 @@
         .hero-section h1 {
             font-size: 4rem;
             font-weight: bold;
-            margin-top: 100px;
+            margin: 0;
         }
 
         .hero-section p {
@@ -179,9 +182,11 @@
 
     <!-- Hero Section -->
     <div class="hero-section">
-        <h1>Life Below Water</h1>
-        <p>Become a member and join us today.</p>
-        <a href="table.html"><button>For More</button></a>
+        <div class="hero-section-text">
+            <h1>Life Below Water</h1>
+            <p>Become a member and join us today.</p>
+            <a href="table.html"><button>For More</button></a>
+        </div>
     </div>
 
     <!-- Rest of your content -->
