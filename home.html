@@ -18,8 +18,9 @@
             background-attachment: fixed; /* Gives a parallax-like effect */
             color: rgb(255, 255, 255);
             text-align: center;
-            padding: 160px 0;
+            padding: 180px 0;
         }
+
 
         .hero-section-text {
             position: relative;
@@ -152,33 +153,33 @@
 </head>
 
 <body>
-    <!-- Top Utility Bar -->
-    <div class="top-utility-bar">
-        <div class="search-container">
+    <!-- Main Navigation Bar -->
+    <header class="main-nav">
+        <div class="search-container" id="search">
             <input type="text" placeholder="Search" />
             <button>🔍</button>
             <a href="profile.html"><img src="images/profile_icon.ico" alt="profile"></a>
         </div>
-    </div>
-
-    <!-- Main Navigation Bar -->
-    <header class="main-nav">
-        <div class="logo">
-            <a href="/home.html">
-                <img src="images/logo.png" alt="TECHASTRIS">
-            </a>
+        <div class="nav-top">
+            <div class="logo">
+                <a href="/home.html">
+                    <img src="images/logo.png" alt="TECHASTRIS">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/sitemap.html">About Us</a></li>
+                    <li><a href="/overview.html">Overview</a></li>
+                    <li><a href="/volunteer.html">Volunteer</a></li>
+                    <li><a href="/teampage.html">Team Page</a></li>
+                    <li><a href="/gallerypage.html">Gallery Page</a></li>
+                    <button id="search-expand">Search</button>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/sitemap.html">About Us</a></li>
-                <li><a href="/overview.html">Overview</a></li>
-                <li><a href="/volunteer.html">Volunteer</a></li>
-                <li><a href="/teampage.html">Team Page</a></li>
-                <li><a href="/gallerypage.html">Gallery Page</a></li>
-            </ul>
-        </nav>
     </header>
+
 
     <!-- Hero Section -->
     <div class="hero-section">
@@ -253,7 +254,7 @@
         </div>
     </footer>
 
-
+    <script src="/js/nav-search.js"></script>
 </body>
 
 </html>

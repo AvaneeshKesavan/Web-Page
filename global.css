@@ -22,8 +22,14 @@ ul {
 }
 
 .search-container {
-    display: flex;
+    display: none;
+    background: rgba(190, 239, 254, 0);
     align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    transition: all 0.3 ease-in-out;
 }
 
 .search-container input {
@@ -46,19 +52,29 @@ ul {
 }
 
 /* Main Navigation Bar */
-.main-nav {
+.nav-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(167, 221, 237);
-    padding: 15px 20px;
+    padding: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-radius: 10px;
 }
 
-.main-nav .logo img {
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 4;
+    left: 10px;
+    top: 30px;
+    right: 20px;
+    justify-content: flex-end;
+}
+
+
+.nav-top .logo img {
     height: 80px;
 }
 
