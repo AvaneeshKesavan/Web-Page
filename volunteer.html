@@ -59,7 +59,7 @@
             padding: 10px;
         }
 
-    
+
 
         .data-card {
             display: flex;
@@ -80,6 +80,7 @@
             display: flex;
             gap: 5px
         }
+
         .page-link {
             text-decoration: none;
             color: #000;
@@ -95,32 +96,34 @@
 
 
 <body>
-    <!-- Top Utility Bar -->
-    <div class="top-utility-bar">
-        <div class="search-container">
-            <input type="text" placeholder="Search" />
-            <button>🔍</button>
-            <a href="profile.html"><img src="images/profile_icon.ico" alt="profile"></a>
-        </div>
-    </div>
-
     <!-- Main Navigation Bar -->
     <header class="main-nav">
-        <div class="logo">
-            <a href="/home.html">
-                <img src="images/logo.png" alt="TECHASTRIS">
-            </a>
+        <div class="nav-top">
+            <div class="logo">
+                <a href="/home.html">
+                    <img src="images/logo.png" alt="TECHASTRIS">
+                </a>
+            </div>
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/sitemap.html">About Us</a></li>
+                    <li><a href="/overview.html">Overview</a></li>
+                    <li><a href="/volunteer.html">Volunteer</a></li>
+                    <li><a href="/teampage.html">Team Page</a></li>
+                    <li><a href="/gallerypage.html">Gallery Page</a></li>
+                    <button id="search-expand">Search</button>
+
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/sitemap.html">About Us</a></li>
-                <li><a href="/overview.html">Overview</a></li>
-                <li><a href="/volunteer.html">Volunteer</a></li>
-                <li><a href="/teampage.html">Team Page</a></li>
-                <li><a href="/gallerypage.html">Gallery Page</a></li>
-            </ul>
-        </nav>
+        <a href="profile.html"><img src="images/profile_icon.ico" alt="profile" class="profile-icon"></a>
+        <!-- Search Bar (Hidden Initially) -->
+        <div class="search-container" id="search-bar">
+            <input type="text" placeholder="Search">
+            <button id="search-btn">Search</button>
+            <button id="close-search">✖</button>
+        </div>
     </header>
 
     <!-- Main content -->
@@ -133,23 +136,22 @@
                 <p>Showing 1 to 6 results on page 1</p>
                 <div class="page-links">
                     <a href="#previous-page" class="page-link">
-                        <
-                    </a>
-                    <a href="#1" class="page-link">
-                        1
-                    </a>
-                    <a href="#2" class="page-link">
-                        2
-                    </a>
-                    <a href="#3" class="page-link">
-                        3
-                    </a>
-                    <a href="#4" class="page-link">
-                        4
-                    </a>
-                    <a href="#5" class="page-link">
-                        >
-                    </a>
+                        < </a>
+                            <a href="#1" class="page-link">
+                                1
+                            </a>
+                            <a href="#2" class="page-link">
+                                2
+                            </a>
+                            <a href="#3" class="page-link">
+                                3
+                            </a>
+                            <a href="#4" class="page-link">
+                                4
+                            </a>
+                            <a href="#5" class="page-link">
+                                >
+                            </a>
                 </div>
             </div>
         </div>
@@ -223,12 +225,14 @@
         <!-- Accessibility Links in the center -->
         <div class="links">
             <a href="/home.html">HOME</a>
+            <a href="/editors.html">ABOUT US</a>
             <a href="/overview.html">OVERVIEW</a>
-            <a href="/volunteer.html">VOLUNTEER</a></li>
-            <a href="/teampage.html">TEAM PAGE</a>
+            <a href="/volunteer.html">VOLUNTEER</a>
+            <a href="/teampage.html">TEAM</a>
             <a href="/gallerypage.html">GALLERY PAGE</a>
             <a href="/sitemap.html">SITEMAP</a>
             <a href="/feedback.html">FEEDBACK</a>
+            <a href="/validation.html">VALIDATION</a>
         </div>
 
         <!-- Line below the links -->
@@ -251,7 +255,7 @@
         </div>
     </footer>
 
-
+    <script src="/js/nav-search.js"></script>
 </body>
 
 </html>
