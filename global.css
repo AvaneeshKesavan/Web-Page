@@ -138,6 +138,36 @@ body {
     display: none;
 }
 
+/* Animation for the search bar, moves it to the left and fades it */
+.search-slide-out {
+    animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%)
+    }
+}
+
+.search-slide-in {
+    animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .search-active .search-container {
     display: flex;
 }
