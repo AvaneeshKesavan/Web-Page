@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(246,241,241);
     font-family: Arial, sans-serif;
     margin: 0;
     padding-top: 0;
@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(167, 221, 237);
+    background: rgba(25, 167, 206);
     padding: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -82,7 +82,7 @@ body {
 
 
 .main-nav nav a:hover {
-    color: rgba(167, 221, 237);
+    color: rgba(25, 167, 206);
     background-color: #000000;
     border: 4px groove #000000;
     padding: 20px 8px;
@@ -120,13 +120,13 @@ body {
 .search-container input {
     padding: 8px;
     width: 80%;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 1rem;
 }
 
 .search-container button {
-    background: rgb(125, 218, 238);
+    background: rgb(20,108,148);
     padding: 8px 16px;
     border: none;
     cursor: pointer;
@@ -148,7 +148,7 @@ body {
 
 .search-container button#search-btn {
     margin-left: 10px;
-    background: rgb(1, 200, 255);
+    background: rgb(25, 167, 206);
 }
 
 #nav-links button#search-expand {
@@ -162,7 +162,7 @@ body {
 
 /* Footer Styling */
 .footer {
-    background-color: #001933;
+    background-color: rgb(0,0,0);
     padding: 20px 40px;
     color: #fff;
     display: flex;
@@ -193,7 +193,7 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
-    color: rgb(97, 198, 228);
+    color: rgb(25, 167, 206);
 }
 
 .footer hr {
@@ -220,7 +220,7 @@ body {
 }
 
 .footer .extra-links a {
-    color: #4cc8ff;
+    color: rgb(25, 167, 206);
     text-decoration: none;
     font-weight: bold;
 }
