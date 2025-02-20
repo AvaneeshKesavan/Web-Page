@@ -7,8 +7,8 @@ const closeSearchButton = document.getElementById("close-search");
 searchExpandButton.addEventListener("click", () => {
     setTimeout(() => {
         searchContainer.style.display = 'flex'; // Show search bar
-        searchContainer.classList.remove("search-slide-out");
         navLinks.style.display = 'none'; // Hide navigation links
+        searchContainer.classList.remove("search-slide-out");
         navLinks.classList.remove("search-slide-out");
     }, 400);
 
