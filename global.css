@@ -152,21 +152,12 @@ body {
 }
 
 #nav-links button#search-expand {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 15px;
+    padding: 5px 20px;
+    margin-bottom: 0.4%;
     border: 2px solid transparent;
     background-color: transparent; /* Same style as the nav links */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-}
-
-#nav-links button#search-expand:hover {
-    color: rgba(167, 221, 237);
-    background-color: #000000;
-    border: 4px groove #000000;
-    padding: 30px 10px;
 }
 
 /* Footer Styling */
