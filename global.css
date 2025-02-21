@@ -273,8 +273,10 @@ body {
 @media (max-width: 768px) {
 
     .hamburger-menu {
-        display: block; /* Show hamburger menu */
+        display: block;
+        /* Show hamburger menu */
     }
+
     /* Utility Bar Adjustments */
     .top-utility-bar {
         justify-content: center;
@@ -282,23 +284,26 @@ body {
     }
 
     .logo {
-        display: none;
+        align-items: end;
+        width: 20px;
     }
 
     /* Navigation Adjustments */
     nav {
-        display: none; /* Hide nav links by default */
+        display: none;
+        /* Hide nav links by default */
         flex-direction: column;
-        width: 100%;
+        width: 30%;
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 60%;
+        right: 3%;
         background: rgba(25, 167, 206, 0.9);
         text-align: center;
     }
 
     nav.active {
-        display: flex; /* Show menu when active */
+        display: flex;
+        /* Show menu when active */
     }
 
     nav ul {
