@@ -60,6 +60,7 @@
         .membership-table td {
             padding: 20px;
             border: 1px solid #3B3F58;
+            width: 24%;
 
         }
 
@@ -89,6 +90,7 @@
             cursor: pointer;
             border-radius: 5px;
             transition: all 0.3s;
+            text-decoration: none;
         }
 
         .basic-btn,
@@ -111,8 +113,34 @@
             /* Center the image in the cell */
         }
 
+        .membership-table th img {
+            width: 40px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .tooltip {
+            cursor: pointer;
+        }
+
+        .zebra-row {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .highlight {
+            background-color: rgba(255, 215, 0, 0.3);
+            font-weight: bold;
+            text-align: center;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
+            .membership-section {
+                text-align: center;
+                padding: 10px;
+            }
+
             .membership-table {
                 width: 95%;
             }
@@ -121,6 +149,7 @@
             .membership-table td {
                 padding: 10px;
                 font-size: 14px;
+                text-align: center;
             }
 
             .join-btn {
@@ -164,7 +193,6 @@
     </header>
 
     <div id="content">
-
         <div class="membership-section">
             <h2>Become a Member</h2>
             <p>Join our exclusive community and enjoy premium benefits. Choose the best plan for you.</p>
@@ -173,53 +201,58 @@
                 <thead>
                     <tr>
                         <th>Features</th>
-                        <th class="basic">Basic<br><span class="price">$0/month</span></th>
-                        <th class="standard">Standard<br><span class="price">$9.99/month</span></th>
-                        <th class="premium">Premium<br><span class="price">$19.99/month</span></th>
+                        <th class="basic"><img src="images/table1.png" alt="Basic Plan Logo" class="tooltip"
+                                title="Basic Plan"> Basic<br><span class="price">Free</span></th>
+                        <th class="standard"><img src="images/table2.png" alt="Standard Plan Logo" class="tooltip"
+                                title="Standard Plan"> Standard<br><span class="price">Rs.499/month</span></th>
+                        <th class="premium"><img src="images/table3.png" alt="Premium Plan Logo" class="tooltip"
+                                title="Premium Plan"> Premium<br><span class="price">Rs.899/month</span></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="zebra-row">
                         <td>Community Forum Access</td>
-                        <td class="basic"><img src="images/tick.png" alt="Exclusive Content"></td>
-
-                        <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
-                        <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                        <td class="basic"><img src="images/tick.png" alt="Yes"></td>
+                        <td class="standard"><img src="images/tick.png" alt="Yes"></td>
+                        <td class="premium"><img src="images/tick.png" alt="Yes"></td>
                     </tr>
                     <tr>
                         <td>Early Project Previews</td>
                         <td class="basic">❌</td>
-                        <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
-                        <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                        <td class="standard"><img src="images/tick.png" alt="Yes"></td>
+                        <td class="premium"><img src="images/tick.png" alt="Yes"></td>
                     </tr>
-                    <tr>
+                    <tr class="zebra-row">
                         <td>Access to Exclusive Content</td>
                         <td class="basic">❌</td>
-                        <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
-                        <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                        <td class="standard"><img src="images/tick.png" alt="Yes"></td>
+                        <td class="premium"><img src="images/tick.png" alt="Yes"></td>
                     </tr>
                     <tr>
                         <td>Special Event Invitations</td>
                         <td class="basic">❌</td>
-                        <td class="standard"><img src="images/tick.png" alt="Exclusive Content"></td>
-                        <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                        <td class="standard"><img src="images/tick.png" alt="Yes"></td>
+                        <td class="premium"><img src="images/tick.png" alt="Yes"></td>
                     </tr>
-                    <tr>
-                        <td>Personalized Support</td>
+                    <tr class="zebra-row">
+                        <td rowspan="2">Personalized Support</td>
                         <td class="basic">❌</td>
                         <td class="standard">❌</td>
-                        <td class="premium"><img src="images/tick.png" alt="Exclusive Content"></td>
+                        <td class="premium"><img src="images/tick.png" alt="Yes"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="highlight">Knowledge Base Access Available For All</td>
                     </tr>
                     <tr class="join-row">
                         <td></td>
-                        <td class="basic"><button class="join-btn basic-btn">Join Now</button></td>
-                        <td class="standard"><button class="join-btn standard-btn">Join Now</button></td>
-                        <td class="premium"><button class="join-btn premium-btn">Join Now</button></td>
+                        <td class="basic"><a href="signup-basic.html" class="join-btn basic-btn">Join Now</a></td>
+                        <td class="standard"><a href="signup-standard.html" class="join-btn standard-btn">Join Now</a>
+                        </td>
+                        <td class="premium"><a href="signup-premium.html" class="join-btn premium-btn">Join Now</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
     </div>
 
 
