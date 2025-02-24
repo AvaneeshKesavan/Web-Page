@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="global.css">
 
     <style>
-        body {
-            background: url('images/membewall.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-
         .membership-section {
             text-align: center;
             color: rgb(0, 0, 0);
@@ -29,6 +24,12 @@
         .membership-section p {
             font-size: 16px;
             margin-bottom: 30px;
+        }
+
+        .dark-mode .membership-section h2,
+        .dark-mode .membership-section p {
+            color: white !important;
+            /* Force color change in dark mode */
         }
 
         .membership-table {
