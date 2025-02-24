@@ -29,11 +29,18 @@ closeSearchButton.addEventListener("click", () => {
     searchContainer.classList.add("search-slide-out");
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const hamburgerMenu = document.getElementById("hamburger-menu");
     const navLinks = document.getElementById("nav-links");
 
-    hamburgerMenu.addEventListener("click", function() {
+    hamburgerMenu.addEventListener("click", function () {
         navLinks.classList.toggle("active"); // Toggle menu visibility
     });
+});
+
+document.getElementById("themeToggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    // Change button background color when toggling
+    this.classList.toggle("dark-mode");
 });
