@@ -14,10 +14,34 @@
             margin-bottom: 5%;
         }
 
+        .hero-section {
+            background: url("images/c2background.jpeg") no-repeat center center/cover;
+            position: relative;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 7% 0;
+        }
+
+        .hero-section-text {
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
         .heading-section {
+            font-size: 2rem;
             text-align: center;
             padding: 10px;
-            background-color: #0077b6;
             color: white;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -29,10 +53,11 @@
         }
 
         .internal-links a {
+            margin-left: 2%;
+            font-size: 1.3rem;
             margin-right: 5%;
-            /* margin: 0 10px; */
             text-decoration: none;
-            color: #0077b6;
+            color: white;
             font-weight: bold;
         }
 
@@ -44,14 +69,14 @@
             font-size: 1.8rem;
             border-bottom: 3px solid #00b4d8;
             padding-bottom: 2%;
-            margin-top: 5%;
+            margin-top: 4%;
         }
 
         .container p {
             font-size: 1.1rem;
             line-height: 1.8;
             text-align: justify;
-            margin-bottom: 20px;
+            margin-bottom: 10%;
         }
     </style>
 </head>
@@ -89,8 +114,9 @@
         </div>
     </header>
 
-    <div id="content">
-        <div class="container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-section-text">
             <div class="heading-section">
                 <h1 id="heading">Aquatic Adaptations</h1>
             </div>
@@ -101,6 +127,12 @@
                 <a href="#behavioral">Physiological Adaptations</a>
                 <a href="#physiological">Conclusion</a>
             </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="container">
+
 
             <h2 id="introduction" class="section">Introduction</h2>
             <p>Organisms that live in aquatic environments face unique challenges, such as buoyancy, oxygen
