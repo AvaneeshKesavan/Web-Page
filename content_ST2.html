@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="global.css">
     <style>
         .container {
-            max-width: 90%;
+            max-width: 80%;
             margin: auto;
-            margin-bottom: 5%;
+        }
+
+        #content {
+            margin-left: 200px;
+            margin-top: -33%;
         }
 
         .hero-section {
@@ -20,12 +24,12 @@
             background-attachment: fixed;
             color: rgb(255, 255, 255);
             text-align: center;
-            padding: 7% 0;
+            padding: 10% 0;
         }
 
         .hero-section-text {
             position: relative;
-            margin-top: 40px;
+            margin-top: 1%;
         }
 
         .hero-section::before {
@@ -38,31 +42,59 @@
             background: rgba(0, 0, 0, 0.5);
         }
 
+        html {
+            scroll-padding-top: 25%;
+        }
+
+        .side-navbar {
+            position: sticky;
+            left: 1.3%;
+            top: 50%;
+            transform: translateY(-40%);
+            padding: 20px;
+            background: #0077b6;
+            justify-content: center;
+            width: 180px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .side-navbar h3 {
+            color: white;
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .side-navbar ul {
+            list-style: none;
+            padding: 10%;
+        }
+
+        .side-navbar ul li {
+            margin-bottom: 12%;
+        }
+
+        .side-navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .side-navbar ul li a:hover {
+            background: #00b4d8;
+        }
+
         .heading-section {
             font-size: 2rem;
             text-align: center;
             padding: 10px;
             color: white;
             border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .internal-links {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .internal-links a {
-            margin-left: 2%;
-            font-size: 1.3rem;
-            margin-right: 5%;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        .internal-links a:hover {
-            text-decoration: underline;
+            margin-bottom: 1%;
         }
 
         .section {
@@ -77,6 +109,106 @@
             line-height: 1.8;
             text-align: justify;
             margin-bottom: 10%;
+        }
+
+        .container img {
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+
+        .toggle-btn {
+            display: none;
+        }
+
+        @media screen and (max-width: 786px) {
+            .container {
+                max-width: 95%;
+                padding: 0 5%;
+            }
+
+            #content {
+                margin-left: 0;
+                margin-top: 5%;
+            }
+
+            /* Make the side navbar a top navigation menu */
+            .side-navbar {
+                position: fixed;
+                text-align: center;
+                top: 50%;
+                left: -210px;
+                height: 60%;
+                background: #0077b6;
+                width: 180px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                transition: 0.3s ease-in-out;
+                z-index: 1000;
+            }
+
+            .side-navbar.open {
+                left: 0;
+                /* Show when active */
+            }
+
+            .toggle-btn {
+                position: fixed;
+                top: 21%;
+                left: 0;
+                z-index: 1100;
+                background: #0073b7;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                display: block;
+            }
+
+
+            .side-navbar ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 0;
+            }
+
+            .side-navbar ul li {
+                margin: 5px;
+            }
+
+            .side-navbar ul li a {
+                padding: 6px 12px;
+            }
+
+            /* Adjust hero section for small screens */
+            .hero-section {
+                padding: 15% 5%;
+            }
+
+            .hero-section-text {
+                margin-top: 3%;
+            }
+
+            /* Adjust heading sizes */
+            .heading-section {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                font-size: 1.4rem;
+            }
+
+            .container p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            /* Make images more responsive */
+            .container img {
+                width: 90%;
+                max-width: 400px;
+            }
         }
     </style>
 </head>
@@ -120,53 +252,154 @@
             <div class="heading-section">
                 <h1 id="heading">Aquatic Adaptations</h1>
             </div>
-            <div class="internal-links">
-                <a href="#">Introduction</a>
-                <a href="#introduction">Physical Adaptations</a>
-                <a href="#physical">Behavioral Adaptations</a>
-                <a href="#behavioral">Physiological Adaptations</a>
-                <a href="#physiological">Conclusion</a>
-            </div>
         </div>
+    </div>
+
+    <button class="toggle-btn">☰</button>
+    <div class="side-navbar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#physical">Physical Adaptations</a></li>
+            <li><a href="#behavioral">Behavioral Adaptations</a></li>
+            <li><a href="#physiological">Physiological Adaptations</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#">Back to Top</a></li>
+        </ul>
     </div>
 
     <div id="content">
         <div class="container">
 
-
             <h2 id="introduction" class="section">Introduction</h2>
-            <p>Organisms that live in aquatic environments face unique challenges, such as buoyancy, oxygen
-                availability, and temperature fluctuations. To survive and thrive in these conditions, aquatic animals
-                and plants have
-                evolved a variety of adaptations that help them navigate their surroundings efficiently.</p>
+            <p>Aquatic environments present unique challenges that require specialized adaptations for survival. Water
+                bodies, ranging from freshwater lakes and rivers to vast oceans, pose specific demands such as buoyancy,
+                oxygen availability, salinity, and temperature fluctuations. To thrive in these conditions, aquatic
+                organisms have evolved a variety of adaptations that enhance their ability to move, breathe, feed, and
+                reproduce. These adaptations can be broadly categorized into physical, behavioral, and physiological
+                changes that enable organisms to maintain homeostasis and efficiently exploit their environment. This
+                essay explores these different types of aquatic adaptations and highlights their significance in the
+                survival and proliferation of aquatic life.
+                <br><br>
+                <img src="images/IntroA.jpeg" alt="Introduction">
+            </p>
 
             <h2 id="physical" class="section">Physical Adaptations</h2>
-            <p>Physical adaptations are structural features that help aquatic organisms survive. These include
-                streamlined bodies that reduce drag while swimming, webbed feet for efficient movement, and gills that
-                allow fish to
-                extract oxygen from water. Additionally, animals like whales have blubber to maintain body temperature
-                in
-                cold waters.</p>
+            <p>Physical adaptations refer to structural changes in an organism’s body that improve its chances of
+                survival in an aquatic environment. These adaptations help aquatic animals manage buoyancy, streamline
+                movement, and acquire food efficiently.
+                <br><br>
+                One of the most significant physical adaptations in aquatic animals is body shape. Many aquatic
+                organisms exhibit a streamlined or fusiform body shape, which reduces drag and allows efficient movement
+                through the water. Fish, dolphins, and sharks exemplify this adaptation with their torpedo-like bodies
+                that enable swift swimming.
+                <br><br>
+                Additionally, specialized appendages play a crucial role in movement. Many aquatic animals have fins,
+                flippers, or webbed feet to aid in propulsion and maneuverability. For example, fish possess various
+                types of fins—dorsal, caudal, pectoral, pelvic, and anal fins—that serve different functions, such as
+                stability and propulsion. Similarly, marine mammals like seals and sea lions have flippers that enable
+                agile swimming.
+                <br><br>
+                Another critical physical adaptation is the presence of gills in fish and certain amphibians, allowing
+                them to extract oxygen from water. Unlike terrestrial animals that rely on lungs for breathing, fish
+                have gills equipped with a large surface area for effective gas exchange. Conversely, marine mammals
+                such as whales and dolphins have evolved to rely on lungs but possess adaptations like blowholes to
+                facilitate breathing at the water’s surface.
+                <br><br>
+                Other physical adaptations include camouflage and body covering. Many aquatic animals have
+                countershading—dark coloration on their dorsal (upper) side and lighter coloration on their ventral
+                (lower) side—to blend with the surrounding water and avoid predators. Additionally, protective body
+                coverings such as scales, shells, and thick skin serve as defense mechanisms. For instance, turtles have
+                hard shells that shield them from predators, and sharks have dermal denticles that reduce friction and
+                protect against parasites.
+                <br><br>
+                <img src="images/physicalA.jpeg" alt="Physical Adaptations">
+            </p>
 
             <h2 id="behavioral" class="section">Behavioral Adaptations</h2>
-            <p>Many aquatic animals exhibit behaviors that increase their chances of survival. Fish often swim in
-                schools to protect themselves from predators, while marine mammals like whales and dolphins communicate
-                through
-                echolocation. Some species, such as sea turtles, migrate thousands of miles between feeding and nesting
-                grounds.</p>
+            <p>Behavioral adaptations involve changes in an organism's activities or habits that improve its chances of
+                survival in an aquatic ecosystem. These behaviors may pertain to movement, feeding, reproduction, and
+                predator avoidance.
+                <br><br>
+                One notable behavioral adaptation is migration. Many aquatic species undertake long migrations for
+                breeding and feeding purposes. Salmon, for example, travel from the ocean to freshwater rivers to spawn,
+                while whales migrate between feeding grounds in polar waters and breeding areas in tropical regions.
+                These migrations ensure survival by allowing organisms to exploit optimal environmental conditions.
+                <br><br>
+                Feeding strategies also reflect behavioral adaptations. Aquatic animals have developed unique feeding
+                behaviors suited to their environment. Filter feeders like baleen whales, oysters, and sponges extract
+                plankton and nutrients from the water by passing it through specialized structures. Predatory fish such
+                as sharks exhibit ambush or pursuit hunting techniques, depending on their speed and agility.
+                Bottom-dwelling organisms like rays and catfish have adapted to scavenging by sifting through sediments
+                for food.
+                <br><br>
+                Another crucial behavioral adaptation is social behavior and communication. Many marine species, such as
+                dolphins, orcas, and some fish, live in groups or schools for increased protection against predators.
+                Schooling fish move in synchronized patterns to confuse predators and reduce individual vulnerability.
+                Additionally, marine mammals use vocalizations, echolocation, and body language to communicate and
+                navigate. For instance, dolphins emit high-frequency clicks and whistles to locate prey and interact
+                with group members.
+                <br><br>
+                Reproductive behaviors in aquatic species are also adapted to their environments. Some species engage in
+                external fertilization, releasing eggs and sperm into the water, while others use internal
+                fertilization. Parental care varies widely, with some fish, such as cichlids, guarding their eggs and
+                young, while others, like sea turtles, lay eggs on beaches and leave them to develop independently.
+                <br><br>
+                <img src="images/behavioralA.jpeg" alt="Behavioral Adaptations">
+            </p>
 
             <h2 id="physiological" class="section">Physiological Adaptations</h2>
-            <p>Physiological adaptations enable aquatic organisms to function efficiently in their environment. Marine
-                fish regulate salt balance in their bodies, deep-sea creatures withstand immense pressure, and diving
-                animals
-                like seals and whales have the ability to store large amounts of oxygen in their muscles and blood for
-                extended dives.</p>
+            <p>Physiological adaptations involve internal biological mechanisms that help aquatic organisms maintain
+                homeostasis and cope with environmental challenges such as salinity, oxygen levels, and temperature
+                variations.
+                <br><br>
+                One key physiological adaptation is osmoregulation, which enables organisms to regulate the balance of
+                salts and water within their bodies. Freshwater fish constantly absorb water due to osmosis and excrete
+                large amounts of dilute urine to prevent excessive water intake. In contrast, marine fish lose water due
+                to the high salinity of seawater and compensate by drinking seawater while excreting excess salts
+                through specialized cells in their gills.
+                <br><br>
+                Another critical physiological adaptation is thermoregulation. While most fish are ectothermic, meaning
+                their body temperature fluctuates with the surrounding water, some species, such as tuna and certain
+                sharks, exhibit regional endothermy. These fish maintain a higher internal body temperature through
+                specialized blood vessel structures known as the rete mirabile, which conserves heat and enhances
+                muscular efficiency.
+                <br><br>
+                Breathing adaptations are also vital for survival in aquatic environments. Fish rely on gills to extract
+                oxygen from water, while some species, such as lungfish, have evolved lungs to survive in oxygen-poor
+                environments. Additionally, marine mammals like seals and whales have adapted to prolonged dives by
+                storing large amounts of oxygen in their muscles and blood, reducing their heart rate to conserve
+                energy, and utilizing myoglobin-rich tissues for efficient oxygen storage.
+                <br><br>
+                Bioluminescence is another fascinating physiological adaptation seen in deep-sea organisms. Many
+                deep-sea fish, jellyfish, and squid produce light through chemical reactions in specialized cells called
+                photophores. This adaptation helps them attract prey, deter predators, or communicate in the darkness of
+                the deep ocean.
+                <br><br>
+                Additionally, toxin production serves as a defense mechanism for various aquatic organisms. Some
+                species, such as pufferfish and certain jellyfish, produce potent toxins to deter predators. These
+                toxins can be stored in their tissues or secreted as venom, offering protection against threats.
+                <br><br>
+                <img src="images/physiologicalA.jpeg" alt="Physiological Adaptations">
+            </p>
 
             <h2 id="conclusion" class="section">Conclusion</h2>
-            <p>Aquatic adaptations are essential for survival in water-based habitats. Through physical, behavioral, and
-                physiological changes, marine and freshwater organisms continue to thrive in their diverse environments.
-                Understanding these adaptations helps scientists and conservationists protect aquatic life for future
-                generations.</p>
+            <p>Aquatic adaptations are crucial for the survival and success of organisms living in diverse water
+                environments. Physical adaptations, such as streamlined bodies, gills, and camouflage, enhance movement,
+                respiration, and protection. Behavioral adaptations, including migration, feeding strategies, and social
+                behaviors, allow aquatic species to maximize their resources and minimize risks. Physiological
+                adaptations, such as osmoregulation, thermoregulation, and bioluminescence, enable organisms to maintain
+                homeostasis and thrive in challenging conditions.
+                <br><br>
+                These adaptations highlight the remarkable diversity and complexity of life in aquatic ecosystems.
+                Understanding these evolutionary traits not only enhances our knowledge of marine biology and ecology
+                but also emphasizes the importance of conserving aquatic habitats. As human activities increasingly
+                impact water environments, it becomes essential to protect and preserve aquatic life and the ecosystems
+                they inhabit. By studying and appreciating aquatic adaptations, we can contribute to the sustainable
+                management of our planet’s precious aquatic resources.
+                <br><br>
+                <img src="images/aquaticA.jpeg" alt="Aquatic adaptations">
+            </p>
         </div>
     </div>
 
@@ -212,6 +445,8 @@
     </footer>
 
     <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+
 </body>
 
 </html>
