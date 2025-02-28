@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="global.css">
     <style>
         .container {
-            max-width: 70%;
+            max-width: 80%;
             margin: auto;
             margin-bottom: 5%;
+        }
+
+        #content {
+            margin-left: 200px;
+            transform: translateY(-17%);
         }
 
         .hero-section {
@@ -25,7 +30,7 @@
 
         .hero-section-text {
             position: relative;
-            margin-top: 40px;
+            margin-top: 1%;
         }
 
         .hero-section::before {
@@ -38,12 +43,16 @@
             background: rgba(0, 0, 0, 0.5);
         }
 
+        html {
+            scroll-padding-top: 25%;
+        }
+
         .side-navbar {
-            position: fixed;
-            height: 50%;
-            left: 1%;
+            position: sticky;
+            height: 60%;
+            left: 1.1%;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-40%);
             padding: 20px;
             background: #0077b6;
             justify-content: center;
@@ -156,6 +165,7 @@
             <li><a href="#behavioral">Behavioral Adaptations</a></li>
             <li><a href="#physiological">Physiological Adaptations</a></li>
             <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#">Back to Top</a></li>
         </ul>
     </div>
 
@@ -325,6 +335,7 @@
     </footer>
 
     <script src="/js/nav-search.js"></script>
+
 </body>
 
 </html>
