@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Marine Ecosystems</title>
+        <style>
+            body {
+                background-image : url("images/sea_wave.jpg");
+                background-repeat : no repeat;
+                background-size : cover;
+            }
+
+            .Main {
+                display :  grid;
+                grid-template-columns : 1fr 1fr;
+                gap : 0px;
+                place-items : center;
+                width : 50%;
+                height : 50%;
+            }
+
+            #Left_Section, #Right_Section {
+                display : grid;
+                grid-template-rows : 1fr 1fr
+                gap : 0px;
+                height : 50%
+            }
+
+            #Left_Top, #Left_Down, #Right_Top, #Right_Down {
+                background-color : White;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = "Main">
+            <div id = "Left_Section">
+                <div id = "Left_Top">a</div>
+                <div id = "Left_Down">b</div>
+            </div>
+            <div id = "Right_Section">
+                <div id = "Right_Top">c</div>
+                <div id = "Right_Down">d</div>
+            </div>
+        </div>
+    </body>
+  </html>
