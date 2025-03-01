@@ -5,7 +5,7 @@
         <title>Marine Ecosystems</title>
         <style>
 
-            /* Styling for the Main*/
+            /*..........................Styling for the Main...........................*/
 
             #Main {
                 font-family : Ink Journal;
@@ -15,16 +15,15 @@
                 gap : 10px;
             }
 
-            /* Styling on the nav bar*/
+            /*....................Styling on the nav bar...............................*/
 
             #Content_Nav_Bar {
                 font-size : 20px;
                 color : White;
                 background-color : #0B6BB2;
-                flex : 1;
-                height : 100vh;
+                width : 200px;
                 border-radius : 5px;
-                position : sticky;
+                position : fixed;
             }
 
             #Content_Nav_Bar ul {
@@ -32,7 +31,7 @@
                 flex-direction : column;
                 gap : 40px;
                 list-style : none;
-                padding : 150px 20px 0px 20px;
+                padding : 100px 20px 100px 20px;
             }
 
             .Nav_Element {
@@ -41,8 +40,7 @@
                 box-sizing: border-box;
                 border-radius : 5px;
                 transition: background-color 0.5s ease;
-}
-
+            }
 
             .Nav_Element:hover {
                 background-color : #074878;
@@ -51,11 +49,13 @@
             /*....................Styling for the content section.....................*/
 
             #Content {
-                flex : 5;
                 display : flex;
                 flex-direction : column;
                 align-items : stretch;
                 gap : 30px;
+                overflow-y : auto;
+                margin-left : 230px;
+
             }
 
             #Head_Topic {
@@ -94,7 +94,7 @@
                 box-shadow : 5px 5px 10px Gray;
             }
 
-            #Topic_2 h3, #Topic_3 h3{
+            #Topic_2 h3, #Topic_3 h3, #Topic_4 h3{
                 margin-bottom : -20px;
             }
 
@@ -243,11 +243,43 @@
                             <p>
                                 Beneath the rolling waves, an intricate dance of life and survival plays out in the form of marine food chains and webs.
                             </p>
+
                             <h3>🔆The Sunlit Foundation – Producers</h3>
                             <p>
                                 At the base of the marine food chain are the producers, microscopic phytoplankton that float freely in the water,
                                 absorbing sunlight and using photosynthesis to create energy.
                                 These tiny plants are the primary source of food for countless marine creatures and serve as the backbone of the ocean’s ecosystem
+                            </p>
+
+                            <h3>🦐The Grazers – Primary Consumers</h3>
+                            <p>
+                                Small, drifting creatures known as zooplankton feast on phytoplankton,
+                                converting their energy into a form usable by larger animals. Small fish, shrimp, and krill also belong to this level,
+                                forming a crucial link between the microscopic world and the larger predators.
+                            </p>
+
+                            <h3>🦑The Predators – Secondary Consumers</h3>
+                            <p>
+                                Fast-swimming fish like mackerel, squid, and jellyfish prey on smaller organisms, keeping populations balanced.
+                                They are the bridge between the tiny grazers and the ocean’s top hunters.
+                            </p>
+
+                            <h3>🦈The Ocean’s Apex Predators</h3>
+                            <p>
+                                At the peak of the food web, formidable creatures such as sharks, orcas, and giant squid reign supreme.
+                                These top predators keep marine populations in check, preventing any one species from overpopulating and disrupting the ecosystem.
+                            </p>
+
+                            <h3>🌐The Web of Life</h3>
+                            <p>
+                                Unlike simple food chains, marine ecosystems form intricate food webs, where multiple species interact in complex ways.
+                                A single fish may be prey to different predators at different life stages, and a decline in one species—caused by overfishing
+                                or habitat destruction—can send ripples throughout the entire ecosystem
+                            </p>
+
+                            <p>
+                                This fragile balance is what keeps the ocean alive, making every creature—from the tiniest
+                                plankton to the largest whale—an essential part of this vast, interconnected world.
                             </p>
                         </div>
                     </div>
