@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Below Water - Feedback</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="css/global.css">
     <style>
         body {
             background: url('images/feedbackwall.jpeg') no-repeat center center fixed;
@@ -322,14 +322,12 @@
     </div>
 
     <footer class="footer">
-        <!-- Logo -->
         <a href="https://sdgs.un.org/">
             <div class="image-container">
                 <img src="images/image.png" alt="Image 1">
                 <img src="images/logo2.png" alt="Image 2">
             </div>
         </a>
-
         <!-- Accessibility Links in the center -->
         <div class="links">
             <a href="/home.html">HOME</a>
@@ -352,10 +350,10 @@
                 <a href="/table.html">Membership</a>
             </div>
             <div class="extra-links">
-                <a href="#kevin">Kevin</a>
-                <a href="#avaneesh">Avaneesh</a>
-                <a href="#pangajan">Pangajan</a>
-                <a href="#imayuru">Imayuru</a>
+                <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+                <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+                <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+                <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 TECHASTRIS.</p>
@@ -364,6 +362,9 @@
     </footer>
 
     <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/redirect.js" defer></script>
+
 </body>
 
 </html>
