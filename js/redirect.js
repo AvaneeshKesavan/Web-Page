@@ -64,12 +64,16 @@ function redirect(name) {
         return btn;
     }
 
-    let validationBtn = createButton("Validation Page", "#4A90E2", function() {
+    let validationBtn = createButton("Validation", "#4A90E2", function() {
         window.location.href = `./validation_${stNumber}.html`;
     });
 
-    let editorBtn = createButton("Page Editor", "#2ECC71", function() {
+    let editorBtn = createButton("Page Editor", "#4A90E2", function() {
         window.location.href = `./pageEditor_${stNumber}.html`;
+    });
+
+    let contentBtn = createButton("Content", "#4A90E2", function() {
+        window.location.href = `./content_${stNumber}.html`;
     });
 
     let closeBtn = createButton("Cancel", "#E74C3C", function() {
@@ -79,6 +83,7 @@ function redirect(name) {
     // Append buttons
     popup.appendChild(validationBtn);
     popup.appendChild(editorBtn);
+    popup.appendChild(contentBtn);
     popup.appendChild(closeBtn);
 
     // Add popup to the body
