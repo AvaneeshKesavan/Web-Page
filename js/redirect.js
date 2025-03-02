@@ -1,8 +1,8 @@
 const nameToST = { // Mapping names to their corresponding ST numbers
-    "Kevin": "ST1",
+    "Kevin": "ST4",
     "Avaneesh": "ST2",
     "Pangajan": "ST3",
-    "Imayuru": "ST4"
+    "Imayuru": "ST1"
 };
 
 function redirect(name) {
