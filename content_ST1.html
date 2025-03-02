@@ -70,7 +70,7 @@
                 box-shadow : 5px 5px 20px Gray;
             }
 
-            #Side-Nav nav h3 {
+            #Side-Nav h3 {
                 margin-top: 0;
                 font-size: 1.5rem;
             }
@@ -100,19 +100,18 @@
             #Button {
                 display : none;
                 position : fixed;
-                top : 28%;
-                left : 1%
+                top : 30%;
+                transition: transform 0.3s ease;
             }
 
-           /*#Nav_Toggle {
+           #Nav_Toggle {
                 display: none;
-            } */
+            }
 
             #Toggle_Btn {
-                font-size: 1.5rem;
+                font-size: 1rem;
                 cursor: pointer;
                 top: 30%;
-                left: 1%;
                 background: #1188C9;
                 color: white;
                 padding: 5px;
@@ -122,15 +121,18 @@
 
             /* .....Responsiveness..... */
             @media screen and (max-width: 768px) {
-                #Side-Nav {
-                    transform: translateX(-95%);
+                #Side-Nav{
+                    transform: translateX(-92%);
                 }
                 #Button {
                     display: block;
                 }
-                #Button:has(#Nav_Toggle:checked) + #Side-Nav {
+                #Button:has(#Nav_Toggle:checked) ~ #Side-Nav {
                     transform : translateX(0%);
-                    display : block;
+                }
+
+                #Button:has(#Nav_Toggle:checked){
+                    transform: translateX(20%);
                 }
             }
 
@@ -156,7 +158,7 @@ px;            }
             @media screen and (max-width: 768px) {
                 #Content {
                     margin : 3%;
-                    margin-left : 6%
+                    margin-left : 7%
                 }
             }
         </style>
@@ -204,17 +206,16 @@ px;            }
                 <input type="checkbox" id="Nav_Toggle">
                 <label for="Nav_Toggle" id="Toggle_Btn">☰</label>
             </div>
+
             <div id ="Side-Nav">
-                <nav>
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#Topic_1">What are Marine Ecosystems?</a></li>
-                        <li><a href="#Topic_2">Types of Marine Ecosystems</a></li>
-                        <li><a href="#Topic_3">Importance of Marine Ecosystems</a></li>
-                        <li><a href="#Topic_4">Marine Food Chains and Webs</a></li>
-                        <li><a href="#Hero_Section">Back to Top</a></li>
-                    </ul>
-                </nav>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#Topic_1">What are Marine Ecosystems?</a></li>
+                    <li><a href="#Topic_2">Types of Marine Ecosystems</a></li>
+                    <li><a href="#Topic_3">Importance of Marine Ecosystems</a></li>
+                    <li><a href="#Topic_4">Marine Food Chains and Webs</a></li>
+                    <li><a href="#Hero_Section">Back to Top</a></li>
+                </ul>
             </div>
 
             <div id = "Content">
