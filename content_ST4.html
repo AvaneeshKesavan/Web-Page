@@ -1,415 +1,454 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Life Below Water - Marine Ecosystems</title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <link rel="stylesheet" href="css/global.css">
+<html lang="en">
 
-        <style>
-            /*..........Body Styling..........*/
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Below Water - Marine Ecosystems</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/global.css">
 
-            html, body {
-                font-family : Ink Journal;
-            }
+    <style>
+        /*..........Hero Section Styling..........*/
 
-            /*..........Hero Section Styling..........*/
+        #Hero_Section {
+            background: url("images/marine_ecosystems.jpg") no-repeat center center/cover;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            transform: translateY(-10%);
+        }
 
-            #Hero_Section {
-                background: url("images/marine_ecosystems.jpg") no-repeat center center/cover;
-                height: 40vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                text-align: center;
-                color: white;
-                padding: 20px;
-                transform : translateY(-10%);
-            }
+        #Hero_Section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+        }
 
-            #Hero_Section::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.2);
+        #Hero_Section h1 {
+            position: relative;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        /*.....Responsiveness.....*/
+        @media screen and (max-width: 768px) {
+            .hero-section {
+                height: 35vh;
+                padding: 10px;
             }
 
             #Hero_Section h1 {
-                position: relative;
-                font-size: 4rem;
-                font-weight: bold;
+                font-size: 2.5rem;
             }
+        }
 
-            /*.....Responsiveness.....*/
-            @media screen and (max-width: 768px) {
-                .hero-section {
-                    height: 35vh;
-                    padding: 10px;
-                }
+        /*..........Styling for the side nav bar..........*/
+        #Side-Nav {
+            position: fixed;
+            left: 1%;
+            top: 33%;
+            width: 200px;
+            background: #1188C9;
+            color: white;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px Gray;
+        }
 
-                #Hero_Section h1 {
-                    font-size: 2.5rem;
-                }
-            }
+        #Side-Nav h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
 
-            /*..........Styling for the side nav bar..........*/
+        #Side-Nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #Side-Nav ul li {
+            padding: 10px;
+            transform: background-color 0.5s ease;
+            margin-bottom: 2px;
+            border-radius: 5px;
+        }
+
+        #Side-Nav ul li:hover {
+            background-color: #0C618F;
+        }
+
+        #Side-Nav ul li a {
+            color: White;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #Button {
+            display: none;
+            position: fixed;
+            top: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        #Nav_Toggle {
+            display: none;
+        }
+
+        #Toggle_Btn {
+            font-size: 1rem;
+            cursor: pointer;
+            top: 30%;
+            background: #1188C9;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px Gray;
+        }
+
+        /* .....Responsiveness..... */
+        @media screen and (max-width: 768px) {
             #Side-Nav {
-                position: fixed;
-                left: 1%;
-                top: 33%;
-                width: 200px;
-                background: #1188C9;
-                color: white;
-                padding: 20px;
-                transition: transform 0.3s ease;
-                border-radius : 5px;
-                box-shadow : 5px 5px 20px Gray;
-            }
-
-            #Side-Nav h3 {
-                margin-top: 0;
-                font-size: 1.5rem;
-            }
-
-            #Side-Nav ul {
-                list-style: none;
-                padding: 0;
-            }
-
-            #Side-Nav ul li {
-                padding: 10px;
-                transform : background-color 0.5s ease;
-                margin-bottom : 2px;
-                border-radius : 5px;
-            }
-
-            #Side-Nav ul li:hover {
-                background-color : #0C618F;
-            }
-
-            #Side-Nav ul li a {
-                color: White;
-                text-decoration: none;
-                font-weight: bold;
+                transform: translateX(-92%);
             }
 
             #Button {
-                display : none;
-                position : fixed;
-                top : 30%;
-                transition: transform 0.3s ease;
+                display: block;
             }
 
-           #Nav_Toggle {
-                display: none;
+            #Button:has(#Nav_Toggle:checked)~#Side-Nav {
+                transform: translateX(0%);
             }
 
-            #Toggle_Btn {
-                font-size: 1rem;
-                cursor: pointer;
-                top: 30%;
-                background: #1188C9;
-                color: white;
-                padding: 5px;
-                border-radius: 5px;
-                box-shadow : 5px 5px 20px Gray;
+            #Button:has(#Nav_Toggle:checked) {
+                transform: translateX(20%);
             }
+        }
 
-            /* .....Responsiveness..... */
-            @media screen and (max-width: 768px) {
-                #Side-Nav{
-                    transform: translateX(-92%);
-                }
-                #Button {
-                    display: block;
-                }
-                #Button:has(#Nav_Toggle:checked) ~ #Side-Nav {
-                    transform : translateX(0%);
-                }
+        /*..........Styling for the contnent..........*/
+        #Content {
+            margin: 3%;
+            margin-left: 280px;
+            margin-top: 5%;
+        }
 
-                #Button:has(#Nav_Toggle:checked){
-                    transform: translateX(20%);
-                }
-            }
+        #Content hr {
+            border: 1px solid #1188C9;
+        }
 
-            /*..........Styling for the contnent..........*/
+        #Content h3 {
+            margin-bottom: -15px;
+        }
+
+        #Topic_1,
+        #Topic_2,
+        #Topic_3,
+        #Topic_4 {
+            scroll-margin-top: 150px;
+        }
+
+        @media screen and (max-width: 768px) {
             #Content {
-                margin : 3%;
-                margin-left : 280px;
-                margin-top : 5%;
-px;            }
-
-            #Content hr {
-                border : 1px solid #1188C9;
+                margin: 3%;
+                margin-left: 7%
             }
+        }
+    </style>
+</head>
 
-            #Content h3 {
-                margin-bottom : -15px;
-            }
-
-            #Topic_1, #Topic_2, #Topic_3, #Topic_4 {
-                scroll-margin-top : 150px;
-            }
-
-            @media screen and (max-width: 768px) {
-                #Content {
-                    margin : 3%;
-                    margin-left : 7%
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-        <header class="main-nav">
-            <div class="nav-top">
-                <div class="logo">
-                    <a href="/home.html">
-                        <img src="images/logo.png" alt="TECHASTRIS">
-                    </a>
-                </div>
-                <div class="hamburger-menu" id="hamburger-menu">☰</div>
-                <nav id="nav-links">
-                    <ul>
-                        <li><a href="/home.html">Home</a></li>
-                        <li><a href="/sitemap.html">About Us</a></li>
-                        <li><a href="/overview.html">Overview</a></li>
-                        <li><a href="/volunteer.html">Volunteer</a></li>
-                        <li><a href="/teampage.html">Team Page</a></li>
-                        <li><a href="/gallerypage.html">Gallery Page</a></li>
-                        <button id="search-expand">🔍</button>
-
-                    </ul>
-                </nav>
+<body>
+    <header class="main-nav">
+        <div class="nav-top">
+            <div class="logo">
+                <a href="/home.html">
+                    <img src="images/logo.png" alt="TECHASTRIS">
+                </a>
             </div>
-            <a href="profile.html"><img src="images/profile_icon.ico" alt="profile" class="profile-icon"></a>
-            <button id="themeToggle" class="theme-button"></button>
-            <!-- Search Bar (Hidden Initially) -->
-            <div class="search-container" id="search-bar">
-                <input type="text" placeholder="Search">
-                <button id="search-btn">Search</button>
-                <button id="close-search">✖</button>
-            </div>
-        </header>`
+            <div class="hamburger-menu" id="hamburger-menu">☰</div>
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/sitemap.html">About Us</a></li>
+                    <li><a href="/overview.html">Overview</a></li>
+                    <li><a href="/volunteer.html">Volunteer</a></li>
+                    <li><a href="/teampage.html">Team Page</a></li>
+                    <li><a href="/gallerypage.html">Gallery Page</a></li>
+                    <button id="search-expand">🔍</button>
 
-        <div id = "Hero_Section">
-                <h1>Marine Ecosystems</h1>
+                </ul>
+            </nav>
         </div>
-
-        <div id = "Button">
-            <input type="checkbox" id="Nav_Toggle">
-            <label for="Nav_Toggle" id="Toggle_Btn">☰</label>
+        <a href="profile.html"><img src="images/profile_icon.ico" alt="profile" class="profile-icon"></a>
+        <button id="themeToggle" class="theme-button"></button>
+        <!-- Search Bar (Hidden Initially) -->
+        <div class="search-container" id="search-bar">
+            <input type="text" placeholder="Search">
+            <button id="search-btn">Search</button>
+            <button id="close-search">✖</button>
         </div>
+    </header>`
 
-        <div id ="Side-Nav">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#Topic_1">What are Marine Ecosystems?</a></li>
-                <li><a href="#Topic_2">Types of Marine Ecosystems</a></li>
-                <li><a href="#Topic_3">Importance of Marine Ecosystems</a></li>
-                <li><a href="#Topic_4">Marine Food Chains and Webs</a></li>
-                <li><a href="#Hero_Section">Back to Top</a></li>
-            </ul>
-        </div>
+    <div id="Hero_Section">
+        <h1>Marine Ecosystems</h1>
+    </div>
 
-        <div id = "Content">
-            <div id = "Topic_1">
-                <h2>What are Marine Ecosystems ?</h2>
-                <hr>
-                <p>
-                    Marine ecosystems are vast, ever-changing worlds filled with life, mystery, and breathtaking beauty. They encompass the deep, shadowy
-                    trenches of the ocean where monstrous creatures roam, the sparkling coral reefs bursting with color, and the sunlit coastal waters that cradle life
-                    at the boundary between land and sea. Unlike freshwater ecosystems, marine environments are shaped by powerful tides, shifting currents,
-                    and the salt-laden embrace of the sea, creating conditions that nurture an extraordinary array of organisms.
-                </p>
-                <p>
-                    These ecosystems are not just vital for marine life, they regulate Earth’s climate, generate oxygen, and absorb carbon dioxide,
-                    acting as the planet’s life-support system. From the microscopic plankton drifting unseen in the currents to the mighty whales that glide through the depths,
-                    marine ecosystems are the foundation of an intricate web of life, sustaining creatures both beneath the waves and far beyond the shores.
-                </p>
-                <br>
-            </div>
-            <div id = "Topic_2">
-                <h2>Types of Marine Ecosystems</h2>
-                <hr>
-                <p>
-                    The marine world is incredibly diverse, home to a variety of ecosystems,
-                    each teeming with unique life forms and playing a crucial role in the ocean’s delicate balance.
-                </p>
+    <div id="Button">
+        <input type="checkbox" id="Nav_Toggle">
+        <label for="Nav_Toggle" id="Toggle_Btn">☰</label>
+    </div>
 
-                <h3>🐳Oceans – The Endless Blue</h3>
-                <p>
-                    The vast, open ocean stretches across the Earth like an unbroken sapphire sheet,
-                    covering over 70% of the planet’s surface. It is divided into different layers—each an entirely different world.
-                    The sunlit surface shimmers with schooling fish, playful dolphins, and soaring seabirds, while deeper down, darkness rules,
-                    hiding bizarre creatures like the glowing anglerfish and giant squid.
-                </p>
+    <div id="Side-Nav">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#Topic_1">What are Marine Ecosystems?</a></li>
+            <li><a href="#Topic_2">Types of Marine Ecosystems</a></li>
+            <li><a href="#Topic_3">Importance of Marine Ecosystems</a></li>
+            <li><a href="#Topic_4">Marine Food Chains and Webs</a></li>
+            <li><a href="#Hero_Section">Back to Top</a></li>
+        </ul>
+    </div>
 
-                <h3>🪸Coral Reefs – The Underwater Cities</h3>
-                <p>
-                    Often called the "rainforests of the sea," coral reefs are dazzling, bustling underwater metropolises built by tiny coral polyps over centuries.
-                    In these vivid ecosystems, sea turtles glide gracefully between intricate coral structures, clownfish dart among anemones,
-                    and reef sharks patrol the waters, maintaining the delicate balance of life.
-                </p>
-
-                <h3>🌊Estuaries – The Cradle of the Sea</h3>
-                <p>
-                    Where freshwater rivers meet the salty embrace of the ocean, estuaries emerge as rich, nurturing habitats.
-                    These brackish waters are bustling nurseries where baby fish, shrimp, and crabs find shelter before venturing into the open sea.
-                    The mix of salt and freshwater creates an environment brimming with nutrients, making estuaries one of the most productive ecosystems on Earth.
-                </p>
-
-                <h3>🌱Mangrove Forests – Guardians of the Shore</h3>
-                <p>
-                    With their gnarled roots rising from the water like ancient sentinels, mangrove forests thrive along tropical coastlines,
-                    shielding land from erosion and storms. These salt-tolerant trees form dense, tangled forests that serve as hiding places for young marine creatures,
-                    from tiny fish to wading birds, and even endangered species like sea turtles and manatees.
-                </p>
-
-                <h3>🪼Deep-Sea Ecosystems – The Twilight Abyss</h3>
-                <p>
-                    Beyond the reach of sunlight, where the pressure could crush a human in an instant, the deep-sea world is a realm of mystery.
-                    Here, creatures like the ghostly gulper eel and bioluminescent jellyfish float through the blackness,
-                    while colossal tube worms cluster around hydrothermal vents, drawing energy not from the sun, but from Earth’s fiery core.
-                </p>
-
-                <p>
-                    Each of these ecosystems is a world within a world, filled with life, struggle, and survival, all connected in a delicate balance that keeps the ocean alive.
-                </p>
-                <br>
-            </div>
-            <div id = "Topic_3">
-                <h2>Importance of Marine Ecosystems</h2>
-                <hr>
-                <p>
-                    Marine ecosystems are more than just breathtaking landscapes beneath the waves—they are the very heartbeat of our planet.
-                    Their importance is woven into every aspect of life on Earth:
-                </p>
-                <h3>🌏The Planet's Breath</h3>
-                <p>
-                    Marine ecosystems produce over 50% of the oxygen we breathe. Tiny,
-                    invisible phytoplankton floating on the ocean’s surface absorb sunlight and carbon dioxide,
-                    releasing oxygen into the air. Without these microscopic life forms, life as we know it would not exist
-                </p>
-
-                <h3>❄️A Climate Regulator</h3>
-                <p>
-                    The ocean is like Earth’s air conditioner—it absorbs vast amounts of heat and carbon dioxide,
-                    helping to regulate global temperatures. However, as climate change accelerates, the delicate balance of this system is at risk,
-                    leading to rising sea levels, stronger storms, and shifts in marine life.
-                </p>
-
-                <h3>🍽️A Source of Life and Livelihood</h3>
-                <p>
-                    For billions of people, the ocean provides food, jobs, and economic stability.
-                    From the bustling fish markets of coastal towns to deep-sea fisheries supplying the world,
-                    marine ecosystems are the backbone of global food security. Additionally, marine-derived compounds are being researched for life-saving medicines,
-                    including cancer treatments and antibiotics.
-                </p>
-
-                <h3>🏝️Nature’s Shield</h3>
-                <p>
-                    Coastal ecosystems like coral reefs, mangroves, and seagrass meadows act as natural barriers, protecting shorelines from erosion,
-                    storm surges, and tsunamis. Without them, coastal communities would be far more vulnerable to the forces of nature.
-                </p>
-
-                <p>
-                    Despite their immense importance, marine ecosystems face growing threats from overfishing, pollution, and climate change.
-                    Their health is our health, making conservation efforts more urgent than ever.
-                </p>
-                <br>
-            </div>
-            <div id = "Topic_4">
-                <h2>Marine Food Chains and Webs</h2>
-                <hr>
-                <p>
-                    Beneath the rolling waves, an intricate dance of life and survival plays out in the form of marine food chains and webs.
-                </p>
-
-                <h3>🔆The Sunlit Foundation – Producers</h3>
-                <p>
-                    At the base of the marine food chain are the producers, microscopic phytoplankton that float freely in the water,
-                    absorbing sunlight and using photosynthesis to create energy.
-                    These tiny plants are the primary source of food for countless marine creatures and serve as the backbone of the ocean’s ecosystem
-                </p>
-
-                <h3>🦐The Grazers – Primary Consumers</h3>
-                <p>
-                    Small, drifting creatures known as zooplankton feast on phytoplankton,
-                    converting their energy into a form usable by larger animals. Small fish, shrimp, and krill also belong to this level,
-                    forming a crucial link between the microscopic world and the larger predators.
-                </p>
-
-                <h3>🦑The Predators – Secondary Consumers</h3>
-                <p>
-                    Fast-swimming fish like mackerel, squid, and jellyfish prey on smaller organisms, keeping populations balanced.
-                    They are the bridge between the tiny grazers and the ocean’s top hunters.
-                </p>
-
-                <h3>🦈The Ocean’s Apex Predators</h3>
-                <p>
-                    At the peak of the food web, formidable creatures such as sharks, orcas, and giant squid reign supreme.
-                    These top predators keep marine populations in check, preventing any one species from overpopulating and disrupting the ecosystem.
-                </p>
-
-                <h3>🌐The Web of Life</h3>
-                <p>
-                    Unlike simple food chains, marine ecosystems form intricate food webs, where multiple species interact in complex ways.
-                    A single fish may be prey to different predators at different life stages, and a decline in one species—caused by overfishing
-                    or habitat destruction—can send ripples throughout the entire ecosystem
-                </p>
-
-                <p>
-                    This fragile balance is what keeps the ocean alive, making every creature—from the tiniest
-                    plankton to the largest whale—an essential part of this vast, interconnected world.
-                </p>
-                <br>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <a href="https://sdgs.un.org/">
-                <div class="image-container">
-                    <img src="images/image.png" alt="Image 1">
-                    <img src="images/logo2.png" alt="Image 2">
-                </div>
-            </a>
-            <!-- Accessibility Links in the center -->
-            <div class="links">
-                <a href="/home.html">HOME</a>
-                <a href="/editors.html">ABOUT US</a>
-                <a href="/overview.html">OVERVIEW</a>
-                <a href="/volunteer.html">VOLUNTEER</a>
-                <a href="/teampage.html">TEAM</a>
-                <a href="/gallerypage.html">GALLERY PAGE</a>
-                <a href="/sitemap.html">SITEMAP</a>
-                <a href="/feedback.html">FEEDBACK</a>
-                <a href="/validation.html">VALIDATION</a>
-            </div>
-
-            <!-- Line below the links -->
+    <div id="Content">
+        <div id="Topic_1">
+            <h2>What are Marine Ecosystems ?</h2>
             <hr>
+            <p>
+                Marine ecosystems are vast, ever-changing worlds filled with life, mystery, and breathtaking beauty.
+                They encompass the deep, shadowy
+                trenches of the ocean where monstrous creatures roam, the sparkling coral reefs bursting with color, and
+                the sunlit coastal waters that cradle life
+                at the boundary between land and sea. Unlike freshwater ecosystems, marine environments are shaped by
+                powerful tides, shifting currents,
+                and the salt-laden embrace of the sea, creating conditions that nurture an extraordinary array of
+                organisms.
+            </p>
+            <p>
+                These ecosystems are not just vital for marine life, they regulate Earth’s climate, generate oxygen, and
+                absorb carbon dioxide,
+                acting as the planet’s life-support system. From the microscopic plankton drifting unseen in the
+                currents to the mighty whales that glide through the depths,
+                marine ecosystems are the foundation of an intricate web of life, sustaining creatures both beneath the
+                waves and far beyond the shores.
+            </p>
+            <br>
+        </div>
+        <div id="Topic_2">
+            <h2>Types of Marine Ecosystems</h2>
+            <hr>
+            <p>
+                The marine world is incredibly diverse, home to a variety of ecosystems,
+                each teeming with unique life forms and playing a crucial role in the ocean’s delicate balance.
+            </p>
 
-            <!-- Bottom section with Fan Support, Copyright and Extra Links -->
-            <div class="bottom-text">
-                <div class="membership">
-                    <a href="/table.html">Membership</a>
-                </div>
-                <div class="extra-links">
-                    <a href="#kevin">Kevin</a>
-                    <a href="#avaneesh">Avaneesh</a>
-                    <a href="#pangajan">Pangajan</a>
-                    <a href="#imayuru">Imayuru</a>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 TECHASTRIS.</p>
-                </div>
+            <h3>🐳Oceans – The Endless Blue</h3>
+            <p>
+                The vast, open ocean stretches across the Earth like an unbroken sapphire sheet,
+                covering over 70% of the planet’s surface. It is divided into different layers—each an entirely
+                different world.
+                The sunlit surface shimmers with schooling fish, playful dolphins, and soaring seabirds, while deeper
+                down, darkness rules,
+                hiding bizarre creatures like the glowing anglerfish and giant squid.
+            </p>
+
+            <h3>🪸Coral Reefs – The Underwater Cities</h3>
+            <p>
+                Often called the "rainforests of the sea," coral reefs are dazzling, bustling underwater metropolises
+                built by tiny coral polyps over centuries.
+                In these vivid ecosystems, sea turtles glide gracefully between intricate coral structures, clownfish
+                dart among anemones,
+                and reef sharks patrol the waters, maintaining the delicate balance of life.
+            </p>
+
+            <h3>🌊Estuaries – The Cradle of the Sea</h3>
+            <p>
+                Where freshwater rivers meet the salty embrace of the ocean, estuaries emerge as rich, nurturing
+                habitats.
+                These brackish waters are bustling nurseries where baby fish, shrimp, and crabs find shelter before
+                venturing into the open sea.
+                The mix of salt and freshwater creates an environment brimming with nutrients, making estuaries one of
+                the most productive ecosystems on Earth.
+            </p>
+
+            <h3>🌱Mangrove Forests – Guardians of the Shore</h3>
+            <p>
+                With their gnarled roots rising from the water like ancient sentinels, mangrove forests thrive along
+                tropical coastlines,
+                shielding land from erosion and storms. These salt-tolerant trees form dense, tangled forests that serve
+                as hiding places for young marine creatures,
+                from tiny fish to wading birds, and even endangered species like sea turtles and manatees.
+            </p>
+
+            <h3>🪼Deep-Sea Ecosystems – The Twilight Abyss</h3>
+            <p>
+                Beyond the reach of sunlight, where the pressure could crush a human in an instant, the deep-sea world
+                is a realm of mystery.
+                Here, creatures like the ghostly gulper eel and bioluminescent jellyfish float through the blackness,
+                while colossal tube worms cluster around hydrothermal vents, drawing energy not from the sun, but from
+                Earth’s fiery core.
+            </p>
+
+            <p>
+                Each of these ecosystems is a world within a world, filled with life, struggle, and survival, all
+                connected in a delicate balance that keeps the ocean alive.
+            </p>
+            <br>
+        </div>
+        <div id="Topic_3">
+            <h2>Importance of Marine Ecosystems</h2>
+            <hr>
+            <p>
+                Marine ecosystems are more than just breathtaking landscapes beneath the waves—they are the very
+                heartbeat of our planet.
+                Their importance is woven into every aspect of life on Earth:
+            </p>
+            <h3>🌏The Planet's Breath</h3>
+            <p>
+                Marine ecosystems produce over 50% of the oxygen we breathe. Tiny,
+                invisible phytoplankton floating on the ocean’s surface absorb sunlight and carbon dioxide,
+                releasing oxygen into the air. Without these microscopic life forms, life as we know it would not exist
+            </p>
+
+            <h3>❄️A Climate Regulator</h3>
+            <p>
+                The ocean is like Earth’s air conditioner—it absorbs vast amounts of heat and carbon dioxide,
+                helping to regulate global temperatures. However, as climate change accelerates, the delicate balance of
+                this system is at risk,
+                leading to rising sea levels, stronger storms, and shifts in marine life.
+            </p>
+
+            <h3>🍽️A Source of Life and Livelihood</h3>
+            <p>
+                For billions of people, the ocean provides food, jobs, and economic stability.
+                From the bustling fish markets of coastal towns to deep-sea fisheries supplying the world,
+                marine ecosystems are the backbone of global food security. Additionally, marine-derived compounds are
+                being researched for life-saving medicines,
+                including cancer treatments and antibiotics.
+            </p>
+
+            <h3>🏝️Nature’s Shield</h3>
+            <p>
+                Coastal ecosystems like coral reefs, mangroves, and seagrass meadows act as natural barriers, protecting
+                shorelines from erosion,
+                storm surges, and tsunamis. Without them, coastal communities would be far more vulnerable to the forces
+                of nature.
+            </p>
+
+            <p>
+                Despite their immense importance, marine ecosystems face growing threats from overfishing, pollution,
+                and climate change.
+                Their health is our health, making conservation efforts more urgent than ever.
+            </p>
+            <br>
+        </div>
+        <div id="Topic_4">
+            <h2>Marine Food Chains and Webs</h2>
+            <hr>
+            <p>
+                Beneath the rolling waves, an intricate dance of life and survival plays out in the form of marine food
+                chains and webs.
+            </p>
+
+            <h3>🔆The Sunlit Foundation – Producers</h3>
+            <p>
+                At the base of the marine food chain are the producers, microscopic phytoplankton that float freely in
+                the water,
+                absorbing sunlight and using photosynthesis to create energy.
+                These tiny plants are the primary source of food for countless marine creatures and serve as the
+                backbone of the ocean’s ecosystem
+            </p>
+
+            <h3>🦐The Grazers – Primary Consumers</h3>
+            <p>
+                Small, drifting creatures known as zooplankton feast on phytoplankton,
+                converting their energy into a form usable by larger animals. Small fish, shrimp, and krill also belong
+                to this level,
+                forming a crucial link between the microscopic world and the larger predators.
+            </p>
+
+            <h3>🦑The Predators – Secondary Consumers</h3>
+            <p>
+                Fast-swimming fish like mackerel, squid, and jellyfish prey on smaller organisms, keeping populations
+                balanced.
+                They are the bridge between the tiny grazers and the ocean’s top hunters.
+            </p>
+
+            <h3>🦈The Ocean’s Apex Predators</h3>
+            <p>
+                At the peak of the food web, formidable creatures such as sharks, orcas, and giant squid reign supreme.
+                These top predators keep marine populations in check, preventing any one species from overpopulating and
+                disrupting the ecosystem.
+            </p>
+
+            <h3>🌐The Web of Life</h3>
+            <p>
+                Unlike simple food chains, marine ecosystems form intricate food webs, where multiple species interact
+                in complex ways.
+                A single fish may be prey to different predators at different life stages, and a decline in one
+                species—caused by overfishing
+                or habitat destruction—can send ripples throughout the entire ecosystem
+            </p>
+
+            <p>
+                This fragile balance is what keeps the ocean alive, making every creature—from the tiniest
+                plankton to the largest whale—an essential part of this vast, interconnected world.
+            </p>
+            <br>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="https://sdgs.un.org/">
+            <div class="image-container">
+                <img src="images/image.png" alt="Image 1">
+                <img src="images/logo2.png" alt="Image 2">
             </div>
-        </footer>
-    </body>
-  </html>
+        </a>
+        <!-- Accessibility Links in the center -->
+        <div class="links">
+            <a href="/home.html">HOME</a>
+            <a href="/editors.html">ABOUT US</a>
+            <a href="/overview.html">OVERVIEW</a>
+            <a href="/volunteer.html">VOLUNTEER</a>
+            <a href="/teampage.html">TEAM</a>
+            <a href="/gallerypage.html">GALLERY PAGE</a>
+            <a href="/sitemap.html">SITEMAP</a>
+            <a href="/feedback.html">FEEDBACK</a>
+            <a href="/validation.html">VALIDATION</a>
+        </div>
+
+        <!-- Line below the links -->
+        <hr>
+
+        <!-- Bottom section with Fan Support, Copyright and Extra Links -->
+        <div class="bottom-text">
+            <div class="membership">
+                <a href="/table.html">Membership</a>
+            </div>
+            <div class="extra-links">
+                <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+                <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+                <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+                <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TECHASTRIS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/redirect.js" defer></script>
+
+</body>
+
+</html>
