@@ -27,6 +27,9 @@
         }
 
         .card {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
             background: white;
             border-radius: 5px;
             transition: transform 0.3s ease-in-out;
@@ -39,7 +42,7 @@
 
         .card-header-image {
             width: 100%;
-            height: 170px;
+            height: 200px;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
         }
@@ -47,12 +50,15 @@
         .card-body {
             padding: 10px;
             height: 30%;
+            flex-grow: 1;
         }
 
         .card-footer {
-            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             border-top: 1px solid #ccc;
-            padding: 10px;
+            padding: 0 8px;
         }
 
 
@@ -157,11 +163,16 @@
             <div class="card-container">
                 <div class="card">
                     <img class="card-header-image"
-                        src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
+                        src="images/ocg_volunteer.jpg" />
                     <div class="card-body">
                         <h2>ReefRescue: Coral Revival Program</h2>
+                        <p>
+                            Help us restore coral reefs around the world. We are looking for volunteers to help us plant
+                            new coral and monitor the health of existing coral reefs.
+                        </p>
                     </div>
                     <div class="card-footer">
+                        <p>Country: Global</p>
                         <a href="#volunteer-learn-more">Learn more</a>
                     </div>
                 </div>
@@ -169,8 +180,12 @@
                     <img class="card-header-image" src="/images/under-water.jpg" />
                     <div class="card-body">
                         <h2>SeaSafe: Ocean Rescue & Disaster Relief </h2>
+                        <p>
+                            Join our team of volunteers to help us respond to marine disasters and save marine life.
+                        </p>
                     </div>
                     <div class="card-footer">
+                        <p>Country: Global</p>
                         <a href="#volunteer-learn-more">Learn more</a>
                     </div>
                 </div>
@@ -181,6 +196,7 @@
                         <h2>AquaHope: Sustainable Fisheries Project</h2>
                     </div>
                     <div class="card-footer">
+                        <p>Country: Global</p>
                         <a href="#volunteer-learn-more">Learn more</a>
                     </div>
                 </div>
@@ -191,6 +207,7 @@
                         <h2>ReefRescue: Coral Revival Program</h2>
                     </div>
                     <div class="card-footer">
+                        <p>Country: Global</p>
                         <a href="#volunteer-learn-more">Learn more</a>
                     </div>
                 </div>
@@ -201,6 +218,7 @@
                         <h2>DeepBlue: Ocean Research & Restoration</h2>
                     </div>
                     <div class="card-footer">
+                        <p>Country: Global</p>
                         <a href="#volunteer-learn-more">Learn more</a>
                     </div>
                 </div>
@@ -211,6 +229,7 @@
                         <h2>d</h2>
                     </div>
                     <div class="card-footer">
+                        <p>Country: Global</p>
                         <a href="#volunteer-learn-more">Learn more</a>
                     </div>
                 </div>
