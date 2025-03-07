@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Below Water</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/global.css">
 
     <style>
         /* Hero Section */
@@ -52,9 +52,10 @@
             font-size: 1.5rem;
         }
 
-        .hero-section button {
+        .butn {
             background: rgb(25, 167, 206);
             padding: 10px 20px;
+            color: black;
             border: none;
             font-size: 1.2rem;
             margin-top: 10px;
@@ -62,7 +63,7 @@
             text-decoration: none;
         }
 
-        .hero-section button:hover {
+        .butn:hover {
             background: rgb(20, 108, 148);
         }
 
@@ -127,7 +128,7 @@
                 font-size: 1.2rem;
             }
 
-            .hero-section button {
+            .butn {
                 font-size: 1rem;
                 padding: 8px 16px;
             }
@@ -153,7 +154,7 @@
                     <li><a href="/volunteer.html">Volunteer</a></li>
                     <li><a href="/teampage.html">Team</a></li>
                     <li><a href="/gallerypage.html">Gallery</a></li>
-                    <button id="search-expand">🔍</button>
+                    <li><button id="search-expand">🔍</button></li>
                 </ul>
             </nav>
         </div>
@@ -173,14 +174,14 @@
         <div class="hero-section-text">
             <h1>Life Below Water</h1>
             <p>Become a member and join us today.</p>
-            <a href="table.html"><button>For More</button></a>
+            <a href="table.html" class="butn">For More</a>
         </div>
     </div>
 
     <!-- Rest of your content -->
     <main>
         <section class="mission">
-            <h1>Our Mission</h1>
+            <h2>Our Mission</h2>
             <p>
                 Our website is committed to preserve and restore the health of aquatic
                 ecosystems through sustainable fishing practices, reducing pollution,
@@ -188,7 +189,7 @@
             </p>
         </section>
 
-        <section class="content-links">
+        <div class="content-links">
             <div class="gallery" id="gallery">
                 <a href="content_ST4.html" class="tile"
                     style="--image1: url('images/image1.png'); --image2: url('images/hover1.png')">
@@ -203,7 +204,7 @@
                     style="--image1: url('images/image4.png'); --image2: url('images/hover4.png')">
                 </a>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
