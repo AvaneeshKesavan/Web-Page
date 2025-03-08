@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="Page_1">
+      <h1>Account details</h1>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" placeholder="username" />
+
+      <label for="username">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="student@example.com"
+      />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+
+      <button id="Page_1_Next">Next</button>
+    </div>
+    <div id="Page_2" style="display: none">
+      <h1>Personal details</h1>
+      <label for="fname">First Name</label>
+      <input type="text" name="fname" id="fname" />
+
+      <label for="fname">Last Name</label>
+      <input type="text" name="lname" id="lname" />
+
+      <label for="birthdya">Birthdate</label>
+      <input type="date" name="birthdate" id="birthdate" />
+
+      <label for="country">Country</label>
+      <input type="text" name="country" id="country" />
+
+      <button id="Page_2_Previous">Previous</button>
+      <button id="Page_2_Next">Next</button>
+    </div>
+    <div id="Page_3" style="display: none;">
+      <h1>Bank</h1>
+
+      <button id="Page_3_Previous">Previous</button>
+      <button id="Page_3_Next">Next</button>
+    </div>
+
+    <div id="Page_4" style="display: none;">
+      <h1>Summary</h1>
+      <p>Username: <span id="summary-username"></span></p>
+      <p>Email: <span id="summary-email"></span></p>
+      <p>First Name: <span id="summary-fname"></span></p>
+      <p>Last Name: <span id="summary-lname"></span></p>
+      <p>Birthdate: <span id="summary-birthdate"></span></p>
+      <p>Country: <span id="summary-country"></span></p>
+      <p>Bank: <span id="summary-bank"></span></p>
+
+      <button id="Page_4_Previous">Previous</button>
+      <button id="Page_4_Submit">Submit</button>
+    </div>
+
+    <div style="display: none;">
+        <h1>Welcome user! your account has been created</h1>
+    </div>
+
+    <script>
+      const pageOneContainer = document.getElementById("Page_1");
+      const pageTwoContainer = document.getElementById("Page_2");
+      const pageThreeContainer = document.getElementById("Page_3");
+      const pageFourContainer = document.getElementById("Page_4");
+
+      const pageOneNextButton = document.getElementById("Page_1_Next");
+
+      const pageTwoPreviousButton = document.getElementById("Page_2_Previous");
+      const pageTwoNextButton = document.getElementById("Page_2_Next");
+
+      const pageThreePreviousButton =
+        document.getElementById("Page_3_Previous");
+      const pageThreeNextButton = document.getElementById("Page_3_Next");
+
+      const pageFourPreviousButton =
+        document.getElementById("Page_4_Previous");
+
+      pageOneNextButton.addEventListener("click", () => {
+        pageOneContainer.style.display = "none";
+        pageTwoContainer.style.display = "block";
+      });
+
+      pageTwoPreviousButton.addEventListener("click", () => {
+        pageOneContainer.style.display = "block";
+        pageTwoContainer.style.display = "none";
+      });
+
+      pageTwoNextButton.addEventListener("click", () => {
+        pageTwoContainer.style.display = "none";
+        pageThreeContainer.style.display = "block";
+      });
+
+      pageThreePreviousButton.addEventListener("click", () => {
+        pageTwoContainer.style.display = "block";
+        pageThreeContainer.style.display = "none";
+      });
+
+      pageThreeNextButton.addEventListener("click", () => {
+        pageThreeContainer.style.display = "none";
+        pageFourContainer.style.display = "block";
+        console.log("Page 3 Next");
+
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const fname = document.getElementById("fname").value;
+        const lname = document.getElementById("lname").value;
+        const birthdate = document.getElementById("birthdate").value;
+        const country = document.getElementById("country").value;
+       // const bank = document.getElementById("bank").value;
+
+        document.getElementById("summary-username").innerText = username;
+        document.getElementById("summary-email").innerText = email;
+        document.getElementById("summary-fname").innerText = fname;
+        document.getElementById("summary-lname").innerText = lname;
+        document.getElementById("summary-birthdate").innerText = birthdate;
+        document.getElementById("summary-country").innerText = country;
+       // document.getElementById("summary-bank").innerText = bank;
+      });
+
+      pageFourPreviousButton.addEventListener("click", () => {
+        pageThreeContainer.style.display = "block";
+        pageFourContainer.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
