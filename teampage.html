@@ -14,10 +14,15 @@
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            margin-bottom: 20%;
         }
 
         .team-heading {
             margin-bottom: 30px;
+        }
+
+        .member-tasks a {
+            display: inline-block;
         }
 
         .team-grid {
@@ -49,7 +54,7 @@
 
         .member-details {
             position: absolute;
-            bottom: -120px;
+            bottom: -200px;
             left: 0;
             right: 0;
             background: white;
@@ -61,6 +66,7 @@
             transition: all 0.3s ease;
             pointer-events: none;
             z-index: 1;
+            pointer-events: auto;
         }
 
         .team-member:hover .member-details {
@@ -134,23 +140,31 @@
         <div class="team-container">
             <h1 class="team-heading">Our Team</h1>
             <div class="team-grid">
-                <div class="team-member" tabindex="0">
-                    <img src="Images/Imayuru.jpg" alt="Team Member 1" class="thumbnail">
-                    <div class="member-details">
-                        <div class="member-name">Vidath Imayuru</div>
-                        <div class="member-role">Student 01</div>
-                        <div class="member-tasks">
-                            Undergraduate at Informatics Institute of Technology
-                            <p><a href="https://github.com/typicalninja/">
-                                <img src="Images/github logo.png" alt="github logo" width= "40px"></a>
-                                <a href="imayuruweerawala@gmail.com">
-                                    <img src="Images/gmail logo.jpg" alt="gmail logo" width="40px"></a>
-                                <a href="https://www.linkedin.com/in/imayuru/">
-                                    <img src="Images/linkedin logo.png" alt="linkedin logo" width="40px">
-                                </a></p>
+                <div class="team-grid">
+                    <div class="team-member" tabindex="0">
+                        <img src="Images/Imayuru.jpg" alt="Vidath Imayuru - Profile Picture" class="thumbnail">
+                        <div class="member-details">
+                            <div class="member-name">Vidath Imayuru</div>
+                            <div class="member-role">Student 01</div>
+                            <div class="member-tasks">
+                                <p>Undergraduate at Informatics Institute of Technology</p>
+
+                                <a href="https://github.com/typicalninja/" target="_blank"
+                                    aria-label="Visit Vidath Imayuru's GitHub">
+                                    <img src="Images/github logo.png" alt="GitHub logo" width="40px">
+                                </a>
+                                <a href="mailto:imayuruweerawala@gmail.com" aria-label="Send email to Vidath Imayuru">
+                                    <img src="Images/gmail logo.jpg" alt="Gmail logo" width="40px">
+                                </a>
+                                <a href="https://www.linkedin.com/in/imayuru/" target="_blank"
+                                    aria-label="Visit Vidath Imayuru's LinkedIn">
+                                    <img src="Images/linkedin logo.png" alt="LinkedIn logo" width="40px">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="team-member" tabindex="0">
                     <img src="Images/Avaneesh.jpg" alt="Team Member 2" class="thumbnail">
