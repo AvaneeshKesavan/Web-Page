@@ -20,6 +20,7 @@
             padding: 5px;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 10px;
 
             @media (min-width: 768px) {
                 grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -61,7 +62,15 @@
             padding: 0 8px;
         }
 
-
+        .volunteer-register-card {
+            background: white;
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+        /** Dark Mode for both card & violunteer-register-card */
+        .dark-mode .card, .dark-mode .volunteer-register-card {
+            background: #333;
+        }
 
         .data-card {
             display: flex;
@@ -88,6 +97,13 @@
             color: #000;
             padding: 2px 6px;
             border-radius: 50%;
+        }
+
+        .join-btn {
+            background-color: blue;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
         }
 
         .page-link:hover {
@@ -171,7 +187,7 @@
                     </div>
                     <div class="card-footer">
                         <p>Country: Global</p>
-                        <a href="#volunteer-learn-more">Learn more</a>
+                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
                     </div>
                 </div>
                 <div class="card">
@@ -184,7 +200,7 @@
                     </div>
                     <div class="card-footer">
                         <p>Country: Global</p>
-                        <a href="#volunteer-learn-more">Learn more</a>
+                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
                     </div>
                 </div>
                 <div class="card">
@@ -198,7 +214,7 @@
                     </div>
                     <div class="card-footer">
                         <p>Country: Global</p>
-                        <a href="#volunteer-learn-more">Learn more</a>
+                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
                     </div>
                 </div>
                 <div class="card">
@@ -212,11 +228,11 @@
                     </div>
                     <div class="card-footer">
                         <p>Country: Global</p>
-                        <a href="#volunteer-learn-more">Learn more</a>
+                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-header-image" src="images/behavioralA.jpeg" />
+                    <img class="card-header-image" src="images/ocean_research.jpg" />
                     <div class="card-body">
                         <h2>DeepBlue: Ocean Research & Restoration</h2>
                         <p>
@@ -225,11 +241,11 @@
                     </div>
                     <div class="card-footer">
                         <p>Country: Global</p>
-                        <a href="#volunteer-learn-more">Learn more</a>
+                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-header-image" src="images/aquaticA.jpeg" />
+                    <img class="card-header-image" src="images/content/c2background.jpeg" />
                     <div class="card-body">
                         <h2>Lorem Ipsum</h2>
                         <p>
@@ -238,9 +254,19 @@
                     </div>
                     <div class="card-footer">
                         <p>Country: Global</p>
-                        <a href="#volunteer-learn-more">Learn more</a>
+                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="volunteer-register-card">
+                <!-- Register for volunteering -->
+                <h2 id="register-for-volunteering">Register for volunteering</h2>
+                <p>
+                    Are you interested in volunteering for any of the programs listed above? 
+                    Please create an account to start volunteering!
+                </p>
+                <a href="/create-account.html" class="join-btn">Register Now</a>
             </div>
         </main>
     </div>
