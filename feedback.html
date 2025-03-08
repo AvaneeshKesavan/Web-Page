@@ -69,7 +69,7 @@
         .rating-group {
             display: flex;
             justify-content: space-between;
-            margin-top: 5px;
+            gap: 8px;
         }
 
         .rating-label {
@@ -83,18 +83,20 @@
             display: none;
         }
 
+        .rating-star {
+            font-size: 30px;
+            color: #ddd;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        /* Highlight only the selected star */
         .rating-input:checked+.rating-star {
             color: #f39c12;
         }
 
-        .rating-star {
-            font-size: 24px;
-            color: #ddd;
-            transition: color 0.3s;
-        }
-
-        .rating-label:hover .rating-star,
-        .rating-label:hover~.rating-label .rating-star {
+        /* Hover effect (optional, removes continuous highlight on hover) */
+        .rating-label:hover .rating-star {
             color: #f39c12;
         }
 
