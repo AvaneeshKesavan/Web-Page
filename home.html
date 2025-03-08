@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Below Water</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/global.css">
 
     <style>
         /* Hero Section */
         .hero-section {
-            background: url("images/background.gif") no-repeat center center/cover;
+            background: url("images/home/background.gif") no-repeat center center/cover;
             position: relative;
             background-attachment: fixed;
             color: rgb(255, 255, 255);
@@ -52,9 +52,10 @@
             font-size: 1.5rem;
         }
 
-        .hero-section button {
+        .butn {
             background: rgb(25, 167, 206);
             padding: 10px 20px;
+            color: black;
             border: none;
             font-size: 1.2rem;
             margin-top: 10px;
@@ -62,7 +63,7 @@
             text-decoration: none;
         }
 
-        .hero-section button:hover {
+        .butn:hover {
             background: rgb(20, 108, 148);
         }
 
@@ -73,6 +74,10 @@
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .mission p {
+            font-size: 1.1rem;
         }
 
         .gallery {
@@ -127,7 +132,7 @@
                 font-size: 1.2rem;
             }
 
-            .hero-section button {
+            .butn {
                 font-size: 1rem;
                 padding: 8px 16px;
             }
@@ -141,23 +146,23 @@
         <div class="nav-top">
             <div class="logo">
                 <a href="/home.html">
-                    <img src="images/logo.png" alt="TECHASTRIS">
+                    <img src="images/global/logo.png" alt="TECHASTRIS">
                 </a>
             </div>
             <div class="hamburger-menu" id="hamburger-menu">☰</div>
             <nav id="nav-links">
                 <ul>
                     <li><a href="/home.html">Home</a></li>
-                    <li><a href="/sitemap.html">About Us</a></li>
+                    <li><a href="/about.html">About Us</a></li>
                     <li><a href="/home.html#gallery">Overview</a></li>
+                    <li><a href="/gallerypage.html">Gallery</a></li>
                     <li><a href="/volunteer.html">Volunteer</a></li>
                     <li><a href="/teampage.html">Team</a></li>
-                    <li><a href="/gallerypage.html">Gallery</a></li>
-                    <button id="search-expand">🔍</button>
+                    <li><button id="search-expand">🔍</button></li>
                 </ul>
             </nav>
         </div>
-        <a href="profile.html"><img src="images/profile_icon.ico" alt="profile" class="profile-icon"></a>
+        <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
         <button id="themeToggle" class="theme-button"></button>
         <!-- Search Bar (Hidden Initially) -->
         <div class="search-container" id="search-bar">
@@ -173,57 +178,59 @@
         <div class="hero-section-text">
             <h1>Life Below Water</h1>
             <p>Become a member and join us today.</p>
-            <a href="table.html"><button>For More</button></a>
+            <a href="table.html" class="butn">For More</a>
         </div>
     </div>
 
     <!-- Rest of your content -->
     <main>
         <section class="mission">
-            <h1>Our Mission</h1>
+            <h2>Our Mission</h2>
             <p>
-                Our website is committed to preserve and restore the health of aquatic
-                ecosystems through sustainable fishing practices, reducing pollution,
-                and promoting marine biodiversity conservation efforts.
+                Harness technology and innovation to protect, restore, and sustain
+                marine ecosystems. We strive to combat ocean pollution, enhance biodiversity conservation, and support
+                sustainable practices through research, advocacy, and technological solutions. By working alongside
+                global initiatives and local communities, we aim to create a future where aquatic life thrives in a
+                balanced and sustainable environment.
             </p>
         </section>
 
-        <section class="content-links">
+        <div class="content-links">
             <div class="gallery" id="gallery">
                 <a href="content_ST4.html" class="tile"
-                    style="--image1: url('images/image1.png'); --image2: url('images/hover1.png')">
+                    style="--image1: url('images/home/image1.png'); --image2: url('images/home/hover1.png')">
                 </a>
                 <a href="content_ST2.html" class="tile"
-                    style="--image1: url('images/image2.png'); --image2: url('images/hover2.png')">
+                    style="--image1: url('images/home/image2.png'); --image2: url('images/home/hover2.png')">
                 </a>
                 <a href="content_ST3.html" class="tile"
-                    style="--image1: url('images/image3.png'); --image2: url('images/hover3.png')">
+                    style="--image1: url('images/home/image3.png'); --image2: url('images/home/hover3.png')">
                 </a>
                 <a href="content_ST4.html" class="tile"
-                    style="--image1: url('images/image4.png'); --image2: url('images/hover4.png')">
+                    style="--image1: url('images/home/image4.png'); --image2: url('images/home/hover4.png')">
                 </a>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
-        <a href="https://sdgs.un.org/">
+        <a href="https://sdgs.un.org/" target="_blank">
             <div class="image-container">
-                <img src="images/image.png" alt="Image 1">
-                <img src="images/logo2.png" alt="Image 2">
+                <img src="images/global/image.png" alt="Image 1">
+                <img src="images/global/logo2.png" alt="Image 2">
             </div>
         </a>
         <!-- Accessibility Links in the center -->
         <div class="links">
             <a href="/home.html">HOME</a>
-            <a href="/editors.html">ABOUT US</a>
+            <a href="/about.html">ABOUT US</a>
             <a href="/overview.html">OVERVIEW</a>
+            <a href="/gallerypage.html">GALLERY PAGE</a>
             <a href="/volunteer.html">VOLUNTEER</a>
             <a href="/teampage.html">TEAM</a>
-            <a href="/gallerypage.html">GALLERY PAGE</a>
             <a href="/sitemap.html">SITEMAP</a>
             <a href="/feedback.html">FEEDBACK</a>
-            <a href="/validation.html">VALIDATION</a>
+            <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
         </div>
 
         <!-- Line below the links -->
