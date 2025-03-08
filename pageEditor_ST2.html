@@ -26,7 +26,6 @@
                     <li><a href="/home.html">Home</a></li>
                     <li><a href="/about.html">About Us</a></li>
                     <li><a href="/home.html#gallery">Overview</a></li>
-                    <li><a href="/gallerypage.html">Gallery</a></li>
                     <li><a href="/volunteer.html">Volunteer</a></li>
                     <li><a href="/teampage.html">Team</a></li>
                     <li><button id="search-expand">🔍</button></li>
@@ -57,61 +56,119 @@
                 <section>
                     <h2 id="home">Home Page</h2>
                     <h3>Technical Description</h3>
-                    <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of
-                        the
-                        key tags and styling choices focusing on functionality and design without copying large code
-                        sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                        properties used to create structure and styling.</p>
+                    <p>The home page is designed with a fixed navigation bar that includes a logo, menu links, a profile
+                        icon, and a theme toggle button, allowing users to switch between light and dark modes. The hero
+                        section features a background GIF with a dark overlay to improve readability, along with a large
+                        heading, a short description, and a call-to-action button that redirects users to more
+                        information. The mission section is structured with a bordered container and a subtle shadow
+                        effect for emphasis. The gallery section incorporates interactive image tiles that change on
+                        hover, making the user experience more engaging while linking to various content pages. The
+                        search functionality is implemented with a smooth slide-in and slide-out animation, keeping the
+                        interface clean and user-friendly. A sticky theme button ensures users can toggle themes at any
+                        time, enhancing customization options. The footer contains essential links, external references
+                        (such as the UN SDG 14 page), and additional navigation options with team member names. CSS
+                        media queries are used to ensure responsiveness across different devices, adjusting text sizes,
+                        button padding, and layouts dynamically.</p>
 
                     <h3>Accessibility</h3>
-                    <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                    <p>The website follows good accessibility practices by ensuring high-contrast text, clear hover
+                        effects on links, and a structured layout that enhances screen reader compatibility. The dark
+                        overlay on the hero section’s background GIF improves text readability for users with visual
+                        impairments. The navigation bar is designed to be keyboard-accessible, and buttons have
+                        sufficient spacing for easy interaction. The search bar animation allows smooth transitions
+                        without sudden movement, reducing discomfort for users with motion sensitivity. However, further
+                        improvements could be made by adding ARIA attributes for better screen reader support, enhancing
+                        keyboard navigation by ensuring all interactive elements are easily focusable, and providing
+                        alternative text for images in the gallery section to improve usability for visually impaired
+                        users. Additionally, ensuring that the theme toggle button has an accessible label would further
+                        improve usability.</p>
 
                     <h3>Link to the validation page</h3>
                     <!-- Update the path to link the Page Editor with the splash page -->
-                    <p><a href="validation_ST2.html#homehVal">Include a link to the validation page</a>, use the marker
-                        to
-                        jump to the corresponding section of the validation page.</p>
+                    <p><a href="validation_ST2.html#homehVal">Home Page Validation Report</a></p>
                     <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                     <h3>Link to the page</h3>
-                    <p><a href="home.html">Include a link to the actual page you describe.</a></p>
+                    <p><a href="home.html">Home Page</a></p>
                 </section>
 
                 <section>
                     <h2 id="table">Table Page</h2>
                     <h3>Technical Description</h3>
-                    <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of
-                        the
-                        key tags and styling choices focusing on functionality and design without copying large code
-                        sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                        properties used to create structure and styling.</p>
+                    <p>The membership section inside #content presents a structured membership table with three pricing
+                        tiers: Basic, Standard, and Premium. The table organizes features in rows and membership plans
+                        in columns, improving readability.
+                        <br>
+                        The .membership-table class sets the table’s width to 80%, centers it, and applies
+                        border-collapse: collapse to merge borders for a cleaner look. It has a dark background
+                        (#0F172A), with column headers given distinct background colors (#48cae4, #00b4d8, #0096c7) to
+                        visually differentiate plans. The border-radius: 10px and box-shadow enhance the modern
+                        aesthetic.
+                        <br>
+                        Table cells (td) are styled with padding: 20px for spacing and border: 1px solid #3B3F58 to
+                        define sections. Plan logos and checkmarks use images, centrally aligned with display: block;
+                        margin: 0 auto; for better positioning.
+                        <br>
+                        Join buttons (.join-btn) are styled with a white background, black text, and rounded corners.
+                        The hover effect swaps colors (background-color: black; color: white;) to indicate
+                        interactivity.
+                        <br>
+                        A .zebra-row class is used for alternating row colors (background-color: rgba(255, 255, 255,
+                        0.1);), improving readability. The .highlight class is applied to special messages with a
+                        gold-tinted background.
+                        <br>
+                        Responsive design (@media (max-width: 768px)) adjusts the table width to 95%, reduces padding,
+                        and resizes text for better display on smaller screens.
+                    </p>
 
                     <h3>Accessibility</h3>
-                    <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                    <p>The page ensures accessibility through high contrast text colors, clear font choices, and
+                        well-structured content. The dark mode feature (.dark-mode) ensures readability by switching
+                        text colors dynamically. The table structure allows screen readers to navigate easily, and
+                        tooltips (title attributes on images) provide extra context. Interactive elements like buttons
+                        have clear hover effects, improving usability. Responsive design ensures the table remains
+                        accessible across different devices, avoiding horizontal scrolling on smaller screens.</p>
 
                     <h3>Link to the validation page</h3>
                     <!-- Update the path to link the Page Editor with the splash page -->
-                    <p><a href="validation_ST2.html#tableVal">Include a link to the validation page</a>, use the
-                        marker
-                        to jump to the corresponding section of the validation page.</p>
+                    <p><a href="validation_ST2.html#tableVal">Table Page Validation Report</a></p>
                     <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
 
                     <h3>Link to the page</h3>
-                    <p><a href="table.html">Include a link to the actual page you describe.</a></p>
+                    <p><a href="table.html">Table Page</a></p>
                 </section>
 
                 <section>
-                    <h2 id="content">Content Page</h2>
+                    <h2 id="contents">Content Page</h2>
                     <h3>Technical Description</h3>
-                    <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of
-                        the
-                        key tags and styling choices focusing on functionality and design without copying large code
-                        sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                        properties used to create structure and styling.</p>
+                    <p>The content section is styled using a .container class, which limits the width of the section and
+                        centers it on the page. The #content ID shifts the section to the right (margin-left: 200px) and
+                        moves it upward (margin-top: -35%). The text in the .hero-section-text is positioned relative to
+                        ensure it aligns properly within the section.
+                        <br>
+                        A side navigation bar (.side-navbar) is placed on the left side using position: sticky, keeping
+                        it fixed as the user scrolls. It has a background color, padding, and a box shadow to enhance
+                        visibility. Inside, an unordered list (ul) organizes navigation links, which change color on
+                        hover for better interactivity.
+                        <br>
+                        The section headings (.heading-section and .section) use larger font sizes and colors to make
+                        them stand out. The paragraph text inside .container p is justified for readability, and images
+                        inside .container img are centered and resized to fit well within the section.
+                        <br>
+                        A responsive design is implemented using media queries (@media screen and (max-width: 786px)).
+                        On smaller screens, the content section’s margin is adjusted, the side navbar turns into a
+                        hidden menu that slides out when activated, and images resize dynamically to maintain a clean
+                        layout.
+                    </p>
 
                     <h3>Accessibility</h3>
-                    <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                    <p>Accessibility is improved by ensuring proper text alignment, readable font sizes, and sufficient
+                        color contrast for text elements. The sticky side navigation bar makes it easier for users to
+                        access different sections without scrolling too much. The hover effect on navigation links
+                        provides a visual indicator of interactivity. Responsive design adjustments ensure the content
+                        remains readable and usable on mobile devices. Images are scaled properly, preventing layout
+                        shifts that could affect users navigating with screen readers or keyboards.</p>
 
                     <h3>Link to the validation page</h3>
                     <!-- Update the path to link the Page Editor with the splash page -->
@@ -127,8 +184,15 @@
 
                 <section>
                     <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were
-                        resolved. Reflect on the lessons learned from overcoming these challenges.</p>
+                    <p>During the implementation process, we faced challenges in designing a responsive layout,
+                        maintaining consistency across different pages, and ensuring accessibility. Structuring the home
+                        page, table page, and content page required careful planning to keep the design clean and
+                        user-friendly.
+                        <br>
+                        Through this process, we learned the importance of maintaining a structured layout, testing for
+                        responsiveness early, and considering accessibility from the start. These lessons will help in
+                        creating more user-friendly and visually consistent web pages in the future.
+                    </p>
                 </section>
 
                 <section>
@@ -191,7 +255,6 @@
             <a href="/home.html">HOME</a>
             <a href="/about.html">ABOUT US</a>
             <a href="/overview.html">OVERVIEW</a>
-            <a href="/gallerypage.html">GALLERY PAGE</a>
             <a href="/volunteer.html">VOLUNTEER</a>
             <a href="/teampage.html">TEAM</a>
             <a href="/sitemap.html">SITEMAP</a>
