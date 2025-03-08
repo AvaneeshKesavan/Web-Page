@@ -24,7 +24,36 @@
         </head>
 
         <body>
-            <svg width="100%" height="100%" viewBox="0 -25 215 230">
+            <header class="main-nav">
+            <div class="nav-top">
+                <div class="logo">
+                    <a href="/home.html">
+                        <img src="images/global/logo.png" alt="TECHASTRIS">
+                    </a>
+                </div>
+                <div class="hamburger-menu" id="hamburger-menu">☰</div>
+                <nav id="nav-links">
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/home.html#gallery">Overview</a></li>
+                        <li><a href="/gallerypage.html">Gallery</a></li>
+                        <li><a href="/volunteer.html">Volunteer</a></li>
+                        <li><a href="/teampage.html">Team</a></li>
+                        <li><button id="search-expand">🔍</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
+            <button id="themeToggle" class="theme-button"></button>
+            <!-- Search Bar (Hidden Initially) -->
+            <div class="search-container" id="search-bar">
+                <input type="text" placeholder="Search">
+                <button id="search-btn">Search</button>
+                <button id="close-search">✖</button>
+            </div>
+        </header>
+            <svg width="100%" height="100%" viewBox="0 -40 215 245">
                 <!--First Level -->
                 <circle cx="100" cy="-12" r="6" />
                 <text x="100" y="-12.5" font-size="2.5" text-anchor="middle" fill="black">Splash<tspan x="100" dy="3">Screen</tspan></text>
@@ -169,6 +198,47 @@
 
 
             </svg>
+            <footer class="footer">
+                <a href="https://sdgs.un.org/" target="_blank">
+                    <div class="image-container">
+                        <img src="images/global/image.png" alt="Image 1">
+                        <img src="images/global/logo2.png" alt="Image 2">
+                    </div>
+                </a>
+                <!-- Accessibility Links in the center -->
+                <div class="links">
+                    <a href="/home.html">HOME</a>
+                    <a href="/about.html">ABOUT US</a>
+                    <a href="/overview.html">OVERVIEW</a>
+                    <a href="/gallerypage.html">GALLERY PAGE</a>
+                    <a href="/volunteer.html">VOLUNTEER</a>
+                    <a href="/teampage.html">TEAM</a>
+                    <a href="/sitemap.html">SITEMAP</a>
+                    <a href="/feedback.html">FEEDBACK</a>
+                    <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
+                </div>
 
+                <!-- Line below the links -->
+                <hr>
+
+                <!-- Bottom section with Fan Support, Copyright and Extra Links -->
+                <div class="bottom-text">
+                    <div class="membership">
+                        <a href="/table.html">Membership</a>
+                    </div>
+                    <div class="extra-links">
+                        <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+                        <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+                        <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+                        <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2025 TECHASTRIS.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="/js/nav-search.js"></script>
+            <script src="/js/redirect.js" defer></script>
         </body>
     </html>
