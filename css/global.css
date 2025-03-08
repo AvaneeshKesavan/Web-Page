@@ -91,15 +91,14 @@ html {
     text-decoration: none;
     font-weight: bold;
     padding: 20px 10px;
-    border: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .main-nav nav a:hover {
     color: rgba(25, 167, 206);
     background-color: #000000;
-    border: 2px groove #000000;
-    padding: 30px 10px;
+    border: 0px groove #000000;
+    padding: 40px 10px;
 }
 
 #search-expand {
