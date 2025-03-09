@@ -1,115 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Below Water - Volunteer</title>
     <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
     <link rel="stylesheet" href="css/global.css">
-
-    <style>
-        .container {
-            padding: 20px;
-        }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-            gap: 19px;
-            padding: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 10px;
-
-            @media (min-width: 768px) {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-        }
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            background: white;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .card-header-image {
-            width: 100%;
-            height: 200px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
-
-        .card-body {
-            padding: 10px;
-            height: 30%;
-            flex-grow: 1;
-        }
-
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #ccc;
-            padding: 0 8px;
-        }
-
-        .volunteer-register-card {
-            background: white;
-            padding: 10px;
-            padding-bottom: 20px;
-        }
-        /** Dark Mode for both card & violunteer-register-card */
-        .dark-mode .card, .dark-mode .volunteer-register-card {
-            background: #333;
-        }
-
-        .data-card {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: rgba(167, 221, 237, 1);
-            border-radius: 5px;
-            padding: 6px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-
-            @media (max-width: 768px) {
-                flex-direction: column;
-            }
-        }
-
-        .page-links {
-            display: flex;
-            gap: 5px
-        }
-
-        .page-link {
-            text-decoration: none;
-            color: #000;
-            padding: 2px 6px;
-            border-radius: 50%;
-        }
-
-        .join-btn {
-            background-color: blue;
-            padding: 5px;
-            text-decoration: none;
-            color: white;
-        }
-
-        .page-link:hover {
-            background: rgb(7, 177, 154);
-        }
-    </style>
+    <link rel="stylesheet" href="css/volunteer.css">
 </head>
 
 
@@ -151,7 +48,13 @@
         <main class="container">
             <div class="program-listing">
                 <h1>100 volunteer programs available</h1>
-                <span>Filters: <span>Country: Global</span><span>Country: Sri lanka</span> </span>
+                <span>Filtering by 
+                    <select>
+                            <option value="popular-global">Most popular (Global)</option>
+                            <option value="popular-local">Most popular (Local)</option>
+                            <option value="best-rated">Best rated</option>
+                    </select>  
+                </span>
                 <div class="data-card">
                     <p>Showing 1 to 6 results on page 1</p>
                     <div class="page-links">
@@ -186,8 +89,21 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <p>Country: Global</p>
-                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
+                        <div class="footer-section">
+                            <span>Country: Global</span>
+                            <span>
+                                Rating: 
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9734;</span>
+                            </s>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
+                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -199,8 +115,21 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <p>Country: Global</p>
-                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
+                        <div class="footer-section">
+                            <span>Country: Global</span>
+                            <span>
+                                Rating: 
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9734;</span>
+                            </s>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
+                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -213,8 +142,21 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <p>Country: Global</p>
-                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
+                        <div class="footer-section">
+                            <span>Country: Global</span>
+                            <span>
+                                Rating: 
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                            </s>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
+                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -227,8 +169,21 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <p>Country: Global</p>
-                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
+                        <div class="footer-section">
+                            <span>Country: Global</span>
+                            <span>
+                                Rating: 
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9734;</span>
+                            </s>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
+                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -240,8 +195,21 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <p>Country: Global</p>
-                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
+                        <div class="footer-section">
+                            <span>Country: Global</span>
+                            <span>
+                                Rating: 
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9734;</span>
+                                <span class="rated-star rate-star">&#9734;</span>
+                            </s>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
+                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -253,20 +221,72 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <p>Country: Global</p>
-                        <a href="#register-for-volunteering" class="join-btn">Volunteer now</a>
+                        <div class="footer-section">
+                            <span>Country: Global</span>
+                            <span>
+                                Rating: 
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                                <span class="rated-star rate-star">&#9733;</span>
+                            </s>
+                        </div>
+                        <div class="footer-section">
+                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
+                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="volunteer-register-card">
-                <!-- Register for volunteering -->
-                <h2 id="register-for-volunteering">Register for volunteering</h2>
+            <div class="register-card">
+                <h2>Register for volunteering</h2>
                 <p>
-                    Are you interested in volunteering for any of the programs listed above? 
-                    Please create an account to start volunteering!
+                    Interested in joining our volunteer programs?
+                    Register below to get started.
                 </p>
-                <a href="/create-account.html" class="join-btn">Register Now</a>
+                <a href="#register-now">Click here to register</a>
+            </div>
+
+            <div class="end-card">
+                <div>
+                    <h2>&#9733; 9.5/10</h2>
+                    <h3>110 reviews</h3>
+                    <p>Reviews shown are overall values.</p>
+                    <!-- Sample Reviews -->
+                    <div class="reviews">
+                        <h3>What People Are Saying</h3>
+                        <div class="review">
+                            <p><strong>John D.</strong> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p>"An incredible experience! The team was supportive, and I felt like I truly made a difference."</p>
+                        </div>
+                        <div class="review">
+                            <p><strong>Emily R.</strong> &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p>"Loved the hands-on approach. Would recommend to anyone passionate about marine life!"</p>
+                        </div>
+                        <div class="review">
+                            <p><strong>Michael S.</strong> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p>"A life-changing program! I learned so much about ocean conservation and met amazing people."</p>
+                        </div>
+                        <a href="#more-reviews">
+                            <p>View More Reviews</p>
+                        </a>
+                    </div>
+                </div>
+                <form class="feedback-section">
+                    <h2>Feedback</h2>
+                    <p>
+                        We would love to hear your feedback on our volunteer programs. Please fill out the form below.
+                    </p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <textarea placeholder="Write your feedback here..."></textarea>
+        
+                    <button type="submit" class="submit-feedback-btn">Submit Feedback</button>
+                </form>
             </div>
         </main>
     </div>
