@@ -1,0 +1,323 @@
+/* <--.........Dark Mode.............-->*/
+.dark-mode {
+  #Left_1, #Mid_2, #Mid_2, #Mid_3, #Mid_4, #Right_1, #Right_3 {
+    background-color : #0B3C52;
+    color : White;
+  }
+
+  #Left_2, #Mid_1, #Right_2 {
+    background-color : #106B85;
+    color : White;
+  }
+
+  #Mid_2:hover, #Mid_3:hover, #Mid_4:hover {
+    background-color : #061F2B;
+  }
+
+  #Right_1 .Weekend {
+    background-color : #303030;
+  }
+
+  .Progress_color {
+    height: 10px;
+    border-right: 2px solid #0B3C52;
+    background-color: #0B3C52;
+  }
+
+  #Right_1 .AvailableSlots {
+    background-color : #106B85;
+  }
+
+  #Right_1 .AvailableSlots:hover {
+    background-color : #061F2B !important;
+  }
+
+}
+
+/* <--..........Styling for the body section..........--> */
+.Main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin: 1%;
+  gap: 10px;
+  align-items: stretch;
+}
+
+#content {
+  margin-bottom: 1%;
+}
+
+/* <--..........Styling for the left section..........--> */
+
+.Left {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
+  height: 100%;
+}
+
+.LeftSection {
+  border-radius: 15px;
+  background-color: #19A7CE;
+  padding: 10px;
+  color: White;
+}
+
+#Left_1 {
+  text-align: center;
+  background-color: #146C94;
+  font-size: 30px;
+}
+
+#Left_2 {
+  font-size: 18px;
+}
+
+.Skills_Table {
+  width: 100%;
+  height: 50px;
+  border-collapse: collapse;
+}
+
+.Progress_color {
+  height: 10px;
+  border-right: 2px solid #146C94;
+  background-color: #146C94;
+}
+
+.Progress_blank {
+  background-color: White;
+}
+
+#p1_c {
+  width: 50%;
+}
+
+#p2_c {
+  width: 25%;
+}
+
+#p3_c {
+  width: 80%;
+}
+
+#p4_c {
+  width: 50%;
+}
+
+/* <--..........Styling for the middle section..........--> */
+
+.Middle {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
+  height: 100%
+}
+
+.MidSection {
+  border-radius: 15px;
+  background-color: White;
+  padding: 10px;
+  color: Black;
+}
+
+#Mid_1 {
+  background-color: #19A7CE;
+  color: White;
+  text-align: left;
+}
+
+#Mid_2 div,
+#Mid_3 div,
+#Mid_4 div,
+#Right_2 div {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* <--..........Styling for the right section..........--> */
+.Right {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
+  height: 100%
+}
+
+.RightSection {
+  border-radius: 15px;
+  background-color: White;
+  padding: 10px;
+  color: Black;
+}
+
+#Right_1 div,
+#Right_3 div {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px
+}
+
+#Right_1 table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  ;
+}
+
+#Right_1 th, #Right_1 td {
+  border: 1px solid #616161;
+  border-radius: 5px;
+  padding: 10px;
+  width: 14.28%;
+  height: 14.28%;
+}
+
+#Right_1 th {
+  background-color: #656A73;
+  color: White;
+}
+
+#Right_1 .AvailableSlots {
+  background-color: #AFD3E2;
+}
+
+#Right_1 .Weekend {
+  background-color: LightGray;
+}
+
+#Right_2 {
+  background-color: #AFD3E2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#Right_3 form {
+  padding-left : 30px;
+  padding-top : 10px;
+}
+
+#Right_3 input, #Right_3 textarea {
+  padding-left : 5px;
+  padding-right : 5px;
+}
+
+#Right_3 button {
+  background-color : #19A7CE;
+  border-radius : 5px;
+  border-color : #19A7CE;
+  color : White;
+}
+
+#Right_3 button:hover {
+  background-color : #146C94;
+  border-color : #146C94;
+}
+
+.Goal_Image {
+  border-radius: 5px;
+}
+
+/* <--..........Styling for the body images..........--> */
+img,
+.Topic {
+  margin: 0px;
+  margin: 0px;
+}
+
+/* <--..........Hover Styling..........-->*/
+.Goal_Image {
+  transition: transform 0.5s ease;
+}
+
+#Mid_2,
+#Mid_3,
+#Mid_4 {
+    transition : background-color 0.5s ease;
+}
+
+#Mid_2:hover,
+#Mid_3:hover,
+#Mid_4:hover {
+  background-color: #AFD3E2;
+}
+
+.AvailableSlots {
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.AvailableSlots:hover {
+  color: White;
+  font-weight: bold;
+  background-color: #146C94 !important;
+  transform: scale(1.1);
+}
+
+.Goal_Image:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .Main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  .Left,
+  .Middle,
+  .Right {
+    display: block;
+    width: 100%;
+  }
+
+  .LeftSection,
+  .MidSection,
+  .RightSection {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust profile image */
+  #Left_1 img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  /* Ensure skills table adapts */
+  .Skills_Table {
+    width: 100%;
+  }
+
+  /* Adjust text sizes for better readability */
+  .Topic {
+    font-size: 20px;
+  }
+
+  /* Adjust Calendar Table */
+  #Right_1 table {
+    width: 100%;
+    font-size: 12px;
+    table-layout: fixed;
+  }
+
+  #Right_1 th,
+  #Right_1 td {
+    padding: 5px;
+  }
+
+  /* Stack UN Goals in two rows instead of one */
+  #Right_2 div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Goal_Image {
+    max-height: 70px;
+  }
+}

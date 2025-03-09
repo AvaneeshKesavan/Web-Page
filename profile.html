@@ -1,649 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life Below Water - Profile</title>
-  <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
-  <link rel="stylesheet" href="css/global.css">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Life Below Water - Profile</title>
+      <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
+      <link rel="stylesheet" href="css/global.css">
+      <link rel="stylesheet" href="css/profile.css">
+    </head>
 
-  <style>
-    /* <--.........Dark Mode.............-->*/
-    .dark-mode {
-      #Left_1, #Mid_2, #Mid_2, #Mid_3, #Mid_4, #Right_1, #Right_3 {
-        background-color : #0B3C52;
-        color : White;
-      }
+    <body>
+      <!-- Top Utility Bar -->
+      <!-- Main Navigation Bar -->
+      <header class="main-nav">
+        <div class="nav-top">
+          <div class="logo">
+            <a href="/home.html">
+              <img src="images/global/logo.png" alt="TECHASTRIS">
+            </a>
+          </div>
+          <div class="hamburger-menu" id="hamburger-menu">☰</div>
+          <nav id="nav-links">
+            <ul>
+              <li><a href="/home.html">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/home.html#gallery">Overview</a></li>
+              <li><a href="/volunteer.html">Volunteer</a></li>
+              <li><a href="/teampage.html">Team</a></li>
+              <li><button id="search-expand">🔍</button></li>
+            </ul>
+          </nav>
+        </div>
+        <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
+        <button id="themeToggle" class="theme-button"></button>
+        <!-- Search Bar (Hidden Initially) -->
+        <div class="search-container" id="search-bar">
+          <input type="text" placeholder="Search">
+          <button id="search-btn">Search</button>
+          <button id="close-search">✖</button>
+        </div>
+      </header>
 
-      #Left_2, #Mid_1, #Right_2 {
-        background-color : #106B85;
-        color : White;
-      }
+      <div id="content">
+        <div class="Main">
 
-      #Mid_2:hover, #Mid_3:hover, #Mid_4:hover {
-        background-color : #061F2B;
-      }
+          <!-- Left column -->
+          <div class="Left">
 
-      #Right_1 .Weekend {
-        background-color : #303030;
-      }
+            <!-- Left column - Top section -->
+            <div id="Left_1" class="LeftSection">
+              <h3 class="Topic">Stefen Salvatore</h3>
+              <img src="images/global/profile_icon.ico" height=300 alt="Profile Picture"> <br>
+              <dfn style="font-size : 18px;">" I'm passionate about conserving the sea, working to protect its beauty and
+                preserve its future. "</dfn>
+              <hr>
+              <ul style="font-size : 18px; text-align : left;">
+                  <li>Age : 21</li>
+                  <li>Work : Student</li>
+                  <li>Family : Single</li>
+                  <li>Location : London, England</li>
+              </ul>
+            </div>
 
-      .Progress_color {
-        height: 10px;
-        border-right: 2px solid #0B3C52;
-        background-color: #0B3C52;
-      }
+            <!-- Left column - Bottom section-->
+            <div id="Left_2" class="LeftSection">
+              <h4 Class="Topic" style="text-align : center;">Skills</h4>
+              <table class="Skills_Table">
+                <tr>
+                  <td colspan="2">Communication</td>
+                </tr>
+                <tr>
+                  <td id="p1_c" class="Progress_color"></td>
+                  <td class="Progress_blank"></td>
+                </tr>
+              </table>
+              <br>
+              <table class="Skills_Table">
+                <tr>
+                  <td colspan="2">Team Working</td>
+                </tr>
+                <tr>
+                  <td id="p2_c" class="Progress_color"></td>
+                  <td class="Progress_blank"></td>
+                </tr>
+              </table>
+              <br>
+              <table class="Skills_Table">
+                <tr>
+                  <td colspan="2">IT</td>
+                </tr>
+                <tr>
+                  <td id="p3_c" class="Progress_color"></td>
+                  <td class="Progress_blank"></td>
+                </tr>
+              </table>
+              <br>
+              <table class="Skills_Table">
+                <tr>
+                  <td colspan="2">Presentation</td>
+                </tr>
+                <tr>
+                  <td id="p4_c" class="Progress_color"></td>
+                  <td class="Progress_blank"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
 
-      #Right_1 .AvailableSlots {
-        background-color : #106B85;
-      }
+          <!-- Middle Section -->
+          <div class="Middle">
 
-      #Right_1 .AvailableSlots:hover {
-        background-color : #061F2B !important;
-      }
+            <!-- Middle Section - 1st Section -->
+            <div class="MidSection" id="Mid_1">
+              <h4 class="Topic">Short bio</h4>
+              <p>
+                Stefen Salvatore is a third year Software Engineering Student, passionate
+                about web development and user experience design. He enjoys solving complex
+                problems and cre innovative solutions.
+              </p>
+            </div>
 
-    }
+            <!-- Middle Section - 2nd Section -->
+            <div class="MidSection" id="Mid_2">
+              <div>
+                <img src="images/profile/compass.png" alt="compass icon" height=60>
+                <h4>Goals</h4>
+              </div>
+              <ul>
+                <li>Enhance Code Efficiency</li>
+                <li>Master a New Framework or Technology</li>
+                <li>Contribute to Open Source</li>
+                <li>Improve Software Security Practices</li>
+              </ul>
+            </div>
 
-    /* <--..........Styling for the body section..........--> */
-    .Main {
-      display: grid;
-      grid-template-columns: 1fr 2fr 2fr;
-      margin: 1%;
-      gap: 10px;
-      align-items: stretch;
-    }
+            <!--Middle Section - 3rd Section -->
+            <div class="MidSection" id="Mid_3">
+              <div>
+                <img src="images/profile/barrier.png" alt="barrier icon" height=60>
+                <h4>Frustrations</h4>
+              </div>
+              <ul>
+                <li>Debugging complex issues</li>
+                <li>Unclear requirements</li>
+                <li>Technical Debt</li>
+              </ul>
+            </div>
 
-    #content {
-      margin-bottom: 1%;
-    }
+            <!-- Middle Section - 4th Section -->
+            <div class="MidSection" id="Mid_4">
+              <div>
+                <img src="images/profile/pass.png" alt="grade icon" height=60>
+                <h4>Experience</h4>
+              </div>
+              <ul>
+                <li>Java</li>
+                <li>Pyhton</li>
+                <li>C++</li>
+                <li>HTML</li>
+              </ul>
+            </div>
 
-    /* <--..........Styling for the left section..........--> */
+          </div>
 
-    .Left {
-      display: grid;
-      grid-template-rows: auto;
-      gap: 10px;
-      height: 100%;
-    }
+          <!-- Right Section -->
+          <div class="Right">
 
-    .LeftSection {
-      border-radius: 15px;
-      background-color: #19A7CE;
-      padding: 10px;
-      color: White;
-    }
+            <!-- Right Section - section 1 -->
+            <div class="RightSection" id="Right_1">
+              <div>
+                <img src="images/profile/calendar.png" alt="calendar pic" height=60>
+                <h4>Volunteering Availability</h4>
+              </div>
+              <table>
+                <caption><b>February 2025</b></caption>
+                <thead>
+                  <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="AvailableSlots">1</td>
+                  <td class="Weekend">2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td class="AvailableSlots">4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td class="Weekend">8</td>
+                  <td class="AvailableSlots">9</td>
+                </tr>
+                <tr>
+                  <td class="AvailableSlots">10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td class="AvailableSlots">14</td>
+                  <td class="Weekend">15</td>
+                  <td class="Weekend">16</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>18</td>
+                  <td class="AvailableSlots">19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td class="Weekend">22</td>
+                  <td class="AvailableSlots">23</td>
+                </tr>
+                <tr>
+                  <td class="AvailableSlots">24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td class="Weekend"></td>
+                  <td class="Weekend"></td>
+                </tr>
+              </table>
+            </div>
 
-    #Left_1 {
-      text-align: center;
-      background-color: #146C94;
-      font-size: 30px;
-    }
+            <!--Right Section - Section 2-->
+            <div class="RightSection" id="Right_2">
+              <div>
+                <img src="images/profile/un_goals.png" alt="un goal pic" height=60>
+                <h4>UN Goals I Support</h4>
+              </div>
+              <br>
+              <br>
+              <div style="gap : 50px; padding : 0px 10px 0px 10px; justify-content : center;">
+                <a href="https://sdgs.un.org/goals/goal8"><img src="images/profile/un_goal_economic_growth.png"
+                    alt="UN goal economic growth pic" height="110" class="Goal_Image"></a>
+                <a href="https://sdgs.un.org/goals/goal15"><img src="images/profile/un_goal_land_life.png"
+                    alt="UN goal life on land pic" height="110" class="Goal_Image"></a>
+                <a href="https://sdgs.un.org/goals/goal4"><img src="images/profile/un_goal_quality_education.png"
+                    alt="UN goal quality education pic" height="110" class="Goal_Image"></a>
+                <a href="https://sdgs.un.org/goals/goal13"><img src="images/profile/un_goals_climate_action.png"
+                    alt="UN goal climate action pic" height="110" class="Goal_Image"></a>
+              </div>
+            </div>
 
-    #Left_2 {
-      font-size: 18px;
-    }
+            <!--Right Section - Section 3-->
+            <div class = "RightSection" id="Right_3">
+              <div>
+                <img src="images/profile/chat.png" alt="compass icon" height=60>
+                <h4>Contact me</h4>
+              </div>
 
-    .Skills_Table {
-      width: 100%;
-      height: 50px;
-      border-collapse: collapse;
-    }
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <br><br>
 
-    .Progress_color {
-      height: 10px;
-      border-right: 2px solid #146C94;
-      background-color: #146C94;
-    }
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br><br>
 
-    .Progress_blank {
-      background-color: White;
-    }
+                <label for="message">Message or Inquiry:</label>
+                <textarea id="message" name="message" rows="1" required></textarea> <br><br>
 
-    #p1_c {
-      width: 50%;
-    }
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
 
-    #p2_c {
-      width: 25%;
-    }
+        </div>
+      </div>
 
-    #p3_c {
-      width: 80%;
-    }
-
-    #p4_c {
-      width: 50%;
-    }
-
-    /* <--..........Styling for the middle section..........--> */
-
-    .Middle {
-      display: grid;
-      grid-template-rows: auto;
-      gap: 10px;
-      height: 100%
-    }
-
-    .MidSection {
-      border-radius: 15px;
-      background-color: White;
-      padding: 10px;
-      color: Black;
-    }
-
-    #Mid_1 {
-      background-color: #19A7CE;
-      color: White;
-      text-align: left;
-    }
-
-    #Mid_2 div,
-    #Mid_3 div,
-    #Mid_4 div,
-    #Right_2 div {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    /* <--..........Styling for the right section..........--> */
-    .Right {
-      display: grid;
-      grid-template-rows: auto;
-      gap: 10px;
-      height: 100%
-    }
-
-    .RightSection {
-      border-radius: 15px;
-      background-color: White;
-      padding: 10px;
-      color: Black;
-    }
-
-    #Right_1 div,
-    #Right_3 div {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px
-    }
-
-    #Right_1 table {
-      width: 100%;
-      table-layout: fixed;
-      text-align: center;
-      border-collapse: collapse;
-      margin: auto;
-      ;
-    }
-
-    #Right_1 th, #Right_1 td {
-      border: 1px solid #616161;
-      border-radius: 5px;
-      padding: 10px;
-      width: 14.28%;
-      height: 14.28%;
-    }
-
-    #Right_1 th {
-      background-color: #656A73;
-      color: White;
-    }
-
-    #Right_1 .AvailableSlots {
-      background-color: #AFD3E2;
-    }
-
-    #Right_1 .Weekend {
-      background-color: LightGray;
-    }
-
-    #Right_2 {
-      background-color: #AFD3E2;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    #Right_3 form {
-      padding-left : 30px;
-      padding-top : 10px;
-    }
-
-    #Right_3 input, #Right_3 textarea {
-      padding-left : 5px;
-      padding-right : 5px;
-    }
-
-    #Right_3 button {
-      background-color : #19A7CE;
-      border-radius : 5px;
-      border-color : #19A7CE;
-      color : White;
-    }
-
-    #Right_3 button:hover {
-      background-color : #146C94;
-      border-color : #146C94;
-    }
-
-    .Goal_Image {
-      border-radius: 5px;
-    }
-
-    /* <--..........Styling for the body images..........--> */
-    img,
-    .Topic {
-      margin: 0px;
-      margin: 0px;
-    }
-
-    /* <--..........Hover Styling..........-->*/
-    #Mid_2,
-    #Mid_3,
-    #Mid_4,
-    .Goal_Image {
-      transition: transform 0.5s ease;
-    }
-
-    #Mid_2:hover,
-    #Mid_3:hover,
-    #Mid_4:hover {
-      background-color: #AFD3E2;
-    }
-
-    .AvailableSlots {
-      transition: background-color 0.5s ease, transform 0.5s ease;
-    }
-
-    .AvailableSlots:hover {
-      color: White;
-      font-weight: bold;
-      background-color: #146C94 !important;
-      transform: scale(1.1)
-    }
-
-    .Goal_Image:hover {
-      transform: scale(1.1);
-    }
-
-    @media (max-width: 768px) {
-      .Main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
-      }
-
-      .Left,
-      .Middle,
-      .Right {
-        display: block;
-        width: 100%;
-      }
-
-      .LeftSection,
-      .MidSection,
-      .RightSection {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-
-      /* Adjust profile image */
-      #Left_1 img {
-        width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-      }
-
-      /* Ensure skills table adapts */
-      .Skills_Table {
-        width: 100%;
-      }
-
-      /* Adjust text sizes for better readability */
-      .Topic {
-        font-size: 20px;
-      }
-
-      /* Adjust Calendar Table */
-      #Right_1 table {
-        width: 100%;
-        font-size: 12px;
-        table-layout: fixed;
-      }
-
-      #Right_1 th,
-      #Right_1 td {
-        padding: 5px;
-      }
-
-      /* Stack UN Goals in two rows instead of one */
-      #Right_2 div {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .Goal_Image {
-        max-height: 70px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Top Utility Bar -->
-  <!-- Main Navigation Bar -->
-  <header class="main-nav">
-    <div class="nav-top">
-      <div class="logo">
-        <a href="/home.html">
-          <img src="images/global/logo.png" alt="TECHASTRIS">
+      <footer class="footer">
+        <a href="https://sdgs.un.org/" target="_blank">
+          <div class="image-container">
+            <img src="images/global/image.png" alt="Image 1">
+            <img src="images/global/logo2.png" alt="Image 2">
+          </div>
         </a>
-      </div>
-      <div class="hamburger-menu" id="hamburger-menu">☰</div>
-      <nav id="nav-links">
-        <ul>
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="/home.html#gallery">Overview</a></li>
-          <li><a href="/volunteer.html">Volunteer</a></li>
-          <li><a href="/teampage.html">Team</a></li>
-          <li><button id="search-expand">🔍</button></li>
-        </ul>
-      </nav>
-    </div>
-    <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
-    <button id="themeToggle" class="theme-button"></button>
-    <!-- Search Bar (Hidden Initially) -->
-    <div class="search-container" id="search-bar">
-      <input type="text" placeholder="Search">
-      <button id="search-btn">Search</button>
-      <button id="close-search">✖</button>
-    </div>
-  </header>
-
-  <div id="content">
-    <div class="Main">
-
-      <!-- Left column -->
-      <div class="Left">
-
-        <!-- Left column - Top section -->
-        <div id="Left_1" class="LeftSection">
-          <h3 class="Topic">Stefen Salvatore</h3>
-          <img src="images/global/profile_icon.ico" height=300 alt="Profile Picture"> <br>
-          <dfn style="font-size : 18px;">" I'm passionate about conserving the sea, working to protect its beauty and
-            preserve its future. "</dfn>
-          <hr>
-          <ul style="font-size : 18px; text-align : left;">
-              <li>Age : 21</li>
-              <li>Work : Student</li>
-              <li>Family : Single</li>
-              <li>Location : London, England</li>
-          </ul>
+        <!-- Accessibility Links in the center -->
+        <div class="links">
+          <a href="/home.html">HOME</a>
+          <a href="/about.html">ABOUT US</a>
+          <a href="/home.html#gallery">OVERVIEW</a>
+          <a href="/volunteer.html">VOLUNTEER</a>
+          <a href="/teampage.html">TEAM</a>
+          <a href="/sitemap.html">SITEMAP</a>
+          <a href="/feedback.html">FEEDBACK</a>
+          <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
         </div>
 
-        <!-- Left column - Bottom section-->
-        <div id="Left_2" class="LeftSection">
-          <h4 Class="Topic" style="text-align : center;">Skills</h4>
-          <table class="Skills_Table">
-            <tr>
-              <td colspan="2">Communication</td>
-            </tr>
-            <tr>
-              <td id="p1_c" class="Progress_color"></td>
-              <td class="Progress_blank"></td>
-            </tr>
-          </table>
-          <br>
-          <table class="Skills_Table">
-            <tr>
-              <td colspan="2">Team Working</td>
-            </tr>
-            <tr>
-              <td id="p2_c" class="Progress_color"></td>
-              <td class="Progress_blank"></td>
-            </tr>
-          </table>
-          <br>
-          <table class="Skills_Table">
-            <tr>
-              <td colspan="2">IT</td>
-            </tr>
-            <tr>
-              <td id="p3_c" class="Progress_color"></td>
-              <td class="Progress_blank"></td>
-            </tr>
-          </table>
-          <br>
-          <table class="Skills_Table">
-            <tr>
-              <td colspan="2">Presentation</td>
-            </tr>
-            <tr>
-              <td id="p4_c" class="Progress_color"></td>
-              <td class="Progress_blank"></td>
-            </tr>
-          </table>
-        </div>
-      </div>
+        <!-- Line below the links -->
+        <hr>
 
-      <!-- Middle Section -->
-      <div class="Middle">
-
-        <!-- Middle Section - 1st Section -->
-        <div class="MidSection" id="Mid_1">
-          <h4 class="Topic">Short bio</h4>
-          <p>
-            Stefen Salvatore is a third year Software Engineering Student, passionate
-            about web development and user experience design. He enjoys solving complex
-            problems and cre innovative solutions.
-          </p>
-        </div>
-
-        <!-- Middle Section - 2nd Section -->
-        <div class="MidSection" id="Mid_2">
-          <div>
-            <img src="images/profile/compass.png" alt="compass icon" height=60>
-            <h4>Goals</h4>
+        <!-- Bottom section with Fan Support, Copyright and Extra Links -->
+        <div class="bottom-text">
+          <div class="membership">
+            <a href="/table.html">Membership</a>
           </div>
-          <ul>
-            <li>Enhance Code Efficiency</li>
-            <li>Master a New Framework or Technology</li>
-            <li>Contribute to Open Source</li>
-            <li>Improve Software Security Practices</li>
-          </ul>
-        </div>
-
-        <!--Middle Section - 3rd Section -->
-        <div class="MidSection" id="Mid_3">
-          <div>
-            <img src="images/profile/barrier.png" alt="barrier icon" height=60>
-            <h4>Frustrations</h4>
+          <div class="extra-links">
+            <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+            <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+            <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+            <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
           </div>
-          <ul>
-            <li>Debugging complex issues</li>
-            <li>Unclear requirements</li>
-            <li>Technical Debt</li>
-          </ul>
-        </div>
-
-        <!-- Middle Section - 4th Section -->
-        <div class="MidSection" id="Mid_4">
-          <div>
-            <img src="images/profile/pass.png" alt="grade icon" height=60>
-            <h4>Experience</h4>
-          </div>
-          <ul>
-            <li>Java</li>
-            <li>Pyhton</li>
-            <li>C++</li>
-            <li>HTML</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Right Section -->
-      <div class="Right">
-
-        <!-- Right Section - section 1 -->
-        <div class="RightSection" id="Right_1">
-          <div>
-            <img src="images/profile/calendar.png" alt="calendar pic" height=60>
-            <h4>Volunteering Availability</h4>
-          </div>
-          <table>
-            <caption><b>February 2025</b></caption>
-            <thead>
-              <tr>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-                <th>Sun</th>
-              </tr>
-            </thead>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td class="AvailableSlots">1</td>
-              <td class="Weekend">2</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td class="AvailableSlots">4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-              <td class="Weekend">8</td>
-              <td class="AvailableSlots">9</td>
-            </tr>
-            <tr>
-              <td class="AvailableSlots">10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td class="AvailableSlots">14</td>
-              <td class="Weekend">15</td>
-              <td class="Weekend">16</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>18</td>
-              <td class="AvailableSlots">19</td>
-              <td>20</td>
-              <td>21</td>
-              <td class="Weekend">22</td>
-              <td class="AvailableSlots">23</td>
-            </tr>
-            <tr>
-              <td class="AvailableSlots">24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td class="Weekend"></td>
-              <td class="Weekend"></td>
-            </tr>
-          </table>
-        </div>
-
-        <!--Right Section - Section 2-->
-        <div class="RightSection" id="Right_2">
-          <div>
-            <img src="images/profile/un_goals.png" alt="un goal pic" height=60>
-            <h4>UN Goals I Support</h4>
-          </div>
-          <br>
-          <br>
-          <div style="gap : 50px; padding : 0px 10px 0px 10px; justify-content : center;">
-            <a href="https://sdgs.un.org/goals/goal8"><img src="images/profile/un_goal_economic_growth.png"
-                alt="UN goal economic growth pic" height="110" class="Goal_Image"></a>
-            <a href="https://sdgs.un.org/goals/goal15"><img src="images/profile/un_goal_land_life.png"
-                alt="UN goal life on land pic" height="110" class="Goal_Image"></a>
-            <a href="https://sdgs.un.org/goals/goal4"><img src="images/profile/un_goal_quality_education.png"
-                alt="UN goal quality education pic" height="110" class="Goal_Image"></a>
-            <a href="https://sdgs.un.org/goals/goal13"><img src="images/profile/un_goals_climate_action.png"
-                alt="UN goal climate action pic" height="110" class="Goal_Image"></a>
+          <div class="copyright">
+            <p>&copy; 2025 TECHASTRIS.</p>
           </div>
         </div>
+      </footer>
 
-        <!--Right Section - Section 3-->
-        <div class = "RightSection" id="Right_3">
-          <div>
-            <img src="images/profile/chat.png" alt="compass icon" height=60>
-            <h4>Contact me</h4>
-          </div>
+      <script src="/js/nav-search.js"></script>
+      <script src="/js/side-bar.js"></script>
+      <script src="/js/redirect.js" defer></script>
 
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required> <br><br>
+    </body>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required> <br><br>
-
-            <label for="message">Message or Inquiry:</label>
-            <textarea id="message" name="message" rows="1" required></textarea> <br><br>
-
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="footer">
-    <a href="https://sdgs.un.org/" target="_blank">
-      <div class="image-container">
-        <img src="images/global/image.png" alt="Image 1">
-        <img src="images/global/logo2.png" alt="Image 2">
-      </div>
-    </a>
-    <!-- Accessibility Links in the center -->
-    <div class="links">
-      <a href="/home.html">HOME</a>
-      <a href="/about.html">ABOUT US</a>
-      <a href="/home.html#gallery">OVERVIEW</a>
-      <a href="/volunteer.html">VOLUNTEER</a>
-      <a href="/teampage.html">TEAM</a>
-      <a href="/sitemap.html">SITEMAP</a>
-      <a href="/feedback.html">FEEDBACK</a>
-      <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
-    </div>
-
-    <!-- Line below the links -->
-    <hr>
-
-    <!-- Bottom section with Fan Support, Copyright and Extra Links -->
-    <div class="bottom-text">
-      <div class="membership">
-        <a href="/table.html">Membership</a>
-      </div>
-      <div class="extra-links">
-        <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
-        <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
-        <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
-        <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2025 TECHASTRIS.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/js/nav-search.js"></script>
-  <script src="/js/side-bar.js"></script>
-  <script src="/js/redirect.js" defer></script>
-
-</body>
-
-</html>
+  </html>
