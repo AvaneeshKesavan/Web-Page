@@ -1,248 +1,286 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Page Editor Student - Kevin</title>
-            <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
-            <link rel="stylesheet" href="css/global.css" />
-            <link rel="stylesheet" href="css/pageEditor_validator.css">
-        </head>
+<html lang="en">
 
-        <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Kevin</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+</head>
 
-            <header class="main-nav">
-                <div class="nav-top">
-                    <div class="logo">
-                        <a href="/home.html">
-                            <img src="images/global/logo.png" alt="TECHASTRIS">
-                        </a>
-                    </div>
-                    <div class="hamburger-menu" id="hamburger-menu">☰</div>
-                    <nav id="nav-links">
-                        <ul>
-                            <li><a href="/home.html">Home</a></li>
-                            <li><a href="/about.html">About Us</a></li>
-                            <li><a href="/home.html#gallery">Overview</a></li>
-                            <li><a href="/volunteer.html">Volunteer</a></li>
-                            <li><a href="/teampage.html">Team</a></li>
-                            <li><button id="search-expand">🔍</button></li>
-                        </ul>
-                    </nav>
-                </div>
-                <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
-                <button id="themeToggle" class="theme-button"></button>
-                <!-- Search Bar (Hidden Initially) -->
-                <div class="search-container" id="search-bar">
-                    <input type="text" placeholder="Search">
-                    <button id="search-btn">Search</button>
-                    <button id="close-search">✖</button>
-                </div>
-            </header>
+<body>
 
-            <div id="content">
-                <section class="stud">
-                    <h2>Kevin Delano Bartholomeusz - 4</h2>
-                </section>
-                <div class="container">
-                    <!-- Main content area -->
-                    <main>
-
-                        <!-- Update those first three sections for the pages you were responsible to implement -->
-
-                        <section>
-                            <h2 id="profile_page">Profile page</h2>
-                            <h3>Technical Description</h3>
-                            <p>The Profile webpage is a structured, responsive HTML document designed to showcase a user’s personal profile, skills,
-                                experience, and volunteering availability. It is built using HTML, CSS, and JavaScript,
-                                following a grid-based layout for organized content presentation. The page is divided into three main sections:
-                                Left (Personal Information & Skills), Middle (Biography, Goals, and Experience), and
-                                Right (Volunteering Availability & Supported UN Goals).
-                                The layout adapts dynamically to different screen sizes through CSS media queries, ensuring an optimal viewing
-                                experience across devices. JavaScript enhances user experience by enabling dynamic
-                                elements such as the sidebar navigation. The webpage follows modern accessibility and usability practices,
-                                making it both visually appealing and functional.
-                            </p>
-
-                            <h3>Accessibility</h3>
-                            <p>This webpage includes accessible features such as semantic HTML elements for better screen reader compatibility,
-                                descriptive alt text for images, and easy-to-navigate links. The layout adapts for mobile users,
-                                ensuring readability on smaller devices. The design also supports keyboard navigation and includes buttons
-                                for expanded functionality, enhancing the user experience for those with disabilities.
-                            </p>
-
-                            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                            <p><a href="validation_ST4.html#profileVal">Profile Page Validation Report</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                            <h3>Link to the page</h3>
-                            <p><a href="/profile.html">Profile Page</a></p>
-                        </section>
-
-                        <section>
-                            <h2 id="sitemap_page">Sitemap page</h2>
-                            <h3>Technical Description</h3>
-                            <p>This HTML document creates a responsive webpage featuring a sitemap rendered with SVG.
-                                It begins with meta tags to ensure proper character encoding and configure the viewport for optimal
-                                display on various screen sizes and devices. The document links to an external CSS stylesheet for consistent
-                                visual styling and includes a favicon for branding. The body of the document features an SVG-based sitemap layout,
-                                which provides an interactive, visually organized representation of a website’s structure.
-                                This setup ensures both accessibility and clarity while maintaining responsiveness for a wide range of devices.
-                            </p>
-
-                            <h3>Accessibility</h3>
-                            <p>This webpage is designed with accessibility in mind.
-                                It ensures that all content is clearly structured and easy to navigate for users with disabilities.
-                                The SVG sitemap provides a visual representation of the website's structure,
-                                and appropriate semantic HTML elements are used to improve screen reader compatibility.
-                                Meta tags and proper viewport settings ensure that the page is optimized for both screen sizes and devices,
-                                including those used by individuals with visual impairments. Additionally, the use of external CSS provides
-                                a consistent and visually appealing layout, while also supporting high contrast and other user-defined
-                                accessibility settings in browsers.
-                            </p>
-
-                            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                            <p><a href="validation_ST4.html#sitemapVal">Sitemap Page Validation Report</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-
-                            <h3>Link to the page</h3>
-                            <p><a href="/sitemap.html">Sitemap Page.</a></p>
-                        </section>
-
-                        <section>
-                            <h2 id="content_page">Content Page</h2>
-                            <h3>Technical Description</h3>
-                            <p>This webpage features a responsive layout with a fixed side navigation menu,
-                                which provides quick links to key sections related to marine ecosystems.
-                                It utilizes CSS for styling, including media queries for adaptive design across devices.
-                                The hero section includes a background image with a fixed attachment and a semi-transparent
-                                overlay for text contrast. JavaScript is used for dynamic elements like the hamburger menu,
-                                theme toggle, and search bar functionality. The page includes semantic HTML elements such
-                                as header, section, and footer, with accessibility considerations such as alt text
-                                for images and proper heading structure. Additionally, CSS transitions enhance interactivity in the
-                                side menu and navigation links.
-                            </p>
-
-                            <h3>Accessibility</h3>
-                            <p>This webpage is designed with accessibility in mind, featuring semantic HTML elements like header,
-                                section, and footer for clear content structure. Text contrast is optimized against the background,
-                                and alt text is provided for images to ensure screen reader compatibility.
-                                The side navigation menu is keyboard-navigable,
-                                with links that are clearly labeled for users with disabilities.
-                                The page also supports responsive design, ensuring usability across various screen sizes.
-                                Dynamic elements like the hamburger menu and search bar have accessible focus states and are operable
-                                with assistive technologies. The content is organized with proper heading hierarchy for easy navigation.
-                            </p>
-
-                            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                            <p><a href="validation_ST4.html#contentVal">Home Page Validation Report</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-
-                            <h3>Link to the page</h3>
-                            <p><a href="/content_ST4.html">Content Page</a></p>
-                        </section>
-
-                        <section>
-                            <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                            <p>During the development of this project, I encountered challenges related to creating a
-                                seamless and responsive layout across devices. Designing the user profile page required thoughtful consideration
-                                of both functionality and aesthetics. I needed to ensure the profile was easy to navigate,
-                                while providing space for the necessary data, such as user information and settings.
-                                For the sitemap, I had to structure the content efficiently, ensuring all sections were easily accessible.
-                                The content page presented the challenge of organizing detailed information in a user-friendly manner
-                                while ensuring visual appeal and clarity.
-
-                                The main technical difficulty was ensuring the elements remained responsive.
-                                With varying screen sizes, I had to adjust the layout and text size to maintain usability,
-                                especially in the mobile view. This included adjusting the navbar, hero section, and content
-                                layout to fit different screens without compromising the overall design. Another hurdle was
-                                implementing a smooth navigation experience, ensuring that links were functional and easy to access,
-                                which included ensuring compatibility with the sidebar menu for different devices. Overall,
-                                these challenges required balancing design, functionality, and accessibility.
-                            </p>
-                        </section>
-
-                        <section>
-                            <h2 id="compliance"> Compliance</h2>
-                            <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p>
-
-
-                        </section>
-
-                        <section>
-                            <h2 id="ref">References</h2>
-                            <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-                            <ul class="ref">
-                                <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                                <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
-                            </ul>
-                        </section>
-
-                        <p class="top"><a href="#top">Go top</a></p>
-                    </main>
-
-                    <!-- Sidebar area -->
-                    <aside>
-                        <h3>Core pages developed:</h3>
-
-                        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
-                        <ul class="top-level-ul">
-                            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-                            <li>Student 4</li>
-                            <ul>
-                                <li><a href="#profile_page">Profile page </a></li>
-                                <li><a href="#sitemap_page">Sitemap page</a></li>
-                                <li><a href="#content_page">Content page</a></li>
-                            </ul>
-                            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-                            <li><a href="#compliance">Compliance</a></li>
-                            <li><a href="#ref">References</a></li>
-                        </ul>
-                    </aside>
-                </div>
-            </div>
-
-            <footer class="footer">
-                <a href="https://sdgs.un.org/" target="_blank">
-                    <div class="image-container">
-                        <img src="images/global/image.png" alt="Image 1">
-                        <img src="images/global/logo2.png" alt="Image 2">
-                    </div>
+    <header class="main-nav">
+        <div class="nav-top">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/global/logo.png" alt="TECHASTRIS">
                 </a>
-                <!-- Accessibility Links in the center -->
-                <div class="links">
-                    <a href="/home.html">HOME</a>
-                    <a href="/about.html">ABOUT US</a>
-                    <a href="/home.html#gallery">OVERVIEW</a>
-                    <a href="/volunteer.html">VOLUNTEER</a>
-                    <a href="/teampage.html">TEAM</a>
-                    <a href="/sitemap.html">SITEMAP</a>
-                    <a href="/feedback.html">FEEDBACK</a>
-                    <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
-                </div>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">☰</div>
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="home.html#gallery">Overview</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="teampage.html">Team</a></li>
+                    <li><button id="search-expand">🔍</button></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
+        <button id="themeToggle" class="theme-button"></button>
+        <!-- Search Bar (Hidden Initially) -->
+        <div class="search-container" id="search-bar">
+            <input type="text" placeholder="Search">
+            <button id="search-btn">Search</button>
+            <button id="close-search">✖</button>
+        </div>
+    </header>
 
-                <!-- Line below the links -->
-                <hr>
+    <div id="content">
+        <section class="stud">
+            <h2>Kevin Delano Bartholomeusz - 4</h2>
+        </section>
+        <div class="container">
+            <!-- Main content area -->
+            <main>
 
-                <!-- Bottom section with Fan Support, Copyright and Extra Links -->
-                <div class="bottom-text">
-                    <div class="membership">
-                        <a href="/table.html">Membership</a>
-                    </div>
-                    <div class="extra-links">
-                        <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
-                        <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
-                        <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
-                        <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
-                    </div>
-                    <div class="copyright">
-                        <p>&copy; 2025 TECHASTRIS.</p>
-                    </div>
-                </div>
-            </footer>
+                <!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <script src="/js/nav-search.js"></script>
-            <script src="/js/side-bar.js"></script>
-            <script src="/js/redirect.js" defer></script>
+                <section>
+                    <h2 id="profile_page">Profile page</h2>
+                    <h3>Technical Description</h3>
+                    <p>The Profile webpage is a structured, responsive HTML document designed to showcase a user’s
+                        personal profile, skills,
+                        experience, and volunteering availability. It is built using HTML, CSS, and JavaScript,
+                        following a grid-based layout for organized content presentation. The page is divided into three
+                        main sections:
+                        Left (Personal Information & Skills), Middle (Biography, Goals, and Experience), and
+                        Right (Volunteering Availability & Supported UN Goals).
+                        The layout adapts dynamically to different screen sizes through CSS media queries, ensuring an
+                        optimal viewing
+                        experience across devices. JavaScript enhances user experience by enabling dynamic
+                        elements such as the sidebar navigation. The webpage follows modern accessibility and usability
+                        practices,
+                        making it both visually appealing and functional.
+                    </p>
 
-        </body>
-    </html>
+                    <h3>Accessibility</h3>
+                    <p>This webpage includes accessible features such as semantic HTML elements for better screen reader
+                        compatibility,
+                        descriptive alt text for images, and easy-to-navigate links. The layout adapts for mobile users,
+                        ensuring readability on smaller devices. The design also supports keyboard navigation and
+                        includes buttons
+                        for expanded functionality, enhancing the user experience for those with disabilities.
+                    </p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation_ST4.html#profileVal">Profile Page Validation Report</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                    <p><a href="profile.html">Profile Page</a></p>
+                </section>
+
+                <section>
+                    <h2 id="sitemap_page">Sitemap page</h2>
+                    <h3>Technical Description</h3>
+                    <p>This HTML document creates a responsive webpage featuring a sitemap rendered with SVG.
+                        It begins with meta tags to ensure proper character encoding and configure the viewport for
+                        optimal
+                        display on various screen sizes and devices. The document links to an external CSS stylesheet
+                        for consistent
+                        visual styling and includes a favicon for branding. The body of the document features an
+                        SVG-based sitemap layout,
+                        which provides an interactive, visually organized representation of a website’s structure.
+                        This setup ensures both accessibility and clarity while maintaining responsiveness for a wide
+                        range of devices.
+                    </p>
+
+                    <h3>Accessibility</h3>
+                    <p>This webpage is designed with accessibility in mind.
+                        It ensures that all content is clearly structured and easy to navigate for users with
+                        disabilities.
+                        The SVG sitemap provides a visual representation of the website's structure,
+                        and appropriate semantic HTML elements are used to improve screen reader compatibility.
+                        Meta tags and proper viewport settings ensure that the page is optimized for both screen sizes
+                        and devices,
+                        including those used by individuals with visual impairments. Additionally, the use of external
+                        CSS provides
+                        a consistent and visually appealing layout, while also supporting high contrast and other
+                        user-defined
+                        accessibility settings in browsers.
+                    </p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation_ST4.html#sitemapVal">Sitemap Page Validation Report</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                    <h3>Link to the page</h3>
+                    <p><a href="sitemap.html">Sitemap Page.</a></p>
+                </section>
+
+                <section>
+                    <h2 id="content_page">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>This webpage features a responsive layout with a fixed side navigation menu,
+                        which provides quick links to key sections related to marine ecosystems.
+                        It utilizes CSS for styling, including media queries for adaptive design across devices.
+                        The hero section includes a background image with a fixed attachment and a semi-transparent
+                        overlay for text contrast. JavaScript is used for dynamic elements like the hamburger menu,
+                        theme toggle, and search bar functionality. The page includes semantic HTML elements such
+                        as header, section, and footer, with accessibility considerations such as alt text
+                        for images and proper heading structure. Additionally, CSS transitions enhance interactivity in
+                        the
+                        side menu and navigation links.
+                    </p>
+
+                    <h3>Accessibility</h3>
+                    <p>This webpage is designed with accessibility in mind, featuring semantic HTML elements like
+                        header,
+                        section, and footer for clear content structure. Text contrast is optimized against the
+                        background,
+                        and alt text is provided for images to ensure screen reader compatibility.
+                        The side navigation menu is keyboard-navigable,
+                        with links that are clearly labeled for users with disabilities.
+                        The page also supports responsive design, ensuring usability across various screen sizes.
+                        Dynamic elements like the hamburger menu and search bar have accessible focus states and are
+                        operable
+                        with assistive technologies. The content is organized with proper heading hierarchy for easy
+                        navigation.
+                    </p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation_ST4.html#contentVal">Home Page Validation Report</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                    <h3>Link to the page</h3>
+                    <p><a href="content_ST4.html">Content Page</a></p>
+                </section>
+
+                <section>
+                    <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>During the development of this project, I encountered challenges related to creating a
+                        seamless and responsive layout across devices. Designing the user profile page required
+                        thoughtful consideration
+                        of both functionality and aesthetics. I needed to ensure the profile was easy to navigate,
+                        while providing space for the necessary data, such as user information and settings.
+                        For the sitemap, I had to structure the content efficiently, ensuring all sections were easily
+                        accessible.
+                        The content page presented the challenge of organizing detailed information in a user-friendly
+                        manner
+                        while ensuring visual appeal and clarity.
+
+                        The main technical difficulty was ensuring the elements remained responsive.
+                        With varying screen sizes, I had to adjust the layout and text size to maintain usability,
+                        especially in the mobile view. This included adjusting the navbar, hero section, and content
+                        layout to fit different screens without compromising the overall design. Another hurdle was
+                        implementing a smooth navigation experience, ensuring that links were functional and easy to
+                        access,
+                        which included ensuring compatibility with the sidebar menu for different devices. Overall,
+                        these challenges required balancing design, functionality, and accessibility.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="compliance"> Compliance</h2>
+                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page
+                        publication. This includes demonstrating your understanding and application of these
+                        regulations. Be realistic and truthful.</p>
+
+
+                </section>
+
+                <section>
+                    <h2 id="ref">References</h2>
+                    <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a
+                        simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a>
+                            (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc.
+                                Indianappolis.</i></li>
+                    </ul>
+                </section>
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <!-- Sidebar area -->
+            <aside>
+                <h3>Core pages developed:</h3>
+
+                <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                <ul class="top-level-ul">
+                    <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                    <li>Student 4</li>
+                    <ul>
+                        <li><a href="#profile_page">Profile page </a></li>
+                        <li><a href="#sitemap_page">Sitemap page</a></li>
+                        <li><a href="#content_page">Content page</a></li>
+                    </ul>
+                    <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#ref">References</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <a href="https://sdgs.un.org/" target="_blank">
+            <div class="image-container">
+                <img src="images/global/image.png" alt="Image 1">
+                <img src="images/global/logo2.png" alt="Image 2">
+            </div>
+        </a>
+        <!-- Accessibility Links in the center -->
+        <div class="links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="home.html#gallery">OVERVIEW</a>
+            <a href="volunteer.html">VOLUNTEER</a>
+            <a href="teampage.html">TEAM</a>
+            <a href="sitemap.html">SITEMAP</a>
+            <a href="feedback.html">FEEDBACK</a>
+            <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
+        </div>
+
+        <!-- Line below the links -->
+        <hr>
+
+        <!-- Bottom sections -->
+        <div class="bottom-text">
+            <div class="membership">
+                <a href="table.html">Membership</a>
+            </div>
+            <div class="extra-links">
+                <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+                <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+                <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+                <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TECHASTRIS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/redirect.js" defer></script>
+
+</body>
+
+</html>
