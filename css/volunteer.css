@@ -70,7 +70,11 @@ input,textarea, select {
     padding-bottom: 20px;
 }
 /** Dark Mode for both card & violunteer-register-card */
-.dark-mode .card, .dark-mode .volunteer-register-card {
+.dark-mode .card, 
+.dark-mode .volunteer-register-card,
+.dark-mode .register-card,
+.dark-mode .end-card
+{
     background: #333;
 }
 
@@ -179,10 +183,9 @@ input,textarea, select {
 }
 
 .reviews {
-margin-top: 10px;
-padding: 10px;
-border-top: 1px solid #ccc;
-
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
 }
 
 .review {

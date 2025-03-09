@@ -396,3 +396,7 @@ html {
 html {
     scroll-behavior: smooth;
 }
+
+.dark-mode a {
+    color: rgb(25, 167, 206);
+}
