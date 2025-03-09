@@ -66,12 +66,6 @@ select {
   gap: 5px;
 }
 
-.volunteer-register-card {
-  background: white;
-  padding: 10px;
-  padding-bottom: 20px;
-}
-
 .data-card {
   display: flex;
   justify-content: space-between;
@@ -94,7 +88,7 @@ select {
 .register-card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
   border-radius: 5px;
   background: white;
@@ -152,7 +146,7 @@ select {
 }
 
 .no-underline-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .apply-btn {
@@ -220,4 +214,22 @@ select {
 
 .dark-mode .review {
   background: #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
