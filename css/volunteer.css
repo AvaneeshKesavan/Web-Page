@@ -170,7 +170,7 @@ select {
 }
 
 .rated-star {
-  color: rgb(213, 213, 3);
+  color: rgb(128, 128, 22);
 }
 
 .page-link:hover {
@@ -178,7 +178,7 @@ select {
 }
 
 .submit-feedback-btn {
-  background-color: #28a745;
+  background-color: #238038;
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -191,6 +191,15 @@ select {
   margin-top: 10px;
   padding: 10px;
   border-top: 1px solid #ccc;
+}
+
+.review-status {
+    color: #237436;
+    font-weight: bold;
+}
+
+.dark-mode .review-status {
+    color: #1be85c;
 }
 
 .review {
