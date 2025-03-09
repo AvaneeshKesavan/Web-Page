@@ -1,339 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life Below Water - Volunteer</title>
-    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/volunteer.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/volunteer.css" />
+  </head>
 
-
-<body>
+  <body>
     <!-- Main Navigation Bar -->
     <header class="main-nav">
-        <div class="nav-top">
-            <div class="logo">
-                <a href="/home.html">
-                    <img src="images/global/logo.png" alt="TECHASTRIS">
-                </a>
-            </div>
-            <div class="hamburger-menu" id="hamburger-menu">☰</div>
-            <nav id="nav-links">
-                <ul>
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/home.html#gallery">Overview</a></li>
-                    <li><a href="/volunteer.html" class="active">Volunteer</a></li>
-                    <li><a href="/teampage.html">Team</a></li>
-                    <li><button id="search-expand">🔍</button></li>
-
-                </ul>
-            </nav>
+      <div class="nav-top">
+        <div class="logo">
+          <a href="/home.html">
+            <img src="images/global/logo.png" alt="TECHASTRIS" />
+          </a>
         </div>
-        <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
-        <button id="themeToggle" class="theme-button"></button>
-        <!-- Search Bar (Hidden Initially) -->
-        <div class="search-container" id="search-bar">
-            <input type="text" placeholder="Search">
-            <button id="search-btn">Search</button>
-            <button id="close-search">✖</button>
-        </div>
+        <div class="hamburger-menu" id="hamburger-menu">☰</div>
+        <nav id="nav-links">
+          <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/home.html#gallery">Overview</a></li>
+            <li><a href="/volunteer.html" class="active">Volunteer</a></li>
+            <li><a href="/teampage.html">Team</a></li>
+            <li><button id="search-expand">🔍</button></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="profile.html"
+        ><img
+          src="images/global/profile_icon.ico"
+          alt="profile"
+          class="profile-icon"
+      /></a>
+      <button id="themeToggle" class="theme-button"></button>
+      <!-- Search Bar (Hidden Initially) -->
+      <div class="search-container" id="search-bar">
+        <input type="text" placeholder="Search" />
+        <button id="search-btn">Search</button>
+        <button id="close-search">✖</button>
+      </div>
     </header>
 
     <!-- Main content -->
 
     <div id="content">
-        <main class="container">
-            <div class="program-listing">
-                <h1>100 volunteer programs available</h1>
-                <span>Filtering by 
-                    <select>
-                            <option value="popular-global">Most popular (Global)</option>
-                            <option value="popular-local">Most popular (Local)</option>
-                            <option value="best-rated">Best rated</option>
-                    </select>  
+      <main class="container">
+        <div class="program-listing">
+          <h1>100 volunteer programs available</h1>
+          <span
+            >Filtering by
+            <select>
+              <option value="popular-all">Most popular (All)</option>
+              <option value="popular-global">Most popular (Global)</option>
+              <option value="popular-local">Most popular (Local)</option>
+              <option value="best-rated">Best rated</option>
+            </select>
+          </span>
+          <div class="data-card">
+            <p>Showing 1 to 6 results on page 1</p>
+            <div class="page-links">
+              <a href="#previous-page" class="page-link"> </a>
+              <a href="#1" class="page-link"> 1 </a>
+              <a href="#2" class="page-link"> 2 </a>
+              <a href="#3" class="page-link"> 3 </a>
+              <a href="#4" class="page-link"> 4 </a>
+              <a href="#5" class="page-link"> > </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              class="card-header-image"
+              alt="Volunteer program 2 header image"
+              src="images/ocg_volunteer.jpg"
+            />
+            <div class="card-body">
+              <h2>ReefRescue: Coral Revival Program</h2>
+              <p>
+                Help us restore coral reefs around the world. We are looking for
+                volunteers to help us plant new coral and monitor the health of
+                existing coral reefs.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="footer-section">
+                <span>Country: Global</span>
+                <span>
+                  Rating:
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9734;</span>
                 </span>
-                <div class="data-card">
-                    <p>Showing 1 to 6 results on page 1</p>
-                    <div class="page-links">
-                        <a href="#previous-page" class="page-link">
-                            < </a>
-                                <a href="#1" class="page-link">
-                                    1
-                                </a>
-                                <a href="#2" class="page-link">
-                                    2
-                                </a>
-                                <a href="#3" class="page-link">
-                                    3
-                                </a>
-                                <a href="#4" class="page-link">
-                                    4
-                                </a>
-                                <a href="#5" class="page-link">
-                                    >
-                                </a>
-                    </div>
-                </div>
+              </div>
+              <div class="footer-section">
+                <a href="#register-for-volunteering" class="card-btn apply-btn"
+                  >Apply</a
+                >
+                <a
+                  href="#register-for-volunteering"
+                  class="card-btn project-btn"
+                  >View Project</a
+                >
+              </div>
             </div>
-            <div class="card-container">
-                <div class="card">
-                    <img class="card-header-image" src="images/ocg_volunteer.jpg" />
-                    <div class="card-body">
-                        <h2>ReefRescue: Coral Revival Program</h2>
-                        <p>
-                            Help us restore coral reefs around the world. We are looking for volunteers to help us plant
-                            new coral and monitor the health of existing coral reefs.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="footer-section">
-                            <span>Country: Global</span>
-                            <span>
-                                Rating: 
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9734;</span>
-                            </s>
-                        </div>
-                        <div class="footer-section">
-                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
-                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-header-image" src="/images/under-water.jpg" />
-                    <div class="card-body">
-                        <h2>SeaSafe: Ocean Rescue & Disaster Relief </h2>
-                        <p>
-                            Join our team of volunteers to help us respond to marine disasters and save marine life.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="footer-section">
-                            <span>Country: Global</span>
-                            <span>
-                                Rating: 
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9734;</span>
-                            </s>
-                        </div>
-                        <div class="footer-section">
-                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
-                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-header-image"
-                        src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
-                    <div class="card-body">
-                        <h2>AquaHope: Sustainable Fisheries Project</h2>
-                        <p>
-                            Join our team of volunteers to help us respond to marine disasters and save marine life.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="footer-section">
-                            <span>Country: Global</span>
-                            <span>
-                                Rating: 
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                            </s>
-                        </div>
-                        <div class="footer-section">
-                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
-                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-header-image"
-                        src="https://images.unsplash.com/photo-1534099635511-8bb701f5f602?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHZvbHVudGVlciUyMG9jZWFufGVufDB8MHwwfHx8Mg%3D%3D" />
-                    <div class="card-body">
-                        <h2>ReefRescue: Coral Revival Program</h2>
-                        <p>
-                            Join our team of volunteers to help us respond to marine disasters and save marine life.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="footer-section">
-                            <span>Country: Global</span>
-                            <span>
-                                Rating: 
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9734;</span>
-                            </s>
-                        </div>
-                        <div class="footer-section">
-                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
-                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-header-image" src="images/ocean_research.jpg" />
-                    <div class="card-body">
-                        <h2>DeepBlue: Ocean Research & Restoration</h2>
-                        <p>
-                            Join our team of volunteers to help us respond to marine disasters and save marine life.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="footer-section">
-                            <span>Country: Global</span>
-                            <span>
-                                Rating: 
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9734;</span>
-                                <span class="rated-star rate-star">&#9734;</span>
-                            </s>
-                        </div>
-                        <div class="footer-section">
-                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
-                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-header-image" src="images/content/c2background.jpeg" />
-                    <div class="card-body">
-                        <h2>Lorem Ipsum</h2>
-                        <p>
-                            Join our team of volunteers to help us respond to marine disasters and save marine life.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="footer-section">
-                            <span>Country: Global</span>
-                            <span>
-                                Rating: 
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                                <span class="rated-star rate-star">&#9733;</span>
-                            </s>
-                        </div>
-                        <div class="footer-section">
-                            <a href="#register-for-volunteering" class="card-btn apply-btn">Apply</a>
-                            <a href="#register-for-volunteering" class="card-btn project-btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-header-image"
+              alt="Volunteer program 2 header image"
+              src="/images/under-water.jpg"
+            />
+            <div class="card-body">
+              <h2>SeaSafe: Ocean Rescue & Disaster Relief</h2>
+              <p>
+                Join our team of volunteers to help us respond to marine
+                disasters and save marine life.
+              </p>
             </div>
+            <div class="card-footer">
+              <div class="footer-section">
+                <span>Country: Global</span>
+                <span>
+                  Rating:
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9734;</span>
+                </span>
+              </div>
+              <div class="footer-section">
+                <a href="#register-for-volunteering" class="card-btn apply-btn"
+                  >Apply</a
+                >
+                <a
+                  href="#register-for-volunteering"
+                  class="card-btn project-btn"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-header-image"
+              alt="Volunteer program 3 header image"
+              src="images/volunteer/ocean_fish.jpg"
+            />
+            <div class="card-body">
+              <h2>AquaHope: Sustainable Fisheries Project</h2>
+              <p>
+                Join our team of volunteers to help us respond to marine
+                disasters and save marine life.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="footer-section">
+                <span>Country: Global</span>
+                <span>
+                  Rating:
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                </span>
+              </div>
+              <div class="footer-section">
+                <a href="#register-for-volunteering" class="card-btn apply-btn"
+                  >Apply</a
+                >
+                <a
+                  href="#register-for-volunteering"
+                  class="card-btn project-btn"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-header-image"
+              src="images/volunteer/barrier_reef.jpg"
+            />
+            <div class="card-body">
+              <h2>ReefRescue: Coral Revival Program</h2>
+              <p>
+                A hands-on volunteering initiative focused on restoring coral
+                reefs affected by climate change and pollution. Volunteers
+                assist marine biologists in coral planting, reef monitoring, and
+                community education to preserve one of the world’s most iconic
+                marine ecosystems.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="footer-section">
+                <span>Country: Australia</span>
+                <span>
+                  Rating:
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9734;</span>
+                </span>
+              </div>
+              <div class="footer-section">
+                <a href="#register-for-volunteering" class="card-btn apply-btn"
+                  >Apply</a
+                >
+                <a
+                  href="#register-for-volunteering"
+                  class="card-btn project-btn"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-header-image" src="images/ocean_research.jpg" />
+            <div class="card-body">
+              <h2>Ocean Research & Restoration program</h2>
+              <p>
+                An advanced ocean research and conservation program designed for
+                volunteers passionate about marine science. Participants support
+                coral restoration projects, conduct underwater surveys, and
+                collaborate with marine biologists to assess ecosystem health.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="footer-section">
+                <span>Country: Global</span>
+                <span>
+                  Rating:
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9734;</span>
+                  <span class="rated-star rate-star">&#9734;</span>
+                </span>
+              </div>
+              <div class="footer-section">
+                <a href="#register-for-volunteering" class="card-btn apply-btn"
+                  >Apply</a
+                >
+                <a
+                  href="#register-for-volunteering"
+                  class="card-btn project-btn"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-header-image"
+              src="images/content/conservation_2.jpg"
+            />
+            <div class="card-body">
+              <h2>
+                Sustainable Fisheries & Marine Resource Management Program
+              </h2>
+              <p>
+                This initiative collaborates with local fishing communities to
+                promote sustainable fishing practices and marine conservation.
+                Assist in fisheries data collection, support workshops on
+                responsible fishing, and work on the development of
+                community-led marine protected areas.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="footer-section">
+                <span>Country: Sri Lanka, Thailand</span>
+                <span>
+                  Rating:
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                  <span class="rated-star rate-star">&#9733;</span>
+                </span>
+              </div>
+              <div class="footer-section">
+                <a href="#register-for-volunteering" class="card-btn apply-btn"
+                  >Apply</a
+                >
+                <a
+                  href="#register-for-volunteering"
+                  class="card-btn project-btn"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <div class="register-card">
-                <h2>Register for volunteering</h2>
+        <div class="register-card">
+          <h2>Register for volunteering</h2>
+          <p>
+            Interested in joining our volunteer programs? Register below to get
+            started.
+          </p>
+          <a href="#register-now" class="no-underline-link">Click here to register</a>
+        </div>
+
+        <div class="end-card">
+          <div>
+            <h2>&#9733; 9.5/10</h2>
+            <h3>110 reviews</h3>
+            <p>Reviews shown are overall values.</p>
+            <!-- Sample Reviews -->
+            <div class="reviews">
+              <h3>What People Are Saying</h3>
+              <div class="review">
                 <p>
-                    Interested in joining our volunteer programs?
-                    Register below to get started.
+                  <strong>John D.</strong> &#9733;&#9733;&#9733;&#9733;&#9733;
                 </p>
-                <a href="#register-now">Click here to register</a>
+                <p>
+                  "An incredible experience! The team was supportive, and I felt
+                  like I truly made a difference."
+                </p>
+              </div>
+              <div class="review">
+                <p>
+                  <strong>Emily R.</strong> &#9733;&#9733;&#9733;&#9733;&#9734;
+                </p>
+                <p>
+                  "Loved the hands-on approach. Would recommend to anyone
+                  passionate about marine life!"
+                </p>
+              </div>
+              <div class="review">
+                <p>
+                  <strong>Michael S.</strong>
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </p>
+                <p>
+                  "A life-changing program! I learned so much about ocean
+                  conservation and met amazing people."
+                </p>
+              </div>
+              <a href="#more-reviews" class="no-underline-link">
+                <p>View More Reviews</p>
+              </a>
             </div>
+          </div>
+          <form class="feedback-section">
+            <h2>Feedback</h2>
+            <p>
+              We would love to hear your feedback on our volunteer programs.
+              Please fill out the form below.
+            </p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <textarea placeholder="Write your feedback here..."></textarea>
 
-            <div class="end-card">
-                <div>
-                    <h2>&#9733; 9.5/10</h2>
-                    <h3>110 reviews</h3>
-                    <p>Reviews shown are overall values.</p>
-                    <!-- Sample Reviews -->
-                    <div class="reviews">
-                        <h3>What People Are Saying</h3>
-                        <div class="review">
-                            <p><strong>John D.</strong> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                            <p>"An incredible experience! The team was supportive, and I felt like I truly made a difference."</p>
-                        </div>
-                        <div class="review">
-                            <p><strong>Emily R.</strong> &#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            <p>"Loved the hands-on approach. Would recommend to anyone passionate about marine life!"</p>
-                        </div>
-                        <div class="review">
-                            <p><strong>Michael S.</strong> &#9733;&#9733;&#9733;&#9733;&#9733;</p>
-                            <p>"A life-changing program! I learned so much about ocean conservation and met amazing people."</p>
-                        </div>
-                        <a href="#more-reviews">
-                            <p>View More Reviews</p>
-                        </a>
-                    </div>
-                </div>
-                <form class="feedback-section">
-                    <h2>Feedback</h2>
-                    <p>
-                        We would love to hear your feedback on our volunteer programs. Please fill out the form below.
-                    </p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <textarea placeholder="Write your feedback here..."></textarea>
-        
-                    <button type="submit" class="submit-feedback-btn">Submit Feedback</button>
-                </form>
-            </div>
-        </main>
+            <button type="submit" class="submit-feedback-btn">
+              Submit Feedback
+            </button>
+          </form>
+        </div>
+      </main>
     </div>
 
     <footer class="footer">
-        <a href="https://sdgs.un.org/" target="_blank">
-            <div class="image-container">
-                <img src="images/global/image.png" alt="Image 1">
-                <img src="images/global/logo2.png" alt="Image 2">
-            </div>
-        </a>
-        <!-- Accessibility Links in the center -->
-        <div class="links">
-            <a href="/home.html">HOME</a>
-            <a href="/about.html">ABOUT US</a>
-            <a href="/home.html#gallery">OVERVIEW</a>
-            <a href="/volunteer.html">VOLUNTEER</a>
-            <a href="/teampage.html">TEAM</a>
-            <a href="/sitemap.html">SITEMAP</a>
-            <a href="/feedback.html">FEEDBACK</a>
-            <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
+      <a href="https://sdgs.un.org/" target="_blank">
+        <div class="image-container">
+          <img src="images/global/image.png" alt="Image 1" />
+          <img src="images/global/logo2.png" alt="Image 2" />
         </div>
+      </a>
+      <!-- Accessibility Links in the center -->
+      <div class="links">
+        <a href="/home.html">HOME</a>
+        <a href="/about.html">ABOUT US</a>
+        <a href="/home.html#gallery">OVERVIEW</a>
+        <a href="/volunteer.html">VOLUNTEER</a>
+        <a href="/teampage.html">TEAM</a>
+        <a href="/sitemap.html">SITEMAP</a>
+        <a href="/feedback.html">FEEDBACK</a>
+        <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
+      </div>
 
-        <!-- Line below the links -->
-        <hr>
+      <!-- Line below the links -->
+      <hr />
 
-        <!-- Bottom section with Fan Support, Copyright and Extra Links -->
-        <div class="bottom-text">
-            <div class="membership">
-                <a href="/table.html">Membership</a>
-            </div>
-            <div class="extra-links">
-                <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
-                <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
-                <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
-                <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 TECHASTRIS.</p>
-            </div>
+      <!-- Bottom section with Fan Support, Copyright and Extra Links -->
+      <div class="bottom-text">
+        <div class="membership">
+          <a href="/table.html">Membership</a>
         </div>
+        <div class="extra-links">
+          <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+          <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+          <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+          <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 TECHASTRIS.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="/js/nav-search.js"></script>
     <script src="/js/side-bar.js"></script>
     <script src="/js/redirect.js" defer></script>
-
-</body>
-
+  </body>
 </html>
