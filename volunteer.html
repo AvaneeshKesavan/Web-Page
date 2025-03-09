@@ -51,7 +51,7 @@
       <main class="container">
         <div class="program-listing">
           <h1>100 volunteer programs available</h1>
-          <span
+          <label
             >Filtering by
             <select>
               <option value="popular-all">Most popular (All)</option>
@@ -59,7 +59,7 @@
               <option value="popular-local">Most popular (Local)</option>
               <option value="best-rated">Best rated</option>
             </select>
-          </span>
+          </label>
           <div class="data-card">
             <p>Showing 1 to 6 results on page 1</p>
             <div class="page-links">
@@ -348,8 +348,8 @@
 
         <div class="end-card">
           <div>
-            <h2>&#9733; 9.5/10</h2>
-            <h3>110 reviews</h3>
+            <h2>&#9733; 9.5/10 (110 total reviews)</h2>
+            <p class="review-status">Exceptional</p>
             <p>Reviews shown are overall values.</p>
             <!-- Sample Reviews -->
             <div class="reviews">
@@ -397,7 +397,8 @@
             <input type="text" id="name" name="name" required />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-            <textarea placeholder="Write your feedback here..."></textarea>
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" name="feedback" placeholder="Write your feedback here..."></textarea>
 
             <button type="submit" class="submit-feedback-btn">
               Submit Feedback
