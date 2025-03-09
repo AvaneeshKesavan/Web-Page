@@ -1,6 +1,5 @@
 .membership-section {
     text-align: center;
-    color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     margin: 50px 0;
 }
@@ -13,12 +12,6 @@
 .membership-section p {
     font-size: 16px;
     margin-bottom: 30px;
-}
-
-.dark-mode .membership-section h2,
-.dark-mode .membership-section p {
-    color: white !important;
-    /* Force color change in dark mode */
 }
 
 .membership-table {
@@ -96,7 +89,6 @@
 
 .membership-table td img {
     width: 30px;
-    /* Adjust the image size */
     height: auto;
     display: block;
     margin: 0 auto;

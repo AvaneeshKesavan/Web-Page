@@ -1,3 +1,4 @@
+/* Set background color and font styles for the entire page */
 body {
     background-color: rgb(246, 241, 241);
     font-family: Arial, sans-serif;
@@ -5,15 +6,18 @@ body {
     padding-top: 0;
 }
 
+/* Dark mode styling */
 .dark-mode {
     background-color: black;
     color: white;
 }
 
+/* Adjusts scroll behavior */
 html {
     scroll-padding-top: 20%;
 }
 
+/* Theme switch button styling */
 .theme-button {
     width: 23px;
     height: 23px;
@@ -22,25 +26,23 @@ html {
     border: 2px solid black;
     cursor: pointer;
     position: fixed;
-    /* Change from absolute to fixed */
     top: 8px;
-    /* Adjust to move up */
     right: 90px;
-    /* Keep it aligned */
     transition: background-color 0.3s ease-in-out;
 }
 
-
+/* Adjust theme button styling in dark mode */
 .dark-mode .theme-button {
     background-color: black;
     border: 2px solid white;
 }
 
+/* Add spacing below navbar to prevent content from being hidden */
 #content {
     padding-top: 140px;
 }
 
-/* Profile icon */
+/* Profile icon styling */
 .profile-icon {
     width: 35px;
     object-fit: contain;
@@ -50,12 +52,12 @@ html {
     transform: translateY(-80%);
 }
 
-/* Navigation Bar */
+/* Navigation bar styling */
 .main-nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 4;
+    z-index: 1;
     left: 10px;
     right: 20px;
     top: 30px;
@@ -63,6 +65,7 @@ html {
     padding: 10px;
 }
 
+/* Styling for the top part of the navigation bar */
 .nav-top {
     display: flex;
     justify-content: space-between;
@@ -73,10 +76,12 @@ html {
     border-radius: 10px;
 }
 
+/* Logo styling in the navbar */
 .nav-top .logo img {
     height: 80px;
 }
 
+/* Navigation links list */
 .main-nav nav ul {
     display: flex;
     gap: 30px;
@@ -86,6 +91,7 @@ html {
     align-items: center;
 }
 
+/* Navigation link styling */
 .main-nav nav a {
     color: #000000;
     text-decoration: none;
@@ -94,20 +100,24 @@ html {
     transition: all 0.2s ease-in-out;
 }
 
+/* Hover effect for navigation links */
 .main-nav nav a:hover {
     color: rgba(25, 167, 206);
     background-color: #000000;
     padding: 39px 10px;
 }
 
+/* Active navigation link styling */
 .main-nav nav a.active {
     color: white;
     padding: 39px 10px;
 }
 
+/* Search expand button styling */
 #search-expand {
     color: #000;
     text-decoration: none;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 5px 15px;
     border: 2px solid transparent;
@@ -116,7 +126,7 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-/* Search Bar */
+/* Search bar container */
 .search-container {
     display: none;
     position: absolute;
@@ -132,6 +142,7 @@ html {
     align-items: center;
 }
 
+/* Search input field */
 .search-container input {
     padding: 8px;
     width: 80%;
@@ -140,6 +151,7 @@ html {
     font-size: 1rem;
 }
 
+/* Search button styling */
 .search-container button {
     background: rgb(20, 108, 148);
     padding: 8px 16px;
@@ -148,12 +160,12 @@ html {
     font-size: 1rem;
 }
 
-/* Search Mode */
+/* Hide nav links when search is active */
 .search-active #nav-links {
     display: none;
 }
 
-/* Animation for the search bar, moves it to the left and fades it */
+/* Animation for search bar sliding out */
 .search-slide-out {
     animation: slide-out 0.5s forwards;
 }
@@ -165,10 +177,11 @@ html {
 
     100% {
         opacity: 0;
-        transform: translateX(-50%)
+        transform: translateX(-50%);
     }
 }
 
+/* Animation for search bar sliding in */
 .search-slide-in {
     animation: slide-in 0.5s forwards;
 }
@@ -185,34 +198,37 @@ html {
     }
 }
 
+/* Display search container when search is active */
 .search-active .search-container {
     display: flex;
 }
 
+/* Hide search bar by default */
 #search-bar {
     display: none;
 }
 
+/* Close search button styling */
 #close-search {
     margin-left: 10px;
 }
 
+/* Styling for the search button */
 .search-container button#search-btn {
     margin-left: 10px;
     background: rgb(25, 167, 206);
 }
 
+/* Navigation search button styling */
 #nav-links button#search-expand {
     padding: 5px 20px;
     margin-bottom: 0.4%;
-    border: 2px solid transparent;
     background-color: transparent;
-    /* Same style as the nav links */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-/* Footer Styling */
+/* Footer section styling */
 .footer {
     background-color: #050a30;
     padding: 20px 40px;
@@ -223,22 +239,26 @@ html {
     text-align: center;
 }
 
+/* Footer logo styling */
 .footer img {
     width: 200px;
     margin-bottom: 45px;
 }
 
+/* Footer image container */
 .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Footer image styling */
 .image-container img {
     width: 10%;
     height: auto;
 }
 
+/* Footer links container */
 .footer .links {
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +267,7 @@ html {
     margin-bottom: 60px;
 }
 
+/* Footer links styling */
 .footer a {
     color: white;
     text-decoration: none;
@@ -254,17 +275,20 @@ html {
     font-size: 16px;
 }
 
+/* Footer link hover effect */
 .footer a:hover {
     text-decoration: underline;
     color: rgb(25, 167, 206);
 }
 
+/* Footer horizontal rule */
 .footer hr {
     border: 1px solid white;
     width: 100%;
     margin: 15px 0;
 }
 
+/* Footer bottom text */
 .footer .bottom-text {
     display: flex;
     justify-content: space-between;
@@ -276,26 +300,31 @@ html {
     padding-top: 10px;
 }
 
+/* Extra footer links */
 .footer .extra-links {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
 
+/* Extra links button styling */
 .footer .extra-links .btn {
     color: rgb(25, 167, 206);
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Extra links button hover effect */
 .footer .extra-links .btn:hover {
     color: white;
 }
 
+/* Footer membership text */
 .footer .membership-table {
     font-weight: bold;
 }
 
+/* Hamburger menu for mobile navigation */
 .hamburger-menu {
     display: none;
     font-size: 30px;
@@ -303,29 +332,29 @@ html {
     color: white;
 }
 
-/* Responsive Styles for Max Width 768px */
+/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
 
+    /* Show hamburger menu */
     .hamburger-menu {
         display: block;
-        /* Show hamburger menu */
     }
 
-    /* Utility Bar Adjustments */
+    /* Center and wrap utility bar content */
     .top-utility-bar {
         justify-content: center;
         flex-wrap: wrap;
     }
 
+    /* Reduce logo size */
     .logo {
         align-items: end;
         width: 20px;
     }
 
-    /* Navigation Adjustments */
+    /* Adjust navigation menu for mobile */
     nav {
         display: none;
-        /* Hide nav links by default */
         flex-direction: column;
         width: 30%;
         position: absolute;
@@ -335,56 +364,14 @@ html {
         text-align: center;
     }
 
+    /* Show menu when active */
     nav.active {
         display: flex;
-        /* Show menu when active */
     }
 
-    nav ul {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    nav ul li {
-        padding: 10px 0;
-    }
-
-    /* Profile Icon */
-    .profile-icon {
-        position: static;
-        transform: none;
-        margin: 10px 0;
-    }
-
-    /* Search Bar */
-    .search-container {
-        width: 90%;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .search-container input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    /* Footer Adjustments */
-    .footer {
-        padding: 20px;
-    }
-
-    .footer .links {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .footer .extra-links {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
+    /* Adjust footer styling for mobile */
+    .footer .links,
+    .footer .extra-links,
     .footer .bottom-text {
         flex-direction: column;
         text-align: center;
@@ -392,8 +379,7 @@ html {
     }
 }
 
-/* Smooth scrolling */
+/* Enable smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
-
