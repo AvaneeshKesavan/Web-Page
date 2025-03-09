@@ -1,0 +1,235 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: white;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header-image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  padding: 10px;
+  height: 30%;
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  padding: 8px 6px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.data-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(167, 221, 237, 1);
+  border-radius: 5px;
+  padding: 6px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.dark-mode .data-card {
+  background-color: rgba(25, 167, 206, 1);
+}
+
+.register-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+}
+
+.end-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.page-links {
+  display: flex;
+  gap: 5px;
+}
+
+.page-link {
+  text-decoration: none;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.dark-mode .page-link {
+  color: white;
+}
+
+.card-btn {
+  padding: 6px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.dark-mode .card-btn {
+  color: white;
+}
+
+.no-underline-link {
+  text-decoration: none;
+}
+
+.apply-btn {
+  background: rgb(29, 213, 121);
+}
+
+.project-btn {
+  background: rgb(32, 188, 231);
+}
+
+.apply-btn:hover {
+  background: rgb(25, 196, 142);
+}
+
+.project-btn:hover {
+  background: rgb(30, 157, 216);
+}
+
+.rate-star {
+  font-size: 1.5rem;
+}
+
+.rated-star {
+  color: rgb(213, 213, 3);
+}
+
+.page-link:hover {
+  background: rgb(7, 177, 154);
+}
+
+.submit-feedback-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.reviews {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.review {
+  margin-top: 10px;
+  padding: 5px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+/** Dark Mode for cards must be in a grayish color */
+.dark-mode .card,
+.dark-mode .volunteer-register-card,
+.dark-mode .register-card,
+.dark-mode .end-card {
+  background: #333;
+}
+
+.dark-mode .review {
+  background: #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}

@@ -14,10 +14,15 @@
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            margin-bottom: 15%;
         }
 
         .team-heading {
             margin-bottom: 30px;
+        }
+
+        .member-tasks a {
+            display: inline-block;
         }
 
         .team-grid {
@@ -49,7 +54,7 @@
 
         .member-details {
             position: absolute;
-            bottom: -120px;
+            bottom: -210px;
             left: 0;
             right: 0;
             background: white;
@@ -61,6 +66,7 @@
             transition: all 0.3s ease;
             pointer-events: none;
             z-index: 1;
+            pointer-events: auto;
         }
 
         .team-member:hover .member-details {
@@ -69,6 +75,7 @@
         }
 
         .member-name {
+            color: black;
             font-size: 1.2em;
             font-weight: bold;
             margin-bottom: 8px;
@@ -115,7 +122,7 @@
                     <li><a href="/about.html">About Us</a></li>
                     <li><a href="/home.html#gallery">Overview</a></li>
                     <li><a href="/volunteer.html">Volunteer</a></li>
-                    <li><a href="/teampage.html">Team</a></li>
+                    <li><a href="/teampage.html" class="active">Team</a></li>
                     <li><button id="search-expand">🔍</button></li>
                 </ul>
             </nav>
@@ -134,46 +141,97 @@
         <div class="team-container">
             <h1 class="team-heading">Our Team</h1>
             <div class="team-grid">
+                <div class="team-grid">
+                    <div class="team-member" tabindex="0">
+                        <img src="images/team/Imayuru.jpg" alt="Team Member 2" class="thumbnail">
+                        <div class="member-details">
+                            <div class="member-name">Imayuru</div>
+                            <div class="member-role">Student 01</div>
+                            <div class="member-tasks">
+                                <p>Undergraduate at Informatics Institute of Technology</p>
+
+                                <a href="https://github.com/typicalninja/" target="_blank"
+                                    aria-label="Visit Vidath Imayuru's GitHub">
+                                    <img src="images/team/github logo.jpg" alt="GitHub logo" width="40px">
+                                </a>
+                                <a href="mailto:imayuruweerawala@gmail.com" aria-label="Send email to Avaneesh Kesavan">
+                                    <img src="images/team/gmail logo.jpg" alt="Gmail logo" width="40px">
+                                </a>
+                                <a href="https://www.linkedin.com/in/imayuru/" target="_blank"
+                                    aria-label="Visit Vidath Imayuru's LinkedIn">
+                                    <img src="images/team/linkedin logo.png" alt="LinkedIn logo" width="40px">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="team-member" tabindex="0">
-                    <img src="Images/Imayuru.jpg" alt="Team Member 1" class="thumbnail">
+                    <img src="images/team/Avaneesh.jpg" alt="Team Member 2" class="thumbnail">
                     <div class="member-details">
-                        <div class="member-name">Vidath Imayuru</div>
-                        <div class="member-role">Frontend Developer</div>
+                        <div class="member-name">Avaneesh</div>
+                        <div class="member-role">Student 02</div>
                         <div class="member-tasks">
-                            UI Design, Component Development, Accessibility Implementation
+                            <p>Undergraduate at Informatics Institute of Technology</p>
+
+                            <a href="https://github.com/AvaneeshKesavan" target="_blank"
+                                aria-label="Visit Avaneesh Kesavan's GitHub">
+                                <img src="images/team/github logo.jpg" alt="GitHub logo" width="40px">
+                            </a>
+                            <a href="mailto:kesavan.avaneesh@gmail.com" aria-label="Send email to Avaneesh Kesavan">
+                                <img src="images/team/gmail logo.jpg" alt="Gmail logo" width="40px">
+                            </a>
+                            <a href="https://www.linkedin.com/in/avaneesh-kesavan/" target="_blank"
+                                aria-label="Visit Avaneesh Kesavan's LinkedIn">
+                                <img src="images/team/linkedin logo.png" alt="LinkedIn logo" width="40px">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="team-member" tabindex="0">
-                    <img src="Images/Avaneesh.jpg" alt="Team Member 2" class="thumbnail">
+                    <img src="images/team/Pangajan.jpg" alt="Team Member 3" class="thumbnail">
                     <div class="member-details">
-                        <div class="member-name">Avaneesh Kesavan</div>
-                        <div class="member-role">Backend Developer</div>
+                        <div class="member-name">Pangajan</div>
+                        <div class="member-role">Student 03</div>
                         <div class="member-tasks">
-                            API Development, Database Design, Security Implementation
+                            <p>Undergraduate at Informatics Institute of Technology</p>
+
+                            <a href="https://github.com/Pangajan" target="_blank"
+                                aria-label="Visit Pangajan Paranitharan's GitHub">
+                                <img src="images/team/github logo.jpg" alt="GitHub logo" width="40px">
+                            </a>
+                            <a href="mailto:pangajan20@gmail.com" aria-label="Send email to Pangajan Paranitharan">
+                                <img src="images/team/gmail logo.jpg" alt="Gmail logo" width="40px">
+                            </a>
+                            <a href="https://www.linkedin.com/in/pangajan-paranitharan-81ab51315/" target="_blank"
+                                aria-label="Visit Pangajan Paranitharan's LinkedIn">
+                                <img src="images/team/linkedin logo.png" alt="LinkedIn logo" width="40px">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="team-member" tabindex="0">
-                    <img src="Images/Pangajan.jpg" alt="Team Member 3" class="thumbnail">
+                    <img src="images/team/Kevin.jpg" alt="Team Member 4" class="thumbnail">
                     <div class="member-details">
-                        <div class="member-name">Pangajan Paranitharan</div>
-                        <div class="member-role">UX Designer</div>
+                        <div class="member-name">Kevin</div>
+                        <div class="member-role">Student 04</div>
                         <div class="member-tasks">
-                            User Research, Wireframing, Prototyping
-                        </div>
-                    </div>
-                </div>
+                            <p>Undergraduate at Informatics Institute of Technology</p>
 
-                <div class="team-member" tabindex="0">
-                    <img src="images/Kevin.jpg" alt="Team Member 4" class="thumbnail">
-                    <div class="member-details">
-                        <div class="member-name">K.D. Bartholomeusz</div>
-                        <div class="member-role">Project Manager</div>
-                        <div class="member-tasks">
-                            Team Coordination, Resource Planning, Client Communication
+                            <a href="https://github.com/kevin-bartholomeusz" target="_blank"
+                                aria-label="Visit K.D. Bartholomeusz's GitHub">
+                                <img src="images/team/github logo.jpg" alt="GitHub logo" width="40px">
+                            </a>
+                            <a href="mailto:bartholomeuszkd@gmail.com" aria-label="Send email to K.D. Bartholomeusz">
+                                <img src="images/team/gmail logo.jpg" alt="Gmail logo" width="40px">
+                            </a>
+                            <a href="https://www.linkedin.com/in/kevin-bartholomeusz-07a70b332/" target="_blank"
+                                aria-label="Visit K.D. Bartholomeusz's LinkedIn">
+                                <img src="images/team/linkedin logo.png" alt="LinkedIn logo" width="40px">
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -1,220 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor Student - Imayuru</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pageEditor_validator.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Editor Student - Imayuru</title>
-  <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico" />
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/pageEditor_validator.css" />
-</head>
-
-<body>
-  <!-- Main Navigation Bar -->
-  <header class="main-nav">
-    <div class="nav-top">
-      <div class="logo">
-        <a href="/home.html">
-          <img src="images/global/logo.png" alt="TECHASTRIS" />
-        </a>
-      </div>
-      <div class="hamburger-menu" id="hamburger-menu">☰</div>
-      <nav id="nav-links">
-        <ul>
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="/home.html#gallery">Overview</a></li>
-          <li><a href="/volunteer.html">Volunteer</a></li>
-          <li><a href="/teampage.html">Team</a></li>
-          <li><button id="search-expand">🔍</button></li>
-        </ul>
-      </nav>
-    </div>
-    <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon" /></a>
-    <button id="themeToggle" class="theme-button"></button>
-    <!-- Search Bar (Hidden Initially) -->
-    <div class="search-container" id="search-bar">
-      <input type="text" placeholder="Search" />
-      <button id="search-btn">Search</button>
-      <button id="close-search">✖</button>
-    </div>
-  </header>
-
-  <div id="content">
-    <section class="stud">
-      <h2>Vidath Imayuru - 1</h2>
-    </section>
-    <div class="container">
-      <!-- Main content area -->
-      <main>
-        <!-- Update those first three sections for the pages you were responsible to implement -->
-
-        <section>
-          <h2 id="splash">Splash screen</h2>
-          <h3>Technical Description</h3>
-          <p>
-            Explain the HTML and CSS techniques used to implement this page.
-            Justify the logic and purpose of the key tags and styling choices
-            focusing on functionality and design without copying large code
-            sections. Explain the purpose of key HTML tags and CSS properties.
-            Specify key HTML tags and CSS properties used to create structure
-            and styling.
-          </p>
-
-          <h3>Accessibility</h3>
-          <p>
-            Explain how you used to addressed accessibility in this particular
-            page you implemented.
-          </p>
-
-          <h3>Link to the validation page</h3>
-          <!-- Update the path to link the Page Editor with the splash page -->
-          <p>
-            <a href="validation_ST1.html#splash-validate">Splash screen validation </a>
-          </p>
-          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-          <h3>Link to the page</h3>
-          <p>
-            <a href="splash.html">View splash screen</a>
-          </p>
-        </section>
-
-        <section>
-          <h2 id="volunteer">Volunteer Page</h2>
-          <h3>Technical Description</h3>
-          <p>
-            Explain the HTML and CSS techniques used to implement this page.
-            Justify the logic and purpose of the key tags and styling choices
-            focusing on functionality and design without copying large code
-            sections. Explain the purpose of key HTML tags and CSS properties.
-            Specify key HTML tags and CSS properties used to create structure
-            and styling.
-          </p>
-
-          <h3>Accessibility</h3>
-          <p>
-            Explain how you used to addressed accessibility in this particular
-            page you implemented.
-          </p>
-
-          <h3>Link to the validation page</h3>
-          <!-- Update the path to link the Page Editor with the splash page -->
-          <p>
-            <a href="validation_ST1.html#volunteervalidate">
-              Volunteer page validation
-            </a>
-          </p>
-          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-          <h3>Link to the page</h3>
-          <p>
-            <a href="volunteer.html">View volunteer page</a>
-          </p>
-        </section>
-
-        <section>
-          <h2 id="challenge">Challenges and Lessons Learned</h2>
-          <p>
-            Detail any challenges encountered during the implementation
-            process and explain how they were resolved. Reflect on the lessons
-            learned from overcoming these challenges.
-          </p>
-        </section>
-
-        <section>
-          <h2 id="compliance">Compliance</h2>
-          <p>
-            Discuss how the pages you have created are compliant with Janet
-            regulations governing web page publication. This includes
-            demonstrating your understanding and application of these
-            regulations. Be realistic and truthful.
-          </p>
-        </section>
-
-        <section>
-          <h2 id="ref">References</h2>
-          <ul class="ref">
-            <li>
-              iStock (2025) <i>iStock.</i> Available at:
-              <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11
-              Feb 2025).
-            </li>
-            <li>
-              Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i>
-            </li>
-          </ul>
-        </section>
-
-        <p class="top"><a href="#top">Go top</a></p>
-      </main>
-
-      <!-- Sidebar area -->
-      <aside>
-        <h3>Core pages developed:</h3>
-
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
-        <ul class="top-level-ul">
-          <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-          <li>Student 1</li>
+  <body>
+    <!-- Main Navigation Bar -->
+    <header class="main-nav">
+      <div class="nav-top">
+        <div class="logo">
+          <a href="/home.html">
+            <img src="images/global/logo.png" alt="TECHASTRIS" />
+          </a>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">☰</div>
+        <nav id="nav-links">
           <ul>
-            <li><a href="#splash">Splash screen</a></li>
-            <li><a href="#volunteer">Volunteer page</a></li>
-            <li><a href="#">Create User account</a></li>
-            <li><a href="#">Human Impact contet page</a></li>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/home.html#gallery">Overview</a></li>
+            <li><a href="/volunteer.html">Volunteer</a></li>
+            <li><a href="/teampage.html">Team</a></li>
+            <li><button id="search-expand">🔍</button></li>
           </ul>
-          <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-          <li><a href="#compliance">Compliance</a></li>
-          <li><a href="#ref">References</a></li>
-        </ul>
-      </aside>
+        </nav>
+      </div>
+      <a href="profile.html"
+        ><img
+          src="images/global/profile_icon.ico"
+          alt="profile"
+          class="profile-icon"
+      /></a>
+      <button id="themeToggle" class="theme-button"></button>
+      <!-- Search Bar (Hidden Initially) -->
+      <div class="search-container" id="search-bar">
+        <input type="text" placeholder="Search" />
+        <button id="search-btn">Search</button>
+        <button id="close-search">✖</button>
+      </div>
+    </header>
+
+    <div id="content">
+      <section class="stud">
+        <h2>Vidath Imayuru - 1</h2>
+      </section>
+      <div class="container">
+        <!-- Main content area -->
+        <main>
+          <!-- Update those first three sections for the pages you were responsible to implement -->
+
+          <section>
+            <h2 id="splash">Splash page</h2>
+            <h3>Technical Description</h3>
+            <p>
+              The splash screen is designed to provide a visually appealing page
+              while the main content is loading. The background of the page is
+              set using background-image css property on the body to a image of
+              underwater animals aligning with the theme of the website. The
+              text content is then perfectly centered within the page using
+              flexbox. Furthermore, a GIF is used to indicate that the page is
+              loading to the user. Semi-transparent overlay is used to make the
+              loading icon and text content more visible and readable.
+              <br />
+              <br />
+              Finally, a 5-second delayed redirect to the home (home.html) page
+              has been implemented using the http-equiv attribute on a meta tag.
+            </p>
+
+            <h3>Accessibility</h3>
+            <p>
+              The splash page ensures accessibility by providing high contrast
+              between text and background using a dark overlay, and a simple
+              layout. The loading icon is animated to provide visual feedback to
+              users while the page is loading, and features an alt attribute for
+              screen readers. The text content is centered and easy to read,
+              ensuring a positive user experience. The 5-second delay before
+              redirecting to the home page gives users enough time to view the
+              splash screen content.
+            </p>
+        
+            <h3>Link to the validation page</h3>
+            <!-- Update the path to link the Page Editor with the splash page -->
+            <p>
+              <a href="validation_ST1.html#splashVal"
+                >Splash Page Validation Report</a
+              >
+            </p>
+            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+            <h3>Link to the page</h3>
+            <p><a href="splash.html">Splash Page</a></p>
+          </section>
+
+          <section>
+            <h2 id="table">Volunteer Page</h2>
+            <h3>Technical Description</h3>
+            <p>
+              The membership section inside #content presents a structured
+              membership table with three pricing tiers: Basic, Standard, and
+              Premium. The table organizes features in rows and membership plans
+              in columns, improving readability.
+              <br />
+              The .membership-table class sets the table’s width to 80%, centers
+              it, and applies border-collapse: collapse to merge borders for a
+              cleaner look. It has a dark background (#0F172A), with column
+              headers given distinct background colors (#48cae4, #00b4d8,
+              #0096c7) to visually differentiate plans. The border-radius: 10px
+              and box-shadow enhance the modern aesthetic.
+              <br />
+              Table cells (td) are styled with padding: 20px for spacing and
+              border: 1px solid #3B3F58 to define sections. Plan logos and
+              checkmarks use images, centrally aligned with display: block;
+              margin: 0 auto; for better positioning.
+              <br />
+              Join buttons (.join-btn) are styled with a white background, black
+              text, and rounded corners. The hover effect swaps colors
+              (background-color: black; color: white;) to indicate
+              interactivity.
+              <br />
+              A .zebra-row class is used for alternating row colors
+              (background-color: rgba(255, 255, 255, 0.1);), improving
+              readability. The .highlight class is applied to special messages
+              with a gold-tinted background.
+              <br />
+              Responsive design (@media (max-width: 768px)) adjusts the table
+              width to 95%, reduces padding, and resizes text for better display
+              on smaller screens.
+            </p>
+
+            <h3>Accessibility</h3>
+            <p>
+              The page ensures accessibility through high contrast text colors,
+              clear font choices, and well-structured content. The dark mode
+              feature (.dark-mode) ensures readability by switching text colors
+              dynamically. The table structure allows screen readers to navigate
+              easily, and tooltips (title attributes on images) provide extra
+              context. Interactive elements like buttons have clear hover
+              effects, improving usability. Responsive design ensures the table
+              remains accessible across different devices, avoiding horizontal
+              scrolling on smaller screens.
+            </p>
+
+            <h3>Link to the validation page</h3>
+            <!-- Update the path to link the Page Editor with the splash page -->
+            <p>
+              <a href="validation_ST1.html#tableVal"
+                >Table Page Validation Report</a
+              >
+            </p>
+            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+            <h3>Link to the page</h3>
+            <p><a href="table.html">Table Page</a></p>
+          </section>
+
+          <section>
+            <h2 id="contents_page">Content Page</h2>
+            <h3>Technical Description</h3>
+            <p>
+              The content section is styled using a .container class, which
+              limits the width of the section and centers it on the page. The
+              #content ID shifts the section to the right (margin-left: 200px)
+              and moves it upward (margin-top: -35%). The text in the
+              .hero-section-text is positioned relative to ensure it aligns
+              properly within the section.
+              <br />
+              A side navigation bar (.side-navbar) is placed on the left side
+              using position: sticky, keeping it fixed as the user scrolls. It
+              has a background color, padding, and a box shadow to enhance
+              visibility. Inside, an unordered list (ul) organizes navigation
+              links, which change color on hover for better interactivity.
+              <br />
+              The section headings (.heading-section and .section) use larger
+              font sizes and colors to make them stand out. The paragraph text
+              inside .container p is justified for readability, and images
+              inside .container img are centered and resized to fit well within
+              the section.
+              <br />
+              A responsive design is implemented using media queries (@media
+              screen and (max-width: 786px)). On smaller screens, the content
+              section’s margin is adjusted, the side navbar turns into a hidden
+              menu that slides out when activated, and images resize dynamically
+              to maintain a clean layout.
+            </p>
+
+            <h3>Accessibility</h3>
+            <p>
+              Accessibility is improved by ensuring proper text alignment,
+              readable font sizes, and sufficient color contrast for text
+              elements. The sticky side navigation bar makes it easier for users
+              to access different sections without scrolling too much. The hover
+              effect on navigation links provides a visual indicator of
+              interactivity. Responsive design adjustments ensure the content
+              remains readable and usable on mobile devices. Images are scaled
+              properly, preventing layout shifts that could affect users
+              navigating with screen readers or keyboards.
+            </p>
+
+            <h3>Link to the validation page</h3>
+            <!-- Update the path to link the Page Editor with the splash page -->
+            <p>
+              <a href="validation_ST1.html#contentVal"
+                >Include a link to the validation page</a
+              >, use the marker to jump to the corresponding section of the
+              validation page.
+            </p>
+            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+            <h3>Link to the page</h3>
+            <p>
+              <a href="content_ST1.html">
+                Conservation and sustainability Content Page
+              </a>
+            </p>
+          </section>
+
+          <section>
+            <h2 id="challenge">Challenges and Lessons Learned</h2>
+            <p>
+              During the implementation process, we faced challenges in
+              designing a responsive layout, maintaining consistency across
+              different pages, and ensuring accessibility. Structuring the home
+              page, table page, and content page required careful planning to
+              keep the design clean and user-friendly.
+              <br />
+              Through this process, we learned the importance of maintaining a
+              structured layout, testing for responsiveness early, and
+              considering accessibility from the start. These lessons will help
+              in creating more user-friendly and visually consistent web pages
+              in the future.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="compliance">Compliance</h2>
+            <p>
+              Discuss how the pages you have created are compliant with Janet
+              regulations governing web page publication. This includes
+              demonstrating your understanding and application of these
+              regulations. Be realistic and truthful.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="ref">References</h2>
+            <p>
+              Provide links to resources you used following a consistent format
+              (e.g., APA, MLA, or a simplified style). For example:<br /><br />
+            </p>
+
+            <ul class="ref">
+              <li>
+                iStock (2025) <i>iStock.</i> Available at:
+                <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11
+                Feb 2025).
+              </li>
+              <li>
+                Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i
+                  >John Willey&Sons. Inc. Indianappolis.</i
+                >
+              </li>
+            </ul>
+          </section>
+
+          <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+          <h3>Core pages developed:</h3>
+
+          <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+          <ul class="top-level-ul">
+            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+            <li>Student 1</li>
+            <ul>
+              <li><a href="#splash">Splash page</a></li>
+              <li><a href="#volunteer">Volunteer page</a></li>
+              <li><a href="#content">Content page</a></li>
+            </ul>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+          </ul>
+        </aside>
+      </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <a href="https://sdgs.un.org/" target="_blank">
-      <div class="image-container">
-        <img src="images/global/image.png" alt="Image 1">
-        <img src="images/global/logo2.png" alt="Image 2">
+    <footer class="footer">
+      <a href="https://sdgs.un.org/" target="_blank">
+        <div class="image-container">
+          <img src="images/global/image.png" alt="Image 1" />
+          <img src="images/global/logo2.png" alt="Image 2" />
+        </div>
+      </a>
+      <!-- Accessibility Links in the center -->
+      <div class="links">
+        <a href="/home.html">HOME</a>
+        <a href="/about.html">ABOUT US</a>
+        <a href="/home.html#gallery">OVERVIEW</a>
+        <a href="/volunteer.html">VOLUNTEER</a>
+        <a href="/teampage.html">TEAM</a>
+        <a href="/sitemap.html">SITEMAP</a>
+        <a href="/feedback.html">FEEDBACK</a>
+        <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
       </div>
-    </a>
-    <!-- Accessibility Links in the center -->
-    <div class="links">
-      <a href="/home.html">HOME</a>
-      <a href="/about.html">ABOUT US</a>
-      <a href="/home.html#gallery">OVERVIEW</a>
-      <a href="/volunteer.html">VOLUNTEER</a>
-      <a href="/teampage.html">TEAM</a>
-      <a href="/sitemap.html">SITEMAP</a>
-      <a href="/feedback.html">FEEDBACK</a>
-      <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
-    </div>
 
-    <!-- Line below the links -->
-    <hr>
+      <!-- Line below the links -->
+      <hr />
 
-    <!-- Bottom section with Fan Support, Copyright and Extra Links -->
-    <div class="bottom-text">
-      <div class="membership">
-        <a href="/table.html">Membership</a>
+      <!-- Bottom section with Fan Support, Copyright and Extra Links -->
+      <div class="bottom-text">
+        <div class="membership">
+          <a href="/table.html">Membership</a>
+        </div>
+        <div class="extra-links">
+          <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+          <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+          <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+          <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 TECHASTRIS.</p>
+        </div>
       </div>
-      <div class="extra-links">
-        <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
-        <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
-        <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
-        <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2025 TECHASTRIS.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="/js/nav-search.js"></script>
-  <script src="/js/side-bar.js"></script>
-  <script src="/js/redirect.js" defer></script>
-
-</body>
-
+    <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/redirect.js" defer></script>
+  </body>
 </html>
