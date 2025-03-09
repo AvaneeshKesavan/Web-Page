@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor Student - Imayuru</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pageEditor_validator.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Editor Student - Imayuru</title>
-  <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico" />
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/pageEditor_validator.css" />
-</head>
-
-<body>
-  <!-- Main Navigation Bar -->
-  <header class="main-nav">
-    <div class="nav-top">
-      <div class="logo">
-        <a href="home.html">
-          <img src="images/global/logo.png" alt="TECHASTRIS" />
-        </a>
+  <body>
+    <!-- Main Navigation Bar -->
+    <header class="main-nav">
+      <div class="nav-top">
+        <div class="logo">
+          <a href="home.html">
+            <img src="images/global/logo.png" alt="TECHASTRIS" />
+          </a>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">☰</div>
+        <nav id="nav-links">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="home.html#gallery">Overview</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="teampage.html">Team</a></li>
+            <li><button id="search-expand">🔍</button></li>
+          </ul>
+        </nav>
       </div>
-      <div class="hamburger-menu" id="hamburger-menu">☰</div>
-      <nav id="nav-links">
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="home.html#gallery">Overview</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="teampage.html">Team</a></li>
-          <li><button id="search-expand">🔍</button></li>
-        </ul>
-      </nav>
-    </div>
-    <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon" /></a>
-    <button id="themeToggle" class="theme-button"></button>
-    <!-- Search Bar (Hidden Initially) -->
-    <div class="search-container" id="search-bar">
-      <input type="text" placeholder="Search" />
-      <button id="search-btn">Search</button>
-      <button id="close-search">✖</button>
-    </div>
-  </header>
+      <a href="profile.html"
+        ><img
+          src="images/global/profile_icon.ico"
+          alt="profile"
+          class="profile-icon"
+      /></a>
+      <button id="themeToggle" class="theme-button"></button>
+      <!-- Search Bar (Hidden Initially) -->
+      <div class="search-container" id="search-bar">
+        <input type="text" placeholder="Search" />
+        <button id="search-btn">Search</button>
+        <button id="close-search">✖</button>
+      </div>
+    </header>
 
-  <div id="content">
-    <section class="stud">
-      <h2>Vidath Imayuru - 1</h2>
-    </section>
-    <div class="container">
-      <!-- Main content area -->
-      <main>
-        <!-- Update those first three sections for the pages you were responsible to implement -->
+    <div id="content">
+      <section class="stud">
+        <h2>Vidath Imayuru - 1</h2>
+      </section>
+      <div class="container">
+        <!-- Main content area -->
+        <main>
+          <!-- Update those first three sections for the pages you were responsible to implement -->
 
           <section>
             <h2 id="splash">Splash page</h2>
@@ -58,10 +62,10 @@
               while the main content is loading. The background of the page is
               set using background-image css property on the body to a image of
               underwater animals aligning with the style & theme of the website.
-              The text content is then perfectly centered within the page using
-              flexbox. Furthermore, a GIF is used to indicate that the page is
-              loading to the user. Semi-transparent overlay is used to make the
-              loading icon and text content more visible and readable.
+              The text content is then centered within the page using flexbox.
+              Furthermore, a GIF is used to indicate that the page is loading to
+              the user. Semi-transparent overlay is used to make the loading
+              icon and text content more visible and readable.
               <br />
               <br />
               Finally, a 5-second delayed redirect to the home (home.html) page
@@ -89,16 +93,9 @@
             </p>
             <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-          <h3>Link to the validation page</h3>
-          <!-- Update the path to link the Page Editor with the splash page -->
-          <p>
-            <a href="validation_ST1.html#splashVal">Splash Page Validation Report</a>
-          </p>
-          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-          <h3>Link to the page</h3>
-          <p><a href="splash.html">Splash Page</a></p>
-        </section>
+            <h3>Link to the page</h3>
+            <p><a href="splash.html">Splash Page</a></p>
+          </section>
 
           <section>
             <h2 id="volunteer">Volunteer Page</h2>
@@ -117,7 +114,7 @@
               themselves are styled using a box-shadow, border-radius, and
               padding to make them visually appealing. The card feature a
               Thumbnail image at the top, followed by the title & description.
-              THe footer uses flexbox and justify-content to align the rating
+              The footer uses flexbox and justify-content to align the rating
               and country to the left and apply and View project buttons to the
               right
               <br />
@@ -133,199 +130,257 @@
               clean layout. The program filter is easy to use and navigate, and
               the pagination bar is clearly labeled. Volunteer cards are
               visually appealing and easy to read, with alt text for images and
-              descriptive text for links. Furthermore, the card grid using media queries. The registration form and feedback
-              form are accessible to users with screen readers and keyboards,
-              with proper labels and input fields. The page is responsive and
-              adapts well to different screen sizes, ensuring a positive user
-              experience for all users.
+              descriptive text for links. Furthermore, the card grid adapts it
+              number of columns using css media queries for different sizes
+              screens. The registration form and feedback form are accessible to
+              users with screen readers and keyboards, with proper labels and
+              input fields. The page is responsive and adapts well to different
+              screen sizes, ensuring a positive user experience for all users.
             </p>
 
-          <h3>Link to the validation page</h3>
-          <!-- Update the path to link the Page Editor with the splash page -->
-          <p>
-            <a href="validation_ST1.html#volunteerVal">Volunteer Page Validation Report</a>
-          </p>
-          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            <h3>Link to the validation page</h3>
+            <!-- Update the path to link the Page Editor with the splash page -->
+            <p>
+              <a href="validation_ST1.html#volunteerVal"
+                >Volunteer Page Validation Report</a
+              >
+            </p>
+            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-          <h3>Link to the page</h3>
-          <p><a href="volunteer.html">Volunteer Page</a></p>
-        </section>
+            <h3>Link to the page</h3>
+            <p><a href="volunteer.html">Volunteer Page</a></p>
+          </section>
 
-        <section>
-          <h2 id="contents_page">Content Page</h2>
-          <h3>Technical Description</h3>
-          <p>
-            The content section is styled using a .container class, which
-            limits the width of the section and centers it on the page. The
-            #content ID shifts the section to the right (margin-left: 200px)
-            and moves it upward (margin-top: -35%). The text in the
-            .hero-section-text is positioned relative to ensure it aligns
-            properly within the section.
-            <br />
-            A side navigation bar (.side-navbar) is placed on the left side
-            using position: sticky, keeping it fixed as the user scrolls. It
-            has a background color, padding, and a box shadow to enhance
-            visibility. Inside, an unordered list (ul) organizes navigation
-            links, which change color on hover for better interactivity.
-            <br />
-            The section headings (.heading-section and .section) use larger
-            font sizes and colors to make them stand out. The paragraph text
-            inside .container p is justified for readability, and images
-            inside .container img are centered and resized to fit well within
-            the section.
-            <br />
-            A responsive design is implemented using media queries (@media
-            screen and (max-width: 786px)). On smaller screens, the content
-            section’s margin is adjusted, the side navbar turns into a hidden
-            menu that slides out when activated, and images resize dynamically
-            to maintain a clean layout.
-          </p>
+          <section>
+            <h2 id="contents_page">
+              Conservation and sustainability content Page
+            </h2>
+            <h3>Technical Description</h3>
+            <p>
+              The content page is designed to provide information about
+              conservation and sustainability efforts that are currently
+              ongoing. The page contains a Header Thumbnail image added using
+              the background-image CSS property. The content is then centered
+              within the page using flexbox. Furthermore, the page contains a
+              sticky side navigation bar that allows users to navigate between
+              different sections of the page. The hover effect on navigation
+              links provides a visual indicator of interactivity.
+            </p>
 
-          <h3>Accessibility</h3>
-          <p>
-            Accessibility is improved by ensuring proper text alignment,
-            readable font sizes, and sufficient color contrast for text
-            elements. The sticky side navigation bar makes it easier for users
-            to access different sections without scrolling too much. The hover
-            effect on navigation links provides a visual indicator of
-            interactivity. Responsive design adjustments ensure the content
-            remains readable and usable on mobile devices. Images are scaled
-            properly, preventing layout shifts that could affect users
-            navigating with screen readers or keyboards.
-          </p>
+            <h3>Accessibility</h3>
+            <p>
+              Proper accessibility features have been implemented on the content
+              page to ensure a positive user experience. The page provides high
+              contrast between text and background, readable font sizes, and a
+              clean layout. The sticky side navigation bar is easy to use and
+              navigate, with clear labels for each section. The hover effect on
+              navigation links provides a visual indicator of interactivity,
+              making it easier for users to understand the page structure. The
+              page is responsive and adapts well to different screen sizes,
+              ensuring a positive user experience for all users.
+            </p>
 
-          <h3>Link to the validation page</h3>
-          <!-- Update the path to link the Page Editor with the splash page -->
-          <p>
-            <a href="validation_ST1.html#contentVal">Include a link to the validation page</a>, use the marker to jump
-            to the corresponding section of the
-            validation page.
-          </p>
-          <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            <h3>Link to the validation page</h3>
+            <!-- Update the path to link the Page Editor with the splash page -->
+            <p>
+              <a href="validation_ST1.html#contentVal">
+                Content Page Validation Report
+              </a>
+            </p>
+            <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-          <h3>Link to the page</h3>
-          <p>
-            <a href="content_ST1.html">
-              Conservation and sustainability Content Page
-            </a>
-          </p>
-        </section>
+            <h3>Link to the page</h3>
+            <p>
+              <a href="content_ST1.html">
+                Conservation and sustainability Content Page
+              </a>
+            </p>
+          </section>
 
-        <section>
-          <h2 id="challenge">Challenges and Lessons Learned</h2>
-          <p>
-            During the implementation process, we faced challenges in
-            designing a responsive layout, maintaining consistency across
-            different pages, and ensuring accessibility. Structuring the home
-            page, table page, and content page required careful planning to
-            keep the design clean and user-friendly.
-            <br />
-            Through this process, we learned the importance of maintaining a
-            structured layout, testing for responsiveness early, and
-            considering accessibility from the start. These lessons will help
-            in creating more user-friendly and visually consistent web pages
-            in the future.
-          </p>
-        </section>
+          <section>
+            <h2 id="challenge">Challenges and Lessons Learned</h2>
+            <p>
+              During the development of my assigned pages, i faced several
+              challenges. The most significant challenge was ensuring that the
+              pages were responsive on all types of devices and screen sizes.
+              This required testing and debugging each of my assigned page on
+              different screen sizes using the browser dev tools. Furthermore,
+              ensuring that the pages were accessible to all users was another
+              challenge. I had to make sure that the pages had proper alt text
+              for images, readable font sizes, and high contrast between text
+              and background. This required me to research accessibility best
+              practices and implement them throughout the pages.
+            </p>
+          </section>
 
-        <section>
-          <h2 id="compliance">Compliance</h2>
-          <p>
-            Discuss how the pages you have created are compliant with Janet
-            regulations governing web page publication. This includes
-            demonstrating your understanding and application of these
-            regulations. Be realistic and truthful.
-          </p>
-        </section>
+          <section>
+            <h2 id="compliance">Compliance</h2>
+            <p>
+              During the development of my assigned pages, I ensured that the
+              pages were compliant with Janet regulations governing web page
+              publication. I made sure that the pages were accessible to all
+              users by following ARIA standards and providing proper alt text
+              for images. I also made sure that the pages had high contrast
+              between text and background, readable font sizes, and a clean
+              layout. All copyrighted material was properly attributed within
+              the page itself or in the <a href="#ref">reference section</a>
+            </p>
+          </section>
 
-        <section>
-          <h2 id="ref">References</h2>
-          <p>
-            Provide links to resources you used following a consistent format
-            (e.g., APA, MLA, or a simplified style). For example:<br /><br />
-          </p>
+          <section>
+            <h2 id="ref">References</h2>
+            <p>
+              The following references & copyrighted material were used during
+              the development of my assigned pages:
+            </p>
 
-          <ul class="ref">
-            <li>
-              iStock (2025) <i>iStock.</i> Available at:
-              <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11
-              Feb 2025).
-            </li>
-            <li>
-              Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i>
-            </li>
+            <ul class="ref">
+              <li id="ref-1">
+                ThatDania. (2019, May 20). Untitled image. Episode 32: How CSS
+                works and what we aim for with CSS. Medium.
+                <a
+                  href="https://medium.com/hackernoon/episode-32-how-css-works-and-what-we-aim-for-with-css-ecf2304904a9"
+                  >https://medium.com/hackernoon/episode-32-how-css-works-and-what-we-aim-for-with-css-ecf2304904a9</a
+                >
+              </li>
+              <li>
+                Jensen, N. B. (2021, September 21). A group of garbage floating
+                in the ocean. Unsplash.
+                <a
+                  href="https://unsplash.com/photos/a-group-of-garbage-floating-in-the-ocean-FxnqdmKBJps"
+                >
+                  https://unsplash.com/photos/a-group-of-garbage-floating-in-the-ocean-FxnqdmKBJps
+                </a>
+              </li>
+              <li>
+                Wimmerlin, J. (2018, January 24). School of fish under body of
+                water. Unsplash.
+                <a
+                  href="https://unsplash.com/photos/school-of-fish-under-body-of-water-ePvBOHsAA54"
+                >
+                  https://unsplash.com/photos/school-of-fish-under-body-of-water-ePvBOHsAA54
+                </a>
+              </li>
+              <li>
+                Taylor, C. (2020, June 12). White and black sea turtle under
+                water. Unsplash.
+                <a
+                  href="https://unsplash.com/photos/white-and-black-sea-turtle-under-water-TLxTFr9AoO0"
+                >
+                  https://unsplash.com/photos/white-and-black-sea-turtle-under-water-TLxTFr9AoO0
+                </a>
+              </li>
+              <li>
+                Yoshii, H. (2020, March 3). school of fish in body of water.
+                Unsplash.
+                <a
+                  href="https://unsplash.com/photos/school-of-fish-in-body-of-water-9y7y26C-l4Y"
+                >
+                  https://unsplash.com/photos/school-of-fish-in-body-of-water-9y7y26C-l4Y
+                </a>
+              </li>
+              <li>
+                Jnr, T. (2017, October 18). landscape photography of sailing
+                boats during golden hour. Unsplash.
+                <a
+                  href="https://unsplash.com/photos/landscape-photography-of-sailing-boats-during-golden-hour-oOFN-dSZRaE"
+                >
+                  https://unsplash.com/photos/landscape-photography-of-sailing-boats-during-golden-hour-oOFN-dSZRaE
+                </a>
+              </li>
+              <li id="ref-martin-2023">
+                Martin. (2023, October 20). Oceans - United Nations Sustainable
+                Development. United Nations Sustainable Development.
+                <a href="https://www.un.org/sustainabledevelopment/oceans/">
+                  https://www.un.org/sustainabledevelopment/oceans/
+                </a>
+              </li>
+              <li id="ref-igini-2024">
+                Igini, M. (2024, March 4). 7 solutions to overfishing we need
+                right now. Earth.Org.
+                <a href="https://earth.org/solutions-to-overfishing/">
+                  https://earth.org/solutions-to-overfishing/
+                </a>
+              </li>
+              <li id="ref-encounter-edu-2019">
+                Encounter edu. (2019, November 20). Who protects the Great Barrier Reef
+                and how? Encounter Edu.
+                <a
+                  href="https://encounteredu.com/cpd/subject-updates/learn-more-how-is-the-great-barrier-reef-being-protected"
+                >
+                  https://encounteredu.com/cpd/subject-updates/learn-more-how-is-the-great-barrier-reef-being-protected
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+          <h3>Core pages developed:</h3>
+
+          <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+          <ul class="top-level-ul">
+            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+            <li>Student 1</li>
+            <ul>
+              <li><a href="#splash">Splash page</a></li>
+              <li><a href="#volunteer">Volunteer page</a></li>
+              <li><a href="#contents_page">Content page</a></li>
+            </ul>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
           </ul>
-        </section>
-
-        <p class="top"><a href="#top">Go top</a></p>
-      </main>
-
-      <!-- Sidebar area -->
-      <aside>
-        <h3>Core pages developed:</h3>
-
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
-        <ul class="top-level-ul">
-          <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-          <li>Student 1</li>
-          <ul>
-            <li><a href="#splash">Splash page</a></li>
-            <li><a href="#volunteer">Volunteer page</a></li>
-            <li><a href="#content">Content page</a></li>
-          </ul>
-          <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-          <li><a href="#compliance">Compliance</a></li>
-          <li><a href="#ref">References</a></li>
-        </ul>
-      </aside>
-    </div>
-  </div>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <a href="https://sdgs.un.org/" target="_blank">
-      <div class="image-container">
-        <img src="images/global/image.png" alt="Image 1">
-        <img src="images/global/logo2.png" alt="Image 2">
-      </div>
-    </a>
-    <!-- Accessibility Links in the center -->
-    <div class="links">
-      <a href="home.html">HOME</a>
-      <a href="about.html">ABOUT US</a>
-      <a href="home.html#gallery">OVERVIEW</a>
-      <a href="volunteer.html">VOLUNTEER</a>
-      <a href="teampage.html">TEAM</a>
-      <a href="sitemap.html">SITEMAP</a>
-      <a href="feedback.html">FEEDBACK</a>
-      <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
-    </div>
-
-    <!-- Line below the links -->
-    <hr>
-
-    <!-- Bottom sections -->
-    <div class="bottom-text">
-      <div class="membership">
-        <a href="table.html">Membership</a>
-      </div>
-      <div class="extra-links">
-        <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
-        <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
-        <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
-        <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2025 TECHASTRIS.</p>
+        </aside>
       </div>
     </div>
-  </footer>
 
-  <!-- JavaScript Files -->
-  <script src="/js/nav-search.js"></script>
-  <script src="/js/side-bar.js"></script>
-  <script src="/js/redirect.js" defer></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <a href="https://sdgs.un.org/" target="_blank">
+        <div class="image-container">
+          <img src="images/global/image.png" alt="Image 1" />
+          <img src="images/global/logo2.png" alt="Image 2" />
+        </div>
+      </a>
+      <!-- Accessibility Links in the center -->
+      <div class="links">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="home.html#gallery">OVERVIEW</a>
+        <a href="volunteer.html">VOLUNTEER</a>
+        <a href="teampage.html">TEAM</a>
+        <a href="sitemap.html">SITEMAP</a>
+        <a href="feedback.html">FEEDBACK</a>
+        <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
+      </div>
 
-</body>
+      <!-- Line below the links -->
+      <hr />
 
+      <!-- Bottom sections -->
+      <div class="bottom-text">
+        <div class="membership">
+          <a href="table.html">Membership</a>
+        </div>
+        <div class="extra-links">
+          <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+          <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+          <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+          <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 TECHASTRIS.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/redirect.js" defer></script>
+  </body>
 </html>
