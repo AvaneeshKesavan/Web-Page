@@ -189,10 +189,6 @@ html {
     display: flex;
 }
 
-#search-bar {
-    display: none;
-}
-
 #close-search {
     margin-left: 10px;
 }
