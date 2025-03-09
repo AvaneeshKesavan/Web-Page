@@ -142,8 +142,7 @@
       ;
     }
 
-    #Right_1 th,
-    #Right_1 td {
+    #Right_1 th, #Right_1 td {
       border: 1px solid #616161;
       border-radius: 5px;
       padding: 10px;
@@ -169,6 +168,28 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+
+    #Right_3 form {
+      padding-left : 30px;
+      padding-top : 10px;
+    }
+
+    #Right_3 input, #Right_3 textarea {
+      padding-left : 5px;
+      padding-right : 5px;
+    }
+
+    #Right_3 button {
+      background-color : #19A7CE;
+      border-radius : 5px;
+      border-color : #19A7CE;
+      color : White;
+    }
+
+    #Right_3 button:hover {
+      background-color : #146C94;
+      border-color : #146C94;
     }
 
     .Goal_Image {
@@ -499,7 +520,7 @@
           </table>
         </div>
 
-
+        <!--Right Section - Section 2-->
         <div class="RightSection" id="Right_2">
           <div>
             <img src="images/profile/un_goals.png" alt="un goal pic" height=60>
@@ -517,6 +538,27 @@
             <a href="https://sdgs.un.org/goals/goal13"><img src="images/profile/un_goals_climate_action.png"
                 alt="UN goal climate action pic" height="110" class="Goal_Image"></a>
           </div>
+        </div>
+
+        <!--Right Section - Section 3-->
+        <div class = "RightSection" id="Right_3">
+          <div>
+            <img src="images/profile/chat.png" alt="compass icon" height=60>
+            <h4>Contact me</h4>
+          </div>
+
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br><br>
+
+            <label for="message">Message or Inquiry:</label>
+            <textarea id="message" name="message" rows="1" required></textarea> <br><br>
+
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
 
