@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Pangajan</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+</head>
+
+
+<body>
+     <!-- Main Navigation Bar -->
+     <header class="main-nav">
+        <div class="nav-top">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/global/logo.png" alt="TECHASTRIS">
+                </a>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">☰</div>
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="home.html#gallery">Overview</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="teampage.html">Team</a></li>
+                    <li><button id="search-expand">🔍</button></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
+        <button id="themeToggle" class="theme-button"></button>
+        <!-- Search Bar (Hidden Initially) -->
+        <div class="search-container" id="search-bar">
+            <input type="text" placeholder="Search">
+            <button id="search-btn">Search</button>
+            <button id="close-search">✖</button>
+        </div>
+    </header>
+
+
+    <div id="content">
+        <section class="stud">
+            <h2>Avaneesh Kesavan - 2</h2>
+        </section>
+        <div class="container">
+            <!-- Main content area -->
+            <main>
+
+                <!-- Update those first three sections for the pages you were responsible to implement -->
+
+                <section>
+                    <h2 id="feedback_page">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>The feedback page features a responsive design with a fixed navigation bar containing a logo,
+                         hamburger menu, navigation links, search functionality, profile icon, and theme toggle. 
+                        The main content presents a structured feedback form with required fields (name, email, message) 
+                        and optional elements including a five-star rating system, category dropdown, and additional questions 
+                        about updates and requests. Form elements maintain consistent styling with clear visual hierarchy and 
+                        intuitive input methods. The footer includes external UN SDG links with images, comprehensive site navigation,
+                        membership information, team member links with JavaScript handlers, and copyright details.
+                        The page incorporates three JavaScript files managing navigation, sidebar behavior, and redirects, 
+                        while using both global and page-specific CSS for consistent yet customized styling 
+                        throughout the interface.</p>
+
+                    <h3>Accessibility</h3>
+                    <p>The feedback page implements several accessibility features including required field indicators,
+                        descriptive form labels, and logically structured content for screen reader compatibility. 
+                        The rating system uses both star symbols and text descriptions, benefiting users with different 
+                        visual capabilities. The form maintains adequate spacing between interactive elements to prevent
+                        mis-clicks for those with motor limitations. The theme toggle enhances accessibility by providing 
+                        contrast options, while the responsive design ensures usability across devices. However, 
+                        improvements could include adding ARIA attributes for more comprehensive screen reader support,
+                        enhancing keyboard navigation with clearer focus indicators, and ensuring all interactive 
+                        elements have appropriate tab order. The hamburger menu should include an aria-label, 
+                        and the star rating system would benefit from additional invisible text for better screen reader
+                        context. The search functionality could also include more descriptive labels for 
+                        assistive technology users.</p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation_ST3.html#feedback_page">Feedback Page Validation Report</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                    <p><a href="feedback.html">Feedback Page</a></p>
+                </section>
+
+                <section>
+                    <h2 id="team_page">Team Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>The team page implements a responsive design with a fixed navigation bar featuring the TECHASTRIS logo,
+                        collapsible hamburger menu for mobile devices, main navigation links with "Team" highlighted as the 
+                        active page, an expandable search functionality, profile icon access, and theme toggle button.
+                        The content area displays a clean team grid layout with individual member cards that expand
+                        when focused. Each team member card follows a consistent design pattern showing a thumbnail image,
+                        member name, role designation (Student 01-04), institutional affiliation as Informatics Institute of Technology
+                        undergraduates, and three social media connection points (GitHub, Gmail, LinkedIn) with 
+                        appropriate aria labels for screen reader support. The cards include tabindex attributes 
+                        to ensure keyboard navigability. The page maintains the site's standardized footer structure with external
+                        UN SDG links accompanied by organizational images, uppercase site navigation links,
+                        a horizontal divider, membership access, team member quick links with JavaScript redirect
+                        functionality, and copyright information. The implementation leverages both global
+                        and page-specific CSS files for styling consistency while accommodating unique team page elements,
+                        and incorporates three JavaScript files managing navigation behavior, sidebar functionality,
+                        and member-specific redirects for a seamless user experience.</p>
+
+                    <h3>Accessibility</h3>
+                    <p>The team page incorporates several accessibility features including proper HTML structure with language attributes, 
+                        tabindex attributes on team member cards for keyboard navigation, descriptive aria-labels on social media links,
+                        alt text for images, and visual indication of the active navigation item. However, several improvements would 
+                        enhance accessibility: the hamburger menu lacks an aria-label for screen reader context, social media icons
+                        with fixed 40px widths may create touch targets too small for users with motor impairments, onclick JavaScript 
+                        handlers in the footer should be replaced with proper link functionality for better assistive technology support, 
+                        color contrast should be verified for WCAG compliance, focus indicators could be more visible during keyboard
+                        navigation, and ARIA landmarks would improve screen reader navigation through the page structure. Additionally, 
+                        some image alt texts could be more descriptive, and the cards' interaction model should ensure all functionality
+                        is available to keyboard-only users, particularly when viewing team member details that might be designed
+                        primarily for mouse hover interactions.</p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation_ST3.html#team_page">Team Page Validation Report</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                    <h3>Link to the page</h3>
+                    <p><a href="teampage.html">Team Page</a></p>
+                </section>
+
+                <section>
+                    <h2 id="contents">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>The Human Impact content page incorporates an advanced HTML5 structure with comprehensive
+                        metadata and multiple linked stylesheets. The header section includes a custom inline 
+                        style block defining a fixed-attachment hero section with a background image specific to the 
+                        human impact theme. The navigation system maintains site-wide consistency with a logo, hamburger
+                        menu for mobile devices, primary navigation links, search functionality, profile access, and theme toggle. 
+                        The hero section features a full-width background image with fixed attachment for parallax 
+                        scrolling effect, containing a prominently centered heading that establishes the page topic.
+                        <br>
+                        The page implements a sophisticated side navigation system with a toggle button that allows users to
+                        show or hide the quick links menu. This side navbar provides anchor links to each major section of
+                        the content, enabling efficient page navigation. The toggle functionality is controlled via JavaScript,
+                        allowing the sidebar to adapt to different screen sizes and viewing preferences. The main content 
+                        is organized into well-structured sections with semantic heading tags (h2) serving as anchors for 
+                        the sidebar navigation, creating a cohesive information architecture throughout the page.
+                        <br>
+                        The content is presented in a scholarly format with substantial text blocks explaining different aspects
+                        of human impact on marine environments. Each major section (Introduction, Pollution, Overexploitation,
+                        and Climate Change) follows a consistent pattern with a heading, multiple paragraphs of detailed information,
+                        and a relevant supporting image. The text content is comprehensive and educational, with specific statistics 
+                        and examples supporting the environmental narrative. Images are strategically placed at the end of each 
+                        section to visually reinforce the written content, with appropriate alt text for accessibility.
+                        <br>
+                        The page maintains the site's standard footer structure with external UN SDG links,
+                        site navigation options, membership access, team member links with JavaScript redirect handlers, 
+                        and copyright information. The implementation includes three JavaScript files handling navigation
+                        behavior, sidebar functionality, and redirects. The overall architecture balances information density
+                        with readability, using whitespace, paragraph breaks, and visual elements to create an engaging educational 
+                        experience. The page design demonstrates attention to both aesthetic presentation and information architecture,
+                        leveraging fixed-position elements, responsive design techniques, and interactive components to enhance user
+                        engagement with serious environmental content.
+                    </p>
+
+                    <h3>Accessibility</h3>
+                    <p>Accessibility is improved by ensuring proper text alignment, readable font sizes, and sufficient
+                        color contrast for text elements. The sticky side navigation bar makes it easier for users to
+                        access different sections without scrolling too much. The hover effect on navigation links
+                        provides a visual indicator of interactivity. Responsive design adjustments ensure the content
+                        remains readable and usable on mobile devices. Images are scaled properly, preventing layout
+                        shifts that could affect users navigating with screen readers or keyboards.</p>
+
+                    <h3>Link to the validation page</h3>
+                    <!-- Update the path to link the Page Editor with the splash page -->
+                    <p><a href="validation_ST3.html#contentval3">Include a link to the validation page</a>, use the
+                        marker to
+                        jump to the corresponding section of the validation page.</p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                    <h3>Link to the page</h3>
+                    <p><a href="content_ST3.html">Content page</a></p>
+                </section>
+
+                <section>
+                    <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>The team page and feedback form implementation faced several technical hurdles. Navigation consistency 
+                        across pages required careful CSS architecture to handle active states and responsive behaviors.
+                        The feedback form needed intuitive validation while maintaining user-friendly error handling.
+                        Responsive design demanded precise breakpoints to accommodate varying screen sizes, especially 
+                        for team member cards and form elements. Interactive components like the expandable search bar 
+                        and theme toggle required efficient JavaScript event handling with smooth animations.
+                        <br>
+                        Accessibility implementation presented significant challenges. Creating keyboard-navigable team cards while
+                        preserving visual design required careful focus state management. Adding appropriate ARIA labels throughout 
+                        both pages demanded understanding of screen reader behavior. The star rating system needed to be both 
+                        visually appealing and accessible. Form validation errors had to be communicated through multiple channels
+                        beyond visual cues. The theme toggle feature required maintaining sufficient contrast in both light and dark
+                        modes to ensure readability for all users.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 id="compliance"> Compliance</h2>
+                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page
+                        publication. This includes demonstrating your understanding and application of these
+                        regulations. Be
+                        realistic and truthful.</p>
+
+
+                </section>
+
+                <section>
+                    <h2 id="ref">References</h2>
+                    <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a
+                        simplified
+                        style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a>
+                            (Last
+                            accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc.
+                                Indianappolis.</i></li>
+                    </ul>
+                </section>
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+            
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#">Feedback page</a> </li>
+                        <li><a href="#">Team page</a></li>
+                        <li><a href="#">Content page</a></li>
+                    </ul>
+
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <a href="https://sdgs.un.org/" target="_blank">
+            <div class="image-container">
+                <img src="images/global/image.png" alt="Image 1">
+                <img src="images/global/logo2.png" alt="Image 2">
+            </div>
+        </a>
+        <!-- Accessibility Links in the center -->
+        <div class="links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="home.html#gallery">OVERVIEW</a>
+            <a href="volunteer.html">VOLUNTEER</a>
+            <a href="teampage.html">TEAM</a>
+            <a href="sitemap.html">SITEMAP</a>
+            <a href="feedback.html">FEEDBACK</a>
+            <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
+        </div>
+
+        <!-- Line below the links -->
+        <hr>
+
+        <!-- Bottom sections -->
+        <div class="bottom-text">
+            <div class="membership">
+                <a href="table.html">Membership</a>
+            </div>
+            <div class="extra-links">
+                <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+                <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+                <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+                <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TECHASTRIS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/redirect.js" defer></script>
+
+</body>
+</html>
