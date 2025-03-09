@@ -69,14 +69,7 @@ input,textarea, select {
     padding: 10px;
     padding-bottom: 20px;
 }
-/** Dark Mode for both card & violunteer-register-card */
-.dark-mode .card, 
-.dark-mode .volunteer-register-card,
-.dark-mode .register-card,
-.dark-mode .end-card
-{
-    background: #333;
-}
+
 
 .data-card {
     display: flex;
@@ -197,4 +190,17 @@ input,textarea, select {
 
 .review p {
     margin: 5px 0;
+}
+
+/** Dark Mode for cards must be in a grayish color */
+.dark-mode .card, 
+.dark-mode .volunteer-register-card,
+.dark-mode .register-card,
+.dark-mode .end-card
+{
+    background: #333;
+}
+
+.dark-mode .review {
+    background: #444;
 }
