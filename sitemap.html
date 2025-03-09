@@ -1,377 +1,400 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Sitemap</title>
-            <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
-            <link rel="stylesheet" href="css/global.css">
+<html lang="en">
 
-            <style>
-                .dark-mode {
-                    svg {
-                        background-color : Black;
-                        stroke-width : 0.5;
-                    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
+    <link rel="icon" type="image/x-icon" href="/images/global/favicon.ico">
+    <link rel="stylesheet" href="css/global.css">
 
-                    svg line {
-                        stroke : #1188C9;
-                    }
+    <style>
+        .dark-mode {
+            svg {
+                background-color: Black;
+                stroke-width: 0.5;
+            }
 
-                    svg circle {
-                        fill : #139BE6;
-                    }
+            svg line {
+                stroke: #1188C9;
+            }
 
-                }
+            svg circle {
+                fill: #139BE6;
+            }
 
-                svg {
-                    background-color : White;
-                    stroke-width : 0.2;
-                }
+        }
 
-                svg line {
-                    stroke : #0A4E73;
-                }
+        svg {
+            background-color: White;
+            stroke-width: 0.2;
+        }
 
-                svg circle {
-                    fill : #1188C9;
-                }
+        svg line {
+            stroke: #0A4E73;
+        }
 
-                svg .Hover_Circles {
-                    transition: fill 0.5s ease;
-                }
+        svg circle {
+            fill: #1188C9;
+        }
 
-                svg .Hover_Circles:hover {
-                    fill : #0A4C70;
-                }
+        svg .Hover_Circles {
+            transition: fill 0.5s ease;
+        }
 
-                svg text {
-                    fill : White;
-                    pointer-events : none;
-                }
+        svg .Hover_Circles:hover {
+            fill: #0A4C70;
+        }
 
-                @media screen and (max-width : 1365px) {
-                    svg {
-                        padding-top : 100px;
-                    }
-                }
-            </style>
-        </head>
+        svg text {
+            fill: White;
+            pointer-events: none;
+        }
 
-        <body>
-            <header class="main-nav">
-            <div class="nav-top">
-                <div class="logo">
-                    <a href="home.html">
-                        <img src="images/global/logo.png" alt="TECHASTRIS">
-                    </a>
-                </div>
-                <div class="hamburger-menu" id="hamburger-menu">☰</div>
-                <nav id="nav-links">
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="home.html#gallery">Overview</a></li>
-                        <li><a href="volunteer.html">Volunteer</a></li>
-                        <li><a href="teampage.html">Team</a></li>
-                        <li><button id="search-expand">🔍</button></li>
-                    </ul>
-                </nav>
-            </div>
-            <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
-            <button id="themeToggle" class="theme-button"></button>
-            <!-- Search Bar (Hidden Initially) -->
-            <div class="search-container" id="search-bar">
-                <input type="text" placeholder="Search">
-                <button id="search-btn">Search</button>
-                <button id="close-search">✖</button>
-            </div>
-        </header>
-            <svg width="100%" height="100%" viewBox="0 -40 215 245">
-                <!--First Level -->
-                <a href="splash.html">
-                    <circle cx="100" cy="-12" r="6" class="Hover_Circles"/>
-                    <text x="100" y="-12.5" font-size="2.5" text-anchor="middle" fill="black">Splash<tspan x="100" dy="3">Screen</tspan></text>
-                </a>
-                <line x1="100" y1="-6" x2="100" y2="4" />
+        @media screen and (max-width : 1365px) {
+            svg {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-nav">
+        <div class="nav-top">
+            <div class="logo">
                 <a href="home.html">
-                    <circle cx="100" cy="10" r="6" class="Hover_Circles"/>
-                    <text x="100" y="11" font-size="2.5" text-anchor="middle" fill="black">Home</text>
+                    <img src="images/global/logo.png" alt="TECHASTRIS">
                 </a>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">☰</div>
+            <nav id="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="home.html#gallery">Overview</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="teampage.html">Team</a></li>
+                    <li><button id="search-expand">🔍</button></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="profile.html"><img src="images/global/profile_icon.ico" alt="profile" class="profile-icon"></a>
+        <button id="themeToggle" class="theme-button"></button>
+        <!-- Search Bar (Hidden Initially) -->
+        <div class="search-container" id="search-bar">
+            <input type="text" placeholder="Search">
+            <button id="search-btn">Search</button>
+            <button id="close-search">✖</button>
+        </div>
+    </header>
+    <svg width="100%" height="100%" viewBox="0 -40 215 245">
+        <!--First Level -->
+        <a href="splash.html">
+            <circle cx="100" cy="-12" r="6" class="Hover_Circles" />
+            <text x="100" y="-12.5" font-size="2.5" text-anchor="middle" fill="black">Splash<tspan x="100" dy="3">Screen
+                </tspan></text>
+        </a>
+        <line x1="100" y1="-6" x2="100" y2="4" />
+        <a href="home.html">
+            <circle cx="100" cy="10" r="6" class="Hover_Circles" />
+            <text x="100" y="11" font-size="2.5" text-anchor="middle" fill="black">Home</text>
+        </a>
 
-                <line x1="100" y1="16" x2="100" y2="26" />
-                <line x1="23" y1="26" x2="177" y2="26" />
+        <line x1="100" y1="16" x2="100" y2="26" />
+        <line x1="23" y1="26" x2="177" y2="26" />
 
-                <!--12 downward lines from the main branch-->
-                <line x1="23" y1="26" x2="23" y2="36"/>
-                <line x1="37" y1="26" x2="37" y2="36"/>
-                <line x1="51" y1="26" x2="51" y2="56"/>
-                <line x1="65" y1="26" x2="65" y2="36"/>
-                <line x1="79" y1="26" x2="79" y2="36"/>
-                <line x1="93" y1="26" x2="93" y2="56"/>
-                <line x1="107" y1="26" x2="107" y2="36"/>
-                <line x1="121" y1="26" x2="121" y2="36"/>
-                <line x1="135" y1="26" x2="135" y2="56"/>
-                <line x1="149" y1="26" x2="149" y2="36"/>
-                <line x1="163" y1="26" x2="163" y2="36"/>
-                <line x1="177" y1="26" x2="177" y2="56"/>
+        <!--12 downward lines from the main branch-->
+        <line x1="23" y1="26" x2="23" y2="36" />
+        <line x1="37" y1="26" x2="37" y2="36" />
+        <line x1="51" y1="26" x2="51" y2="56" />
+        <line x1="65" y1="26" x2="65" y2="36" />
+        <line x1="79" y1="26" x2="79" y2="36" />
+        <line x1="93" y1="26" x2="93" y2="56" />
+        <line x1="107" y1="26" x2="107" y2="36" />
+        <line x1="121" y1="26" x2="121" y2="36" />
+        <line x1="135" y1="26" x2="135" y2="56" />
+        <line x1="149" y1="26" x2="149" y2="36" />
+        <line x1="163" y1="26" x2="163" y2="36" />
+        <line x1="177" y1="26" x2="177" y2="56" />
 
-                <!--12 circles in the 2nd level-->
-                <a href="teampage.html">
-                    <circle cx="23" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="23" y="42" font-size="2.5" text-anchor="middle" fill="black">Team<tspan x="23" dy="3">Page</tspan></text>
-                </a>
+        <!--12 circles in the 2nd level-->
+        <a href="teampage.html">
+            <circle cx="23" cy="42" r="6" class="Hover_Circles" />
+            <text x="23" y="42" font-size="2.5" text-anchor="middle" fill="black">Team<tspan x="23" dy="3">Page</tspan>
+                </text>
+        </a>
 
-                <a href="about.html">
-                    <circle cx="37" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="37" y="42" font-size="2.5" text-anchor="middle" fill="black">About<tspan x="37" dy="3">Us</tspan></text>
-                </a>
+        <a href="about.html">
+            <circle cx="37" cy="42" r="6" class="Hover_Circles" />
+            <text x="37" y="42" font-size="2.5" text-anchor="middle" fill="black">About<tspan x="37" dy="3">Us</tspan>
+                </text>
+        </a>
 
-                <circle cx="51" cy="62" r="6" />
-                <text x="51" y="63" font-size="2.5" text-anchor="middle" fill="black">Kevin</text>
+        <circle cx="51" cy="62" r="6" />
+        <text x="51" y="63" font-size="2.5" text-anchor="middle" fill="black">Kevin</text>
 
-                <a href="volunteer.html">
-                    <circle cx="65" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="65" y="42" font-size="2.5" text-anchor="middle" fill="black">Volunteer<tspan x="65" dy="3">Page</tspan></text>
-                </a>
+        <a href="volunteer.html">
+            <circle cx="65" cy="42" r="6" class="Hover_Circles" />
+            <text x="65" y="42" font-size="2.5" text-anchor="middle" fill="black">Volunteer<tspan x="65" dy="3">Page
+                </tspan></text>
+        </a>
 
-                <a href="table.html">
-                    <circle cx="79" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="79" y="43" font-size="2" text-anchor="middle" fill="black">Membership</text>
-                </a>
+        <a href="table.html">
+            <circle cx="79" cy="42" r="6" class="Hover_Circles" />
+            <text x="79" y="43" font-size="2" text-anchor="middle" fill="black">Membership</text>
+        </a>
 
-                <circle cx="93" cy="62" r="6" />
-                <text x="93" y="63" font-size="2.5" text-anchor="middle" fill="black">Avaneesh</text>
+        <circle cx="93" cy="62" r="6" />
+        <text x="93" y="63" font-size="2.5" text-anchor="middle" fill="black">Avaneesh</text>
 
-                <a href="sitemap.html">
-                    <circle cx="107" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="107" y="43" font-size="2.5" text-anchor="middle" fill="black">Sitemap</text>
-                </a>
+        <a href="sitemap.html">
+            <circle cx="107" cy="42" r="6" class="Hover_Circles" />
+            <text x="107" y="43" font-size="2.5" text-anchor="middle" fill="black">Sitemap</text>
+        </a>
 
-                <a href="feedback.html">
-                    <circle cx="121" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="121" y="43" font-size="2.5" text-anchor="middle" fill="black">Feedback</text>
-                </a>
+        <a href="feedback.html">
+            <circle cx="121" cy="42" r="6" class="Hover_Circles" />
+            <text x="121" y="43" font-size="2.5" text-anchor="middle" fill="black">Feedback</text>
+        </a>
 
-                <circle cx="135" cy="62" r="6" />
-                <text x="135" y="63" font-size="2.5" text-anchor="middle" fill="black">Pangajan</text>
+        <circle cx="135" cy="62" r="6" />
+        <text x="135" y="63" font-size="2.5" text-anchor="middle" fill="black">Pangajan</text>
 
-                <a href="https://sdgs.un.org/">
-                    <circle cx="149" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="149" y="42" font-size="2.5" text-anchor="middle" fill="black">United<tspan x="149" dy="3">Nations</tspan></text>
-                </a>
+        <a href="https://sdgs.un.org/">
+            <circle cx="149" cy="42" r="6" class="Hover_Circles" />
+            <text x="149" y="42" font-size="2.5" text-anchor="middle" fill="black">United<tspan x="149" dy="3">Nations
+                </tspan></text>
+        </a>
 
-                <a href="https://sdgs.un.org/goals/goal14">
-                    <circle cx="163" cy="42" r="6" class="Hover_Circles"/>
-                    <text x="163" y="43" font-size="2.5" text-anchor="middle" fill="black">SG/DG</text>
-                </a>
+        <a href="https://sdgs.un.org/goals/goal14">
+            <circle cx="163" cy="42" r="6" class="Hover_Circles" />
+            <text x="163" y="43" font-size="2.5" text-anchor="middle" fill="black">SG/DG</text>
+        </a>
 
-                <circle cx="177" cy="62" r="6" />
-                <text x="177" y="63" font-size="2.5" text-anchor="middle" fill="black">Imayuru</text>
+        <circle cx="177" cy="62" r="6" />
+        <text x="177" y="63" font-size="2.5" text-anchor="middle" fill="black">Imayuru</text>
 
-                <!--5 extending lines from the circles in level 2-->
-                <line x1="23" y1="48" x2="23" y2="130"/>
-                <line x1="51" y1="68" x2="51" y2="110"/>
-                <line x1="93" y1="68" x2="93" y2="110"/>
-                <line x1="135" y1="68" x2="135" y2="110"/>
-                <line x1="177" y1="68" x2="177" y2="110"/>
+        <!--5 extending lines from the circles in level 2-->
+        <line x1="23" y1="48" x2="23" y2="130" />
+        <line x1="51" y1="68" x2="51" y2="110" />
+        <line x1="93" y1="68" x2="93" y2="110" />
+        <line x1="135" y1="68" x2="135" y2="110" />
+        <line x1="177" y1="68" x2="177" y2="110" />
 
-                <!--3 branching lines and circles from circle 2 in level 2-->
-                <line x1="51" y1="82" x2="61" y2="82"/>
-                <line x1="51" y1="96" x2="61" y2="96"/>
-                <line x1="51" y1="110" x2="61" y2="110"/>
-                <a href="content_ST4.html">
-                    <circle cx="67" cy="82" r="6" class="Hover_Circles"/>
-                    <text x="67" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="67" dy="3">Page</tspan></text>
-                </a>
-                <a href="pageEditor_ST4.html">
-                    <circle cx="67" cy="96" r="6" class="Hover_Circles"/>
-                    <text x="67" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="67" dy="3">Editor</tspan></text>
-                </a>
-                <a href="validation_ST4.html">
-                    <circle cx="67" cy="110" r="6" class="Hover_Circles"/>
-                    <text x="67" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="67" dy="3">Validation</tspan></text>
-                </a>
+        <!--3 branching lines and circles from circle 2 in level 2-->
+        <line x1="51" y1="82" x2="61" y2="82" />
+        <line x1="51" y1="96" x2="61" y2="96" />
+        <line x1="51" y1="110" x2="61" y2="110" />
+        <a href="content_ST4.html">
+            <circle cx="67" cy="82" r="6" class="Hover_Circles" />
+            <text x="67" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="67" dy="3">Page
+                </tspan></text>
+        </a>
+        <a href="pageEditor_ST4.html">
+            <circle cx="67" cy="96" r="6" class="Hover_Circles" />
+            <text x="67" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="67" dy="3">Editor
+                </tspan></text>
+        </a>
+        <a href="validation_ST4.html">
+            <circle cx="67" cy="110" r="6" class="Hover_Circles" />
+            <text x="67" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="67" dy="3">Validation
+                </tspan></text>
+        </a>
 
-                <!--3 branching lines and circles from circle 3 in level 2-->
-                <line x1="93" y1="82" x2="103" y2="82"/>
-                <line x1="93" y1="96" x2="103" y2="96"/>
-                <line x1="93" y1="110" x2="103" y2="110"/>
-                <a href="content_ST2.html">
-                    <circle cx="109" cy="82" r="6" class="Hover_Circles"/>
-                    <text x="109" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="109" dy="3">Page</tspan></text>
-                </a>
-                <a href="pageEditor_ST2.html">
-                    <circle cx="109" cy="96" r="6" class="Hover_Circles"/>
-                    <text x="109" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="109" dy="3">Editor</tspan></text>
-                </a>
-                <a href="validation_ST2.html">
-                    <circle cx="109" cy="110" r="6" class="Hover_Circles"/>
-                    <text x="109" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="109" dy="3">Validation</tspan></text>
-                </a>
+        <!--3 branching lines and circles from circle 3 in level 2-->
+        <line x1="93" y1="82" x2="103" y2="82" />
+        <line x1="93" y1="96" x2="103" y2="96" />
+        <line x1="93" y1="110" x2="103" y2="110" />
+        <a href="content_ST2.html">
+            <circle cx="109" cy="82" r="6" class="Hover_Circles" />
+            <text x="109" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="109" dy="3">Page
+                </tspan></text>
+        </a>
+        <a href="pageEditor_ST2.html">
+            <circle cx="109" cy="96" r="6" class="Hover_Circles" />
+            <text x="109" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="109" dy="3">Editor
+                </tspan></text>
+        </a>
+        <a href="validation_ST2.html">
+            <circle cx="109" cy="110" r="6" class="Hover_Circles" />
+            <text x="109" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="109" dy="3">Validation
+                </tspan></text>
+        </a>
 
-                <!--3 branching lines and circles from circle 4 in level 2-->
-                <line x1="135" y1="82" x2="145" y2="82"/>
-                <line x1="135" y1="96" x2="145" y2="96"/>
-                <line x1="135" y1="110" x2="145" y2="110"/>
-                <a href="content_ST3.html">
-                    <circle cx="151" cy="82" r="6" class="Hover_Circles"/>
-                    <text x="151" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="151" dy="3">Page</tspan></text>
-                </a>
-                <a href="###">
-                    <circle cx="151" cy="96" r="6" class="Hover_Circles"/>
-                    <text x="151" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="151" dy="3">Editor</tspan></text>
-                </a>
-                <a href="###">
-                    <circle cx="151" cy="110" r="6" class="Hover_Circles"/>
-                    <text x="151" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="151" dy="3">Validation</tspan></text>
-                </a>
+        <!--3 branching lines and circles from circle 4 in level 2-->
+        <line x1="135" y1="82" x2="145" y2="82" />
+        <line x1="135" y1="96" x2="145" y2="96" />
+        <line x1="135" y1="110" x2="145" y2="110" />
+        <a href="content_ST3.html">
+            <circle cx="151" cy="82" r="6" class="Hover_Circles" />
+            <text x="151" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="151" dy="3">Page
+                </tspan></text>
+        </a>
+        <a href="###">
+            <circle cx="151" cy="96" r="6" class="Hover_Circles" />
+            <text x="151" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="151" dy="3">Editor
+                </tspan></text>
+        </a>
+        <a href="###">
+            <circle cx="151" cy="110" r="6" class="Hover_Circles" />
+            <text x="151" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="151" dy="3">Validation
+                </tspan></text>
+        </a>
 
-                <!--3 branching lines and circles from circle 5 in level 2-->
-                <line x1="177" y1="82" x2="187" y2="82"/>
-                <line x1="177" y1="96" x2="187" y2="96"/>
-                <line x1="177" y1="110" x2="187" y2="110"/>
-                <a href="content_ST1.html">
-                    <circle cx="193" cy="82" r="6" class="Hover_Circles"/>
-                    <text x="193" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="193" dy="3">Page</tspan></text>
-                </a>
-                <a href="pageEditor_ST1.html">
-                    <circle cx="193" cy="96" r="6" class="Hover_Circles"/>
-                    <text x="193" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="193" dy="3">Editor</tspan></text>
-                </a>
-                <a href="validation_ST1.html">
-                    <circle cx="193" cy="110" r="6" class="Hover_Circles"/>
-                    <text x="193" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="193" dy="3">Validation</tspan></text>
-                </a>
+        <!--3 branching lines and circles from circle 5 in level 2-->
+        <line x1="177" y1="82" x2="187" y2="82" />
+        <line x1="177" y1="96" x2="187" y2="96" />
+        <line x1="177" y1="110" x2="187" y2="110" />
+        <a href="content_ST1.html">
+            <circle cx="193" cy="82" r="6" class="Hover_Circles" />
+            <text x="193" y="82" font-size="2.5" text-anchor="middle" fill="black">Content<tspan x="193" dy="3">Page
+                </tspan></text>
+        </a>
+        <a href="pageEditor_ST1.html">
+            <circle cx="193" cy="96" r="6" class="Hover_Circles" />
+            <text x="193" y="96" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="193" dy="3">Editor
+                </tspan></text>
+        </a>
+        <a href="validation_ST1.html">
+            <circle cx="193" cy="110" r="6" class="Hover_Circles" />
+            <text x="193" y="109" font-size="2.5" text-anchor="middle" fill="black">Page<tspan x="193" dy="3">Validation
+                </tspan></text>
+        </a>
 
-                <!--branching  lines and circles from the circle at level 2-->
-                <line x1="23" y1="130" x2="177" y2="130"/>
-                <line x1="51" y1="130" x2="51" y2="140"/>
-                <circle cx="51" cy="146" r="6" />
-                <text x="51" y="147" font-size="2.5" text-anchor="middle" fill="black">Kevin</text>
-                <line x1="93" y1="130" x2="93" y2="140"/>
-                <circle cx="93" cy="146" r="6" />
-                <text x="93" y="147" font-size="2.5" text-anchor="middle" fill="black">Avaneesh</text>
-                <line x1="135" y1="130" x2="135" y2="140"/>
-                <circle cx="135" cy="146" r="6" />
-                <text x="135" y="147" font-size="2.5" text-anchor="middle" fill="black">Pangajan</text>
-                <line x1="177" y1="130" x2="177" y2="140"/>
-                <circle cx="177" cy="146" r="6" />
-                <text x="177" y="147" font-size="2.5" text-anchor="middle" fill="black">Imayuru</text>
+        <!--branching  lines and circles from the circle at level 2-->
+        <line x1="23" y1="130" x2="177" y2="130" />
+        <line x1="51" y1="130" x2="51" y2="140" />
+        <circle cx="51" cy="146" r="6" />
+        <text x="51" y="147" font-size="2.5" text-anchor="middle" fill="black">Kevin</text>
+        <line x1="93" y1="130" x2="93" y2="140" />
+        <circle cx="93" cy="146" r="6" />
+        <text x="93" y="147" font-size="2.5" text-anchor="middle" fill="black">Avaneesh</text>
+        <line x1="135" y1="130" x2="135" y2="140" />
+        <circle cx="135" cy="146" r="6" />
+        <text x="135" y="147" font-size="2.5" text-anchor="middle" fill="black">Pangajan</text>
+        <line x1="177" y1="130" x2="177" y2="140" />
+        <circle cx="177" cy="146" r="6" />
+        <text x="177" y="147" font-size="2.5" text-anchor="middle" fill="black">Imayuru</text>
 
-                <!--branching lines and circles extending from circle 1 at level 7-->
-                <line x1="51" y1="152" x2="51" y2="192"/>
-                <line x1="51" y1="164" x2="61" y2="164"/>
-                <line x1="51" y1="178" x2="61" y2="178"/>
-                <line x1="51" y1="192" x2="61" y2="192"/>
-                <a href="mailto:bartholomeuszkd@gmail.com">
-                    <circle cx="67" cy="164" r="6" class="Hover_Circles"/>
-                    <text x="67" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
-                </a>
-                <a href="https://www.linkedin.com/in/kevin-bartholomeusz-07a70b332/">
-                    <circle cx="67" cy="178" r="6" class="Hover_Circles"/>
-                    <text x="67" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
-                </a>
-                <a href="https://github.com/kevin-bartholomeusz">
-                    <circle cx="67" cy="192" r="6" class="Hover_Circles"/>
-                    <text x="67" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
-                </a>
+        <!--branching lines and circles extending from circle 1 at level 7-->
+        <line x1="51" y1="152" x2="51" y2="192" />
+        <line x1="51" y1="164" x2="61" y2="164" />
+        <line x1="51" y1="178" x2="61" y2="178" />
+        <line x1="51" y1="192" x2="61" y2="192" />
+        <a href="mailto:bartholomeuszkd@gmail.com">
+            <circle cx="67" cy="164" r="6" class="Hover_Circles" />
+            <text x="67" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
+        </a>
+        <a href="https://www.linkedin.com/in/kevin-bartholomeusz-07a70b332/">
+            <circle cx="67" cy="178" r="6" class="Hover_Circles" />
+            <text x="67" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
+        </a>
+        <a href="https://github.com/kevin-bartholomeusz">
+            <circle cx="67" cy="192" r="6" class="Hover_Circles" />
+            <text x="67" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
+        </a>
 
-                <!--branching lines and circles extending from circle 2 at level 7-->
-                <line x1="93" y1="152" x2="93" y2="192"/>
-                <line x1="93" y1="164" x2="103" y2="164"/>
-                <line x1="93" y1="178" x2="103" y2="178"/>
-                <line x1="93" y1="192" x2="103" y2="192"/>
-                <a href="mailto:kesavan.avaneesh@gmail.com">
-                    <circle cx="109" cy="164" r="6" class="Hover_Circles"/>
-                    <text x="109" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
-                </a>
-                <a href="https://www.linkedin.com/in/avaneesh-kesavan/">
-                    <circle cx="109" cy="178" r="6" class="Hover_Circles"/>
-                    <text x="109" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
-                </a>
-                <a href="https://github.com/AvaneeshKesavan">
-                    <circle cx="109" cy="192" r="6" class="Hover_Circles"/>
-                    <text x="109" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
-                </a>
+        <!--branching lines and circles extending from circle 2 at level 7-->
+        <line x1="93" y1="152" x2="93" y2="192" />
+        <line x1="93" y1="164" x2="103" y2="164" />
+        <line x1="93" y1="178" x2="103" y2="178" />
+        <line x1="93" y1="192" x2="103" y2="192" />
+        <a href="mailto:kesavan.avaneesh@gmail.com">
+            <circle cx="109" cy="164" r="6" class="Hover_Circles" />
+            <text x="109" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
+        </a>
+        <a href="https://www.linkedin.com/in/avaneesh-kesavan/">
+            <circle cx="109" cy="178" r="6" class="Hover_Circles" />
+            <text x="109" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
+        </a>
+        <a href="https://github.com/AvaneeshKesavan">
+            <circle cx="109" cy="192" r="6" class="Hover_Circles" />
+            <text x="109" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
+        </a>
 
-                <!--branching lines and circles extending from circle 3 at level 7-->
-                <line x1="135" y1="152" x2="135" y2="192"/>
-                <line x1="135" y1="164" x2="145" y2="164"/>
-                <line x1="135" y1="178" x2="145" y2="178"/>
-                <line x1="135" y1="192" x2="145" y2="192"/>
-                <a href="mailto:pangajan20@gmail.com">
-                    <circle cx="151" cy="164" r="6" class="Hover_Circles"/>
-                    <text x="151" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
-                </a>
-                <a href="https://www.linkedin.com/in/pangajan-paranitharan-81ab51315/">
-                    <circle cx="151" cy="178" r="6" class="Hover_Circles"/>
-                    <text x="151" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
-                </a>
-                <a href="https://github.com/Pangajan">
-                    <circle cx="151" cy="192" r="6" class="Hover_Circles"/>
-                    <text x="151" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
-                </a>
+        <!--branching lines and circles extending from circle 3 at level 7-->
+        <line x1="135" y1="152" x2="135" y2="192" />
+        <line x1="135" y1="164" x2="145" y2="164" />
+        <line x1="135" y1="178" x2="145" y2="178" />
+        <line x1="135" y1="192" x2="145" y2="192" />
+        <a href="mailto:pangajan20@gmail.com">
+            <circle cx="151" cy="164" r="6" class="Hover_Circles" />
+            <text x="151" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
+        </a>
+        <a href="https://www.linkedin.com/in/pangajan-paranitharan-81ab51315/">
+            <circle cx="151" cy="178" r="6" class="Hover_Circles" />
+            <text x="151" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
+        </a>
+        <a href="https://github.com/Pangajan">
+            <circle cx="151" cy="192" r="6" class="Hover_Circles" />
+            <text x="151" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
+        </a>
 
-                <!--branching lines and circles extending from circle 4 at level 7-->
-                <line x1="177" y1="152" x2="177" y2="192"/>
-                <line x1="177" y1="164" x2="187" y2="164"/>
-                <line x1="177" y1="178" x2="187" y2="178"/>
-                <line x1="177" y1="192" x2="187" y2="192"/>
-                <a href="mailto:imayuruweerawala@gmail.com">
-                    <circle cx="193" cy="164" r="6" class="Hover_Circles"/>
-                    <text x="193" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
-                </a>
-                <a href="https://www.linkedin.com/in/imayuru/">
-                    <circle cx="193" cy="178" r="6" class="Hover_Circles"/>
-                    <text x="193" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
-                </a>
-                <a href="https://github.com/typicalninja/">
-                    <circle cx="193" cy="192" r="6" class="Hover_Circles"/>
-                    <text x="193" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
-                </a>
-            </svg>
+        <!--branching lines and circles extending from circle 4 at level 7-->
+        <line x1="177" y1="152" x2="177" y2="192" />
+        <line x1="177" y1="164" x2="187" y2="164" />
+        <line x1="177" y1="178" x2="187" y2="178" />
+        <line x1="177" y1="192" x2="187" y2="192" />
+        <a href="mailto:imayuruweerawala@gmail.com">
+            <circle cx="193" cy="164" r="6" class="Hover_Circles" />
+            <text x="193" y="165" font-size="2.5" text-anchor="middle" fill="black">Email</text>
+        </a>
+        <a href="https://www.linkedin.com/in/imayuru/">
+            <circle cx="193" cy="178" r="6" class="Hover_Circles" />
+            <text x="193" y="179" font-size="2.5" text-anchor="middle" fill="black">LinkedIn</text>
+        </a>
+        <a href="https://github.com/typicalninja/">
+            <circle cx="193" cy="192" r="6" class="Hover_Circles" />
+            <text x="193" y="193" font-size="2.5" text-anchor="middle" fill="black">Git</text>
+        </a>
+    </svg>
 
-            <footer class="footer">
-                <a href="https://sdgs.un.org/" target="_blank">
-                    <div class="image-container">
-                        <img src="images/global/image.png" alt="Image 1">
-                        <img src="images/global/logo2.png" alt="Image 2">
-                    </div>
-                </a>
-                <!-- Accessibility Links in the center -->
-                <div class="links">
-                    <a href="home.html">HOME</a>
-                    <a href="about.html">ABOUT US</a>
-                    <a href="home.html#gallery">OVERVIEW</a>
-                    <a href="volunteer.html">VOLUNTEER</a>
-                    <a href="teampage.html">TEAM</a>
-                    <a href="sitemap.html">SITEMAP</a>
-                    <a href="feedback.html">FEEDBACK</a>
-                    <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
-                </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <a href="https://sdgs.un.org/" target="_blank">
+            <div class="image-container">
+                <img src="images/global/image.png" alt="Image 1">
+                <img src="images/global/logo2.png" alt="Image 2">
+            </div>
+        </a>
+        <!-- Accessibility Links in the center -->
+        <div class="links">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="home.html#gallery">OVERVIEW</a>
+            <a href="volunteer.html">VOLUNTEER</a>
+            <a href="teampage.html">TEAM</a>
+            <a href="sitemap.html">SITEMAP</a>
+            <a href="feedback.html">FEEDBACK</a>
+            <a href="https://sdgs.un.org/goals/goal14" target="_blank">SDG</a>
+        </div>
 
-                <!-- Line below the links -->
-                <hr>
+        <!-- Line below the links -->
+        <hr>
 
-                <!-- Bottom section with Fan Support, Copyright and Extra Links -->
-                <div class="bottom-text">
-                    <div class="membership">
-                        <a href="table.html">Membership</a>
-                    </div>
-                    <div class="extra-links">
-                        <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
-                        <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
-                        <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
-                        <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
-                    </div>
-                    <div class="copyright">
-                        <p>&copy; 2025 TECHASTRIS.</p>
-                    </div>
-                </div>
-            </footer>
+        <!-- Bottom sections -->
+        <div class="bottom-text">
+            <div class="membership">
+                <a href="table.html">Membership</a>
+            </div>
+            <div class="extra-links">
+                <a href="#" onclick="redirect('Kevin')" class="btn">Kevin</a>
+                <a href="#" onclick="redirect('Avaneesh')" class="btn">Avaneesh</a>
+                <a href="#" onclick="redirect('Pangajan')" class="btn">Pangajan</a>
+                <a href="#" onclick="redirect('Imayuru')" class="btn">Imayuru</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TECHASTRIS.</p>
+            </div>
+        </div>
+    </footer>
 
-            <script src="/js/nav-search.js"></script>
-            <script src="/js/redirect.js" defer></script>
-        </body>
-    </html>
+    <!-- JavaScript Files -->
+    <script src="/js/nav-search.js"></script>
+    <script src="/js/side-bar.js"></script>
+    <script src="/js/redirect.js" defer></script>
+
+</body>
+
+</html>
