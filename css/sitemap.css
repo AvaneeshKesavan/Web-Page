@@ -1,0 +1,47 @@
+.dark-mode {
+    svg {
+        background-color : Black;
+        stroke-width : 0.5;
+    }
+
+    svg line {
+        stroke : #1188C9;
+    }
+
+    svg circle {
+        fill : #139BE6;
+    }
+
+}
+
+svg {
+    background-color : White;
+    stroke-width : 0.2;
+}
+
+svg line {
+    stroke : #0A4E73;
+}
+
+svg circle {
+    fill : #1188C9;
+}
+
+svg .Hover_Circles {
+    transition: fill 0.5s ease;
+}
+
+svg .Hover_Circles:hover {
+    fill : #0A4C70;
+}
+
+svg text {
+    fill : White;
+    pointer-events : none;
+}
+
+@media screen and (max-width : 1365px) {
+    svg {
+        padding-top : 100px;
+    }
+}

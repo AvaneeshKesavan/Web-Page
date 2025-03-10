@@ -1,0 +1,385 @@
+/* Set background color and font styles for the entire page */
+body {
+    background-color: rgb(246, 241, 241);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 0;
+}
+
+/* Dark mode styling */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Adjusts scroll behavior */
+html {
+    scroll-padding-top: 20%;
+}
+
+/* Theme switch button styling */
+.theme-button {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    position: fixed;
+    top: 8px;
+    right: 90px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Adjust theme button styling in dark mode */
+.dark-mode .theme-button {
+    background-color: black;
+    border: 2px solid white;
+}
+
+/* Add spacing below navbar to prevent content from being hidden */
+#content {
+    padding-top: 140px;
+}
+
+/* Profile icon styling */
+.profile-icon {
+    width: 35px;
+    object-fit: contain;
+    position: absolute;
+    top: 0%;
+    right: 30px;
+    transform: translateY(-80%);
+}
+
+/* Navigation bar styling */
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 4;
+    left: 10px;
+    right: 20px;
+    top: 30px;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Styling for the top part of the navigation bar */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(25, 167, 206);
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Logo styling in the navbar */
+.nav-top .logo img {
+    height: 80px;
+}
+
+/* Navigation links list */
+.main-nav nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Navigation link styling */
+.main-nav nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect for navigation links */
+.main-nav nav a:hover {
+    color: rgba(25, 167, 206);
+    background-color: #000000;
+    padding: 39px 10px;
+}
+
+/* Active navigation link styling */
+.main-nav nav a.active {
+    color: white;
+    padding: 39px 10px;
+}
+
+/* Search expand button styling */
+#search-expand {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Search bar container */
+.search-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search input field */
+.search-container input {
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Search button styling */
+.search-container button {
+    background: rgb(20, 108, 148);
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Hide nav links when search is active */
+.search-active #nav-links {
+    display: none;
+}
+
+/* Animation for search bar sliding out */
+.search-slide-out {
+    animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+/* Animation for search bar sliding in */
+.search-slide-in {
+    animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Display search container when search is active */
+.search-active .search-container {
+    display: flex;
+}
+
+/* Hide search bar by default */
+#search-bar {
+    display: none;
+}
+
+/* Close search button styling */
+#close-search {
+    margin-left: 10px;
+}
+
+/* Styling for the search button */
+.search-container button#search-btn {
+    margin-left: 10px;
+    background: rgb(25, 167, 206);
+}
+
+/* Navigation search button styling */
+#nav-links button#search-expand {
+    padding: 5px 20px;
+    margin-bottom: 0.4%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer section styling */
+.footer {
+    background-color: #050a30;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Footer logo styling */
+.footer img {
+    width: 200px;
+    margin-bottom: 45px;
+}
+
+/* Footer image container */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer image styling */
+.image-container img {
+    width: 10%;
+    height: auto;
+}
+
+/* Footer links container */
+.footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 60px;
+}
+
+/* Footer links styling */
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Footer link hover effect */
+.footer a:hover {
+    text-decoration: underline;
+    color: rgb(25, 167, 206);
+}
+
+/* Footer horizontal rule */
+.footer hr {
+    border: 1px solid white;
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* Footer bottom text */
+.footer .bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+/* Extra footer links */
+.footer .extra-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Extra links button styling */
+.footer .extra-links .btn {
+    color: rgb(25, 167, 206);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Extra links button hover effect */
+.footer .extra-links .btn:hover {
+    color: white;
+}
+
+/* Footer membership text */
+.footer .membership-table {
+    font-weight: bold;
+}
+
+/* Hamburger menu for mobile navigation */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+
+    /* Show hamburger menu */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Center and wrap utility bar content */
+    .top-utility-bar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Reduce logo size */
+    .logo {
+        align-items: end;
+        width: 20px;
+    }
+
+    /* Adjust navigation menu for mobile */
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 30%;
+        position: absolute;
+        top: 60%;
+        right: 3%;
+        background: rgba(25, 167, 206, 0.9);
+        text-align: center;
+    }
+
+    /* Show menu when active */
+    nav.active {
+        display: flex;
+    }
+
+    /* Adjust footer styling for mobile */
+    .footer .links,
+    .footer .extra-links,
+    .footer .bottom-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
