@@ -22,11 +22,8 @@ html {
     border: 2px solid black;
     cursor: pointer;
     position: fixed;
-    /* Change from absolute to fixed */
     top: 8px;
-    /* Adjust to move up */
     right: 90px;
-    /* Keep it aligned */
     transition: background-color 0.3s ease-in-out;
 }
 
